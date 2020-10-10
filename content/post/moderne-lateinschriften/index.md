@@ -1,6 +1,6 @@
 ---
-title: "Muster Alphabete"
-date: 2020-10-09T16:13:43+02:00
+title: "Moderne Lateinschriften"
+date:
 type: book
 tags:
 - Book
@@ -10,4 +10,9 @@ resources:
   params:
     iiif: front/info.json
     class: front
+- src: "title.jpg"
+  name: title
+  params:
+    iiif: title/info.json
+    class: title
 ---

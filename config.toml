@@ -13,6 +13,61 @@ DefaultContentLanguage = "de"
     description = ""
     copyrightYears = "2020"
 
+[languages]
+    [languages.de]
+        languagename = "Deutsch"
+
+        [languages.de.params]
+
+        [languages.de.menu]
+
+            [[languages.de.menu.main]]
+                name = "Start"
+                weight = 1
+                url = "/"
+
+            [[languages.de.menu.main]]
+                name = "Weiterverwendung"
+                weight = 2
+                url = "reuse/"
+
+            [[languages.de.menu.main]]
+                name = "Sammlungen"
+                weight = 3
+                url = "collections/"
+
+            [[languages.de.menu.main]]
+                name = "Über"
+                weight = 4
+                url = "about/"
+
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.params]
+
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+                name = "Start"
+                weight = 1
+                url = "/"
+
+            [[languages.en.menu.main]]
+                name = "Reuse"
+                weight = 2
+                url = "reuse/"
+
+            [[languages.en.menu.main]]
+                name = "Collections"
+                weight = 3
+                url = "collections/"
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 4
+                url = "about/"
 
 
 [module]
