@@ -13,7 +13,9 @@ Daher ist der Zweck diese Blogs hochqualitative Digitalisate zur [Weiterverarbei
 
 Diese Seite wurde mit [Hugo](https://gohugo.io/) generiert.
 
-Als Theme kommt eine angepasste Version von [Showcase](https://github.com/apvarun/showcase-hugo-theme) zum Einsatz. Als Schriftart wird [Raleway](https://github.com/impallari/Raleway/) eingesetzt.
+Das Theme ist inspiriert vom [Tumblr](https://www.tumblr.com/) theme [Paper Stacks](https://www.tumblr.com/theme/36202)
+
+[Inconsolata](https://github.com/googlefonts/inconsolata) and [Playfair Display](https://github.com/clauseggers/Playfair-Display) are used as fonts - if installed on your computer.
 
 Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.
 

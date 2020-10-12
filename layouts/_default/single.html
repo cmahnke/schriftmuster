@@ -2,5 +2,9 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-  {{ partial "page.html" . }}
+      {{- if hasPrefix .File.Dir "collections" -}}
+          {{- partial "collections.html" . -}}
+      {{- else -}}
+          {{- partial "page.html" . -}}
+      {{- end -}}
 {{ end }}

@@ -13,7 +13,9 @@ It's the purpose of this blog to provide high-quality digital copies for [furthe
 
 This page was generated with [Hugo] (https://gohugo.io/).
 
- An adapted version of [Nederburg] (https://github.com/appernetic/hugo-nederburg-theme) is used as the theme. [Raleway] (https://github.com/impallari/Raleway/) is used as the font.
+The theme is inspired by the [Tumblr](https://www.tumblr.com/) theme [Paper Stacks](https://www.tumblr.com/theme/36202).
+
+[Inconsolata](https://github.com/googlefonts/inconsolata) and [Playfair Display](https://github.com/clauseggers/Playfair-Display) are used as fonts - if installed on your computer.
 
 The post-processing of the digitized images was carried out with [ScanTailor Advanced] (https://github.com/4lex4/scantailor-advanced).
 
