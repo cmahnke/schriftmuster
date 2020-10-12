@@ -20,14 +20,6 @@
           <h1 class='post-title'>{{ .Title }}</h1>
       </div>
 
-      {{- if not .Params.metaPage -}}
-          <div class="meta">
-              <div class="date">
-                  <span class="tag-container">{{ partial "meta/tags.html" . }}</span>
-              </div>
-          </div>
-      {{- end -}}
-
       <div class="post-content">
           {{- .Content -}}
       </div>
@@ -53,6 +45,15 @@
               {{- end -}}
           {{- end -}}
       </div>
+
+      {{- if not .Params.metaPage -}}
+          <div class="meta">
+              <div class="tag-container">
+                <div class="tags-heading">Tags</div>
+                  {{ partial "meta/tags.html" . }}
+              </div>
+          </div>
+      {{- end -}}
 
   </article>
 </main>

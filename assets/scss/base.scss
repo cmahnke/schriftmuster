@@ -74,8 +74,8 @@ main {
             max-height: 0;
             width: auto;
             background-color: #fafafa;
-            border-top: solid 2px #000;
-            border-bottom: solid 2px #000;
+            border-top: solid 2px $color-body-text;
+            border-bottom: solid 2px $color-body-text;
             transition: opacity 0.25s, max-height 0.15s linear;
             height: auto;
         }
@@ -96,7 +96,7 @@ main {
                 a:focus,
                 a:hover,
                 a:visited {
-                    color: #000;
+                    color: $color-body-text;
                 }
 
                 a,
@@ -176,6 +176,12 @@ main {
 }
 
 .post-header {
+    width: fit-content;
+    max-width: 75%;
+    margin: auto;
+    border-bottom: lighten($color-body-text, 55%) solid 1px;
+    margin-bottom: 1em;
+
     .post-title {
         text-align: center;
         font-size: xx-large;
@@ -193,6 +199,25 @@ main {
         padding: 2em;
         box-shadow: 0 0 3px rgba(0,0,0,0.5);
         background-color: $color-paper;
+
+        .meta {
+          .tag-container {
+            margin-top: 1em;
+            padding: .4em .3em;
+            border-bottom: $color-body-text solid 1px;
+            border-top: $color-body-text solid 1px;
+            width: fit-content;
+            max-width: 8em;
+
+            .tags-heading {
+                  font-weight: bold;
+                  margin-bottom: .3em;
+                  padding-bottom: .3em;
+                  display: inline-block;
+            }
+          }
+        }
+
     }
 
 }
@@ -207,6 +232,11 @@ main {
         background-color: $color-paper;
         transform-style: flat;
         transition: all 250ms ease-out;
+
+        @media (max-width : 20em) {
+          margin: 1em 0;
+          padding: 1em;
+        }
 
         @media (min-width : 30em) {
             &:after,
@@ -231,6 +261,10 @@ main {
             }
     }
 */
+    }
+
+    .post-header {
+      margin-bottom: 1.5em;
     }
 
     .preview {
