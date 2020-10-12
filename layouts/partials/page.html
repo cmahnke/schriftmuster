@@ -9,17 +9,25 @@
 
 <main class="content {{ $class }}">
   <article class="post" style="{{ $style | safeCSS }}">
-      <div class="post-header">
-          <h1 class='post-title'>{{ .Title }}</h1>
-      </div>
       {{- if not .Params.metaPage -}}
           <div class="meta">
               <div class="date">
-                  <a href="{{ .RelPermalink }}">{{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}</a>
+                  <span class="date">{{ partial "date.html" . }}</span>
               </div>
-            {{ partial "meta/tags.html" . }}
           </div>
       {{- end -}}
+      <div class="post-header">
+          <h1 class='post-title'>{{ .Title }}</h1>
+      </div>
+
+      {{- if not .Params.metaPage -}}
+          <div class="meta">
+              <div class="date">
+                  <span class="tag-container">{{ partial "meta/tags.html" . }}</span>
+              </div>
+          </div>
+      {{- end -}}
+
       <div class="post-content">
           {{- .Content -}}
       </div>

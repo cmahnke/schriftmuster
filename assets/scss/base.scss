@@ -233,12 +233,6 @@ main {
 */
     }
 
-    .date {
-        float: right;
-        font-size: small;
-        margin-right: 1em;
-    }
-
     .preview {
 
         img {
@@ -280,6 +274,13 @@ main {
             padding: 0 0.3em;
         }
     }
+}
+
+.date {
+    float: right;
+    font-size: small;
+    margin-right: 1em;
+    margin-bottom: .6em;
 }
 
 .footer {
