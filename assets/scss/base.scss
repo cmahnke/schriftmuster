@@ -1,13 +1,113 @@
-$font-body-font: '' !default;
+$font-body-font: 'Inconsolata' !default;
 
+/*
 $body-color: #4d4d4d !default;
 $body-background: #38312f !default;
+*/
+$color-body-text: #333333 !default;
+$color-link-text: #333333 !default;
+$color-link-hover: #333333 !default;
+$color-link-active: #333333 !default;
+$color-header-text: #333333 !default;
 
-@import "style";
-@import "custom";
+
 @import "icons";
 @import "ol-iiif";
 
+
+body {
+    font-family: $font-body-font, monospace;
+    color: $color-body-text;
+}
+
+main {
+    margin:auto;
+    width: 65%;
+}
+
+nav {
+        width: 100%;
+        padding: .4em;
+}
+
+.list {
+    .list-entry {
+        margin: 2em 0 ;
+        border: solid 1px #aaa6ab;
+        padding: 2em;
+
+        .post-header {
+            .post-title {
+                text-align: center;
+                font-size: xx-large;
+            }
+        }
+        .preview img {
+
+        }
+
+        .post-summary {
+            padding: 2em auto;
+            display: inline-block;
+            .more {
+                border-top: solid 1px darken(#aaa6ab, 40%);
+                padding-top: 2em;
+                text-align: center;
+            }
+
+        }
+    }
+    .pagination {
+        text-align: center;
+        margin: auto;
+        padding-bottom: 1em;
+        back-next {
+            padding: 0 .3em;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    border-top: solid 1px #aaa6ab;
+    margin: 1em auto 0;
+    background-color: #fafafa;
+
+    .menu {
+        list-style-type: none;
+        text-align: center;
+
+        .menu-item {
+            display: inline;
+        }
+    }
+
+    .credit {
+
+        text-align: center;
+        margin-top: .8em;
+        font-size: x-small;
+
+        p {
+            margin: auto;
+            &.projektemacher {
+                margin: .6em 0;
+            }
+
+            &.cc {
+                color: #aaa6ab;
+            }
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: $color-body-text;
+}
+
+/*
 .fa-plus:before {
     display: inline-block;
     width: 1em;
@@ -39,7 +139,6 @@ $body-background: #38312f !default;
     .excerpt-container {
         box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, .6);
         border-radius: 4px;
-        /* padding: 2% 5.55%; */
         padding: unset;
         margin: 3.5% 3.5%;
         background-color: rgba(255, 255, 255, .6);
@@ -154,3 +253,4 @@ $body-background: #38312f !default;
         padding-right:22.22%;
     }
 }
+*/

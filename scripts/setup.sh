@@ -6,6 +6,8 @@ if [[ -z "$SKIP_IIIF" ]] ; then
     ./scripts/iiif.sh
 fi
 
+./scripts/preview.sh
+
 # Favicons
 # See https://gist.github.com/pfig/1808188
 #convert static/images/kleiderbuegel.png -resize 128x128 -transparent white static/images/favicon-128.png

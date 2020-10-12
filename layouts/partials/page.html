@@ -1,0 +1,44 @@
+{{- $class := "" -}}
+
+<main class="content {{ $class }}">
+
+  <article class="post">
+      <div class="post-header">
+          <h1 class='post-title'>{{ .Title }}</h1>
+      </div>
+      {{- if not .Params.metaPage -}}
+          <div class="meta">
+              <div class="date">
+                  <a href="{{ .RelPermalink }}">{{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}</a>
+              </div>
+            {{ partial "meta/tags.html" . }}
+          </div>
+      {{- end -}}
+      <div class="post-content">
+          {{- .Content -}}
+      </div>
+
+      {{- if .Params.type -}}
+        <div class="{{ .Params.itemType }}-description">
+          {{- if eq .Params.type "book" -}}
+              <h1>{{ i18n "aboutTheNeu" }} {{ i18n "book" }}</h1>
+          {{- else if eq .Params.itemType "font" -}}
+              <h1>{{ i18n "aboutTheFem" }} {{ i18n "font" }}</h1>
+          {{- end -}}
+
+          {{- .Params.itemDescription | markdownify -}}
+        </div>
+      {{- end -}}
+
+      <div class="iiif post-images">
+          {{- $context := path.Dir .File.Path -}}
+          {{- $pageURL := .Permalink -}}
+          {{- range .Params.resources -}}
+              {{- if .params.iiif -}}
+                {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink) }}
+              {{- end -}}
+          {{- end -}}
+      </div>
+
+  </article>
+</main>

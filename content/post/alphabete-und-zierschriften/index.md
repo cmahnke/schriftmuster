@@ -14,14 +14,14 @@ resources:
   params:
     iiif: front-verso/info.json
     class: front-verso
-- src: "back.jpg"
-  name: back
+- src: "end.jpg"
+  name: end
   params:
-    iiif: back/info.json
-    class: back
-- src: "back-verso.jpg"
-  name: back-verso
+    iiif: end/info.json
+    class: end
+- src: "end-verso.jpg"
+  name: end-verso
   params:
-    iiif: back-verso/info.json
-    class: back-verso
+    iiif: end-verso/info.json
+    class: end-verso
 ---

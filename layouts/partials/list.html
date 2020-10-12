@@ -1,0 +1,67 @@
+{{- $pages := .Pages -}}
+{{- if .IsHome -}}
+    {{- $pages = .Site.RegularPages -}}
+{{- end -}}
+
+{{/* Sort sticky pages to top */}}
+{{ $stickyPages := where $pages "Params.sticky" "==" true }}
+{{ $nonStickyPages := where $pages "Params.sticky" "!=" true }}
+{{ $pages = union $stickyPages $nonStickyPages }}
+
+{{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
+<main class="list">
+    	{{- range $paginator.Pages -}}
+            <div class="list-entry">
+
+                {{- $context := path.Dir .File.Path -}}
+                <a class="post-link" href="{{ .Permalink }}">
+                    <div class="post-header">
+                        <h1 class='post-title'>{{ .Title }}</h1>
+                    </div>
+
+                    {{- $previewImg := "" -}}
+                    {{- $imgLocation := "" -}}
+                    {{- $class := "" -}}
+                    {{- if eq .Params.type "font" -}}
+                        {{- $imgName := "preview.png" -}}
+                        {{- $imgLocation = path.Join $context $imgName -}}
+                        {{- $previewImg = (.Resources.ByType "image").GetMatch $imgName -}}
+                        {{- $class = "font" -}}
+                    {{- else if eq .Params.type "book" -}}
+                        {{- $imgName := "front" -}}
+                        {{- $imgLocation = path.Join $context $imgName -}}
+                        {{- $previewImg = (.Resources.ByType "image").GetMatch $imgName -}}
+
+                        {{- $class = "book" -}}
+                    {{- end -}}
+    				{{- if eq $previewImg nil -}}
+                        {{ errorf "Can't find image %s" $imgLocation }}
+                    {{- end -}}
+                    {{- if gt $previewImg.Width 800 -}}
+                        {{- $previewImg = $previewImg.Resize "800x" -}}
+                    {{- end -}}
+
+                    <div class="preview $class">
+                        <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}">
+                    </div>
+
+                    <div class='post-summary'>
+    					{{ .Summary }}
+    					<div class="more">{{ i18n "readPost" }}</div>
+        			</div>
+                </a>
+            </div>
+        {{- end -}}
+
+    {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}}
+    <div class="pagination">
+      {{ if $paginator.HasPrev }}
+        <a class="back-next" href="{{ $paginator.Prev.URL }}">{{ i18n "previous_page" }}</a>
+      {{ end }}
+      {{ if $paginator.HasNext }}
+        <a class="back-next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
+      {{ end }}
+    </div>
+    {{- end }}
+
+</main>

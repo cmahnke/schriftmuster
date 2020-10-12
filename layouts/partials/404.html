@@ -1,0 +1,17 @@
+{{- define "main" -}}
+    <main class="content error404">
+          <article class="post error404">
+
+            <div class='post-header'>
+              <h1 class='entry-title'>404</h1>
+              <h1 class='entry-title'>Nicht gefunden</h1>
+            </div>
+
+            <div class="post-content">
+               <p>Die angeforderte URL konnte auf dem Server nicht gefunden werden.</p>
+               <p>Du kannst hier zurück zur <a href="{{ .Site.BaseURL | safeHTML }}">Startseite</a>.</p>
+            </div>
+
+        </article>
+    </main>
+{{- end -}}

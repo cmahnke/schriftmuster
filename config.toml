@@ -1,11 +1,11 @@
 baseURL = "https://schriftmuster.projektemacher.org/"
 languageCode = "de"
 title = "Schriftmuster"
-theme = "showcase"
 publishDir = "docs"
 canonifyurls = true
 disableKinds = ["term"]
 DefaultContentLanguage = "de"
+stylesheets = ["https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap"]
 
 [params]
     author = "Christian Mahnke"
@@ -86,6 +86,10 @@ DefaultContentLanguage = "de"
     [[module.mounts]]
         source = "assets/js"
         target = "assets/js"
+
+    [[module.mounts]]
+        source = "node_modules/normalize.css"
+        target = "assets/css/normalize"
 
 [imaging]
     quality = 95

@@ -13,4 +13,8 @@ resources:
   params:
     iiif: page015/info.json
     class: sheet
+- src: "page016.jpg"
+  params:
+    iiif: page016/info.json
+    class: sheet
 ---

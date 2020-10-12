@@ -2,3 +2,4 @@ node_modules
 docs
 static/images/favicon*
 resources
+content/post/**/preview.png
