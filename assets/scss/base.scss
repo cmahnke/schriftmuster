@@ -388,6 +388,25 @@ body.about {
     background-image: url("/images/cm.svg");
     background-repeat: no-repeat;
 }
+
+.pagination {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+  .page-numbers,
+  .back-next {
+    font-size: larger;
+    font-weight: bold;
+/*
+    &.current {
+      text-decoration: underline;
+      font-weight:  bolder;
+    }
+  */
+  }
+}
+
 /* Paper background */
 @media (min-width: 56em) {
     .page-container {

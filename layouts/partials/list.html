@@ -41,11 +41,13 @@
 
                             {{- $class = "book" -}}
                         {{- end -}}
-        				{{- if eq $previewImg nil -}}
+        				        {{- if eq $previewImg nil -}}
                             {{ errorf "Can't find image %s" $imgLocation }}
                         {{- end -}}
-
+{{/*
                         {{- if ne $previewImg nil -}}
+*/}}
+                        {{- if ne .Kind "term" -}}
                             {{- if gt $previewImg.Width 800 -}}
                                 {{- $previewImg = $previewImg.Resize "800x" -}}
                             {{- end -}}
@@ -63,21 +65,4 @@
             <!--    </div>-->
             </div>
         {{- end -}}
-
-{{/*
-
-        {{ partial "pagination.html" . }}
-
-
-    {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}}
-    <div class="pagination">
-      {{ if $paginator.HasPrev }}
-        <a class="back-next" href="{{ $paginator.Prev.URL }}">{{ i18n "previous_page" }}</a>
-      {{ end }}
-      {{ if $paginator.HasNext }}
-        <a class="back-next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
-      {{ end }}
-    </div>
-    {{- end }}
-*/}}
 </main>

@@ -2,5 +2,7 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
+    <div class="page-container">
       {{- partial "page.html" . -}}
+    </div>
 {{ end }}

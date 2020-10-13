@@ -58,9 +58,7 @@
        <div id="page">
          {{ partial "header.html" . }}
          <div id="main">
-             <div class="page-container">
-                 {{ block "content" . }}{{ end }}
-             </div>
+             {{ block "content" . }}{{ end }}
              {{ partial "footer.html" . }}
          </div>
        </div>
