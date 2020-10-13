@@ -1,5 +1,5 @@
 {{- $class := "" -}}
-
+{{- $page := .Page -}}
 {{- $rotate := "" }}
 {{ range (seq 0 1) }}
     {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
@@ -41,7 +41,7 @@
           {{- $pageURL := .Permalink -}}
           {{- range .Params.resources -}}
               {{- if .params.iiif -}}
-                {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink) }}
+                {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) }}
               {{- end -}}
           {{- end -}}
       </div>

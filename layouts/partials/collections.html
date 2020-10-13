@@ -1,12 +1,16 @@
 {{- $pages := .Site.RegularPages -}}
-
-{{ $paginator := .Paginate (where $pages "Params.type" "eq" "book") -}}
+{{- $pages = where $pages "Params.type" "eq" "book" -}}
+{{/*
+{{- $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
+*/}}
 
 <main class="list">
-  {{ printf "#%s" (where $pages "Params.type" "eq" "book") }}
 
-{{/*
-  {{- range $paginator.Pages -}}
+    {{/*
+    {{- range $paginator.Pages -}}
+    */}}
+
+  {{- range $pages -}}
     {{- $rotate := "" }}
     {{ range (seq 0 1) }}
         {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
@@ -16,20 +20,32 @@
 
 
     <div class="list-entry paper-curl-right" style="{{ $style | safeCSS }}">
+        {{- $context := path.Dir .File.Path -}}
+        {{- $imgName := "front" -}}
+        {{- $imgLocation := path.Join $context $imgName -}}
+        {{- $previewImg := (.Resources.ByType "image").GetMatch $imgName -}}
+		{{- if eq $previewImg nil -}}
+            {{ errorf "Can't find image %s" $imgLocation }}
+        {{- end -}}
+        <a class="post-link" href="{{ .Permalink }}">
+            <div class="date">
+                <span class="date">{{ partial "date.html" . }}</span>
+            </div>
+            <div class="post-header">
+                <h1 class='post-title'>{{ .Title }}</h1>
+            </div>
+            {{- $class := "book collection" -}}
+            <div class="preview {{ $class }}">
+                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}">
+            </div>
 
+            <div class='post-summary'>
+            	{{ .Summary }}
+            	<div class="more">{{ i18n "readPost" }}</div>
+            </div>
+        </a>
     </div>
-  {{- end -}}
 
-  {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}}
-  <div class="pagination">
-    {{ if $paginator.HasPrev }}
-      <a class="back-next" href="{{ $paginator.Prev.URL }}">{{ i18n "previous_page" }}</a>
-    {{ end }}
-    {{ if $paginator.HasNext }}
-      <a class="back-next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
-    {{ end }}
-  </div>
-  {{- end }}
-*/}}
+{{- end -}}
 
 </main>
