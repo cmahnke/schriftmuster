@@ -1,5 +1,6 @@
-{{- $pages := .Site.RegularPages -}}
+{{- $pages := where .Site.Pages "Section" "post" -}}
 {{- $pages = where $pages "Params.type" "eq" "book" -}}
+
 {{/*
 {{- $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 */}}

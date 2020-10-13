@@ -1,25 +1,21 @@
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}
-    {{- $pages = .Site.RegularPages -}}
+    {{- $pages = where (where .Site.Pages "Section" "post") "Path" "!=" "post" -}}
 {{- end -}}
-
-{{/* Sort sticky pages to top */}}
-{{ $stickyPages := where $pages "Params.sticky" "==" true }}
-{{ $nonStickyPages := where $pages "Params.sticky" "!=" true }}
-{{ $pages = union $stickyPages $nonStickyPages }}
 
 {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 <main class="list">
     	{{- range $paginator.Pages -}}
 
             {{- $rotate := "" }}
-            {{ range (seq 0 1) }}
-                {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
-            {{ end }}
+            {{- range (seq 0 1) -}}
+                {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) -}}
+            {{- end -}}
             {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
             {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
             <div class="list-entry paper-curl-right" style="{{ $style | safeCSS }}">
+
             <!--    <div class="sheet paper-curl-right">-->
                 {{- $context := path.Dir .File.Path -}}
                     <a class="post-link" href="{{ .Permalink }}">
@@ -27,7 +23,7 @@
                             <span class="date">{{ partial "date.html" . }}</span>
                         </div>
                         <div class="post-header">
-                            <h1 class='post-title'>{{ .Title }}</h1>
+                            <h1 class='post-title'>{{ .CurrentSection.Title }}: {{ .Title }}</h1>
                         </div>
 
                         {{- $previewImg := "" -}}
@@ -48,6 +44,7 @@
         				{{- if eq $previewImg nil -}}
                             {{ errorf "Can't find image %s" $imgLocation }}
                         {{- end -}}
+
                         {{- if gt $previewImg.Width 800 -}}
                             {{- $previewImg = $previewImg.Resize "800x" -}}
                         {{- end -}}

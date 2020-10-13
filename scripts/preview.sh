@@ -2,7 +2,7 @@
 
 PREVIEW_WIDTH="800x"
 
-for POST in `ls -1 content/post/**/index.md`
+for POST in `ls -1 content/post/**/**/index.md content/post/**/_index.md`
 do
     if `grep -q 'class: sheet' "$POST"`; then
         DIR=`dirname "$POST"`

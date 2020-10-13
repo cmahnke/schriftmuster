@@ -49,6 +49,13 @@ other = "Sheet"
 [allTags]
 other = "View all posts tagged"
 
+# Post relations
+[sectionParent]
+other = "This page is part of the following collection"
+
+[sectionContentsList]
+other = "This collection contains the following pages"
+
 #Book parts
 [cover]
 other = "Dust jacket"
