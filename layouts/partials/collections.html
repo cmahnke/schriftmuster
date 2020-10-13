@@ -1,0 +1,35 @@
+{{- $pages := .Site.RegularPages -}}
+
+{{ $paginator := .Paginate (where $pages "Params.type" "eq" "book") -}}
+
+<main class="list">
+  {{ printf "#%s" (where $pages "Params.type" "eq" "book") }}
+
+{{/*
+  {{- range $paginator.Pages -}}
+    {{- $rotate := "" }}
+    {{ range (seq 0 1) }}
+        {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
+    {{ end }}
+    {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
+    {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
+
+
+    <div class="list-entry paper-curl-right" style="{{ $style | safeCSS }}">
+
+    </div>
+  {{- end -}}
+
+  {{ if or ($paginator.HasPrev) ($paginator.HasNext) -}}
+  <div class="pagination">
+    {{ if $paginator.HasPrev }}
+      <a class="back-next" href="{{ $paginator.Prev.URL }}">{{ i18n "previous_page" }}</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+      <a class="back-next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
+    {{ end }}
+  </div>
+  {{- end }}
+*/}}
+
+</main>
