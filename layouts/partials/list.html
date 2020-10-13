@@ -45,13 +45,15 @@
                             {{ errorf "Can't find image %s" $imgLocation }}
                         {{- end -}}
 
-                        {{- if gt $previewImg.Width 800 -}}
-                            {{- $previewImg = $previewImg.Resize "800x" -}}
-                        {{- end -}}
+                        {{- if ne $previewImg nil -}}
+                            {{- if gt $previewImg.Width 800 -}}
+                                {{- $previewImg = $previewImg.Resize "800x" -}}
+                            {{- end -}}
 
-                        <div class="preview {{ $class }}">
-                            <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}">
-                        </div>
+                            <div class="preview {{ $class }}">
+                                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}">
+                            </div>
+                        {{- end -}}
 
                         <div class='post-summary'>
         					{{ .Summary }}
