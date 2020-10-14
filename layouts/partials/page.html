@@ -72,7 +72,9 @@
                         <div class="section-parent">
                             {{- i18n "sectionParent" -}}:
                         </div>
-                        <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+                        <ul>
+                            <li><a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a></li>
+                        </ul>
                     {{- end -}}
               {{- end -}}
           </div>

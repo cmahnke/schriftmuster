@@ -14,21 +14,23 @@ resources:
 - src: "front-verso.jpg"
   params:
     iiif: front-verso/info.json
-    class: front-verso
+    class: order-1
 - src: "end.jpg"
   name: end
   params:
     iiif: end/info.json
-    class: end
+    class: order-2
 - src: "end-verso.jpg"
   name: end-verso
   params:
     iiif: end-verso/info.json
-    class: end-verso
+    class: order-3
 - src: "page000a.jpg"
   params:
     iiif: page000a/info.json
+    class: order-4
 - src: "page000b.jpg"
   params:
     iiif: page000b/info.json
+    class: order-5
 ---

@@ -19,13 +19,11 @@ Tags with less then three occurrences aren't shown.
 
 This page was generated with [Hugo] (https://gohugo.io/).
 
-The theme is inspired by the [Tumblr](https://www.tumblr.com/) theme [Paper Stacks](https://www.tumblr.com/theme/36202).
-
-[Inconsolata](https://github.com/googlefonts/inconsolata) and [Playfair Display](https://github.com/clauseggers/Playfair-Display) are used as fonts - if installed on your computer.
+The theme is inspired by the [Tumblr](https://www.tumblr.com/) theme [Paper Stacks](https://www.tumblr.com/theme/36202), [Inconsolata](https://github.com/googlefonts/inconsolata) is used as font.
 
 The post-processing of the digitized images was carried out with [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced).
 
-[OpenLayers](https://openlayers.org/) is used to display the high resolution images. The tiles were generated with [`iiif_static.py`](https://github.com/zimeon/iiif).
+[OpenLayers](https://openlayers.org/) is used to display the high resolution images. The tiles were generated with [libvips](https://libvips.github.io/libvips/).
 
 The site is hosted by [GitHub](https://github.com/).
 

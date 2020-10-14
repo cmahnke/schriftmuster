@@ -16,7 +16,7 @@
 
             <div class="list-entry paper-curl-right" style="{{ $style | safeCSS }}">
 
-            <!--    <div class="sheet paper-curl-right">-->
+            <div class="workaround paper-curl-right">
                 {{- $context := path.Dir .File.Path -}}
                     <a class="post-link" href="{{ .Permalink }}">
                         <div class="date">
@@ -62,7 +62,7 @@
         					<div class="more">{{ i18n "readPost" }}</div>
             			</div>
                     </a>
-            <!--    </div>-->
+              </div>
             </div>
         {{- end -}}
 </main>
