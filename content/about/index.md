@@ -9,6 +9,12 @@ Da ich vor einigen Jahren mal beruflich stark im Bereich der [Texterkennung](htt
 
 Daher ist der Zweck diese Blogs hochqualitative Digitalisate zur [Weiterverarbeitung](/reuse/) bereitzustellen. Aus diesem Grund werden alle Inhalte unter einer Creative Commons Lizenz (Namensnennung - Weitergabe unter gleichen Bedingungen) bereitgestellt.
 
+## Schlagworte
+
+Tags mit weniger als drei Vorkommen werden hier nicht angezeigt.
+
+{{< tagcloud >}}
+
 # Kolophon
 
 Diese Seite wurde mit [Hugo](https://gohugo.io/) generiert.
@@ -25,6 +31,6 @@ Die Seite wird von [GitHub](https://github.com/) gehosted.
 
 # Kontakt
 
-"Vorsatzpapier" ist ein Projekt von **Christian Mahnke**.
+"Schriftmuster" ist ein Projekt von **Christian Mahnke**.
 
-Kontakt ist via [E-Mail](mailto:vorsatzpapier@projektemacher.org) möglich.
+Kontakt ist via [E-Mail](mailto:schriftmuster@projektemacher.org) möglich.
