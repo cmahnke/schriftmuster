@@ -3,10 +3,8 @@ languageCode = "de"
 title = "Schriftmuster"
 publishDir = "docs"
 canonifyurls = true
-#disableKinds = ["term"]
 DefaultContentLanguage = "de"
 stylesheets = ["https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap"]
-#Paginate = 20
 
 [params]
     author = "Christian Mahnke"
