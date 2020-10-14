@@ -1,4 +1,4 @@
-{{- define "main" -}}
+
   {{- $rotate := "" }}
   {{ range (seq 0 1) }}
       {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
@@ -21,4 +21,3 @@
 
         </article>
     </main>
-{{- end -}}

@@ -1,6 +1,7 @@
 ---
 title: "Alphabete und Zierschriften"
 date: 2020-12-31T08:42:43+02:00
+description: 'Die Sammlung "Alphabete, Zierschriften und Monogramme" erschien ca. 1894 bei F. Bartholomäus, Erfurt. <a class="worldcat" href="http://www.worldcat.org/oclc/250533803">&nbsp;</a>'
 type: book
 tags:
 - Book

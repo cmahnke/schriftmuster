@@ -51,7 +51,7 @@ other = "Alle Beiträge mit dem Tag"
 
 # Post relations
 [sectionParent]
-other = "Diese Seite ist Teil der Sammlung:"
+other = "Diese Seite ist Teil der Sammlung"
 
 [sectionContentsList]
 other = "Diese Sammlung enthält die folgenden Seiten"

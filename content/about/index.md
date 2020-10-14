@@ -5,7 +5,7 @@ metaPage: true
 displayinlist: false
 ---
 
-Da ich vor einigen Jahren mal beruflich stark im Bereich der [Texterkennung](https://de.wikipedia.org/wiki/Texterkennung) (Optical character recognition - OCR) engagiert war, verfüge ich auch über eine recht umfangreiche Sammlung an Schriftmustern. Da ich selbst nicht mehr mit dem Thema beschäftigt bin und ich diese Sammlung gerne als Ressource für weitere Entwicklungen anbieten würde, gibt es dieses Blog. Viele der gezeigten Muster sind inzwischen auch anderweitig im Netz verfügbar, teilweise sogar als Schriftdatei.
+Da ich vor einigen Jahren mal beruflich stark im Bereich der [Texterkennung](https://de.wikipedia.org/wiki/Texterkennung) (Optical character recognition - OCR) engagiert war, verfüge ich auch über eine recht umfangreiche Sammlung an Schriftmustern. Inzwischen bin ich nicht mehr mit dem Thema beschäftigt, daher möchte diese Sammlung gerne als Ressource für weitere Entwicklungen anbieten. Die gezeigten Schriften sind nicht nur für den (Buch-) Druck, sondern Plakat-, Zier- und Handschriften. Viele der gezeigten Muster sind inzwischen auch anderweitig im Netz verfügbar, teilweise sogar als Schriftdatei.
 
 Daher ist der Zweck diese Blogs hochqualitative Digitalisate zur [Weiterverarbeitung](/reuse/) bereitzustellen. Aus diesem Grund werden alle Inhalte unter einer Creative Commons Lizenz (Namensnennung - Weitergabe unter gleichen Bedingungen) bereitgestellt.
 

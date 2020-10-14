@@ -20,7 +20,13 @@
           </div>
       {{- end -}}
       <div class="post-header">
-          <h1 class='post-title'>{{ .CurrentSection.Title }}: {{ .Title }}</h1>
+          {{- if .Params.metaPage -}}
+            <h1 class='post-title'>{{ .Title }}</h1>
+          {{ else if eq .Kind "section" }}
+            <h1 class='post-title'>{{ .CurrentSection.Title }}</h1>
+          {{- else -}}
+            <h1 class='post-title'>{{ .CurrentSection.Title }}: {{ .Title }}</h1>
+          {{- end -}}
       </div>
 
       <div class="post-content">
@@ -28,14 +34,13 @@
       </div>
 
       {{- if .Params.type -}}
-        <div class="{{ .Params.itemType }}-description">
+        <div class="{{ .Params.type }}-description">
           {{- if eq .Params.type "book" -}}
               <h1>{{ i18n "aboutTheNeu" }} {{ i18n "book" }}</h1>
           {{- else if eq .Params.itemType "font" -}}
               <h1>{{ i18n "aboutTheFem" }} {{ i18n "font" }}</h1>
           {{- end -}}
-
-          {{- .Params.itemDescription | markdownify -}}
+          {{- .Params.description | markdownify -}}
         </div>
       {{- end -}}
 
@@ -48,34 +53,37 @@
               {{- end -}}
           {{- end -}}
       </div>
-
-      {{- if eq .Kind "section" }}
-            <div class="section-contents-list">
-                {{- i18n "sectionContentsList" -}}:
-            </div>
-            <div class="section-posts">
-                <ul>
-                    {{- range .CurrentSection.Pages -}}
-                        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      <div class="separator"></div>
+      <div class="post-footer">
+          <div class="post-relations">
+              {{- if eq .Kind "section" -}}
+                    <div class="section-contents-list">
+                        {{- i18n "sectionContentsList" -}}:
+                    </div>
+                    <div class="section-posts">
+                        <ul>
+                            {{- range .CurrentSection.Pages -}}
+                                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                            {{- end -}}
+                        <ul>
+                    </div>
+              {{- else -}}
+                    {{- if not .Params.metaPage -}}
+                        <div class="section-parent">
+                            {{- i18n "sectionParent" -}}:
+                        </div>
+                        <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
                     {{- end -}}
-                <ul>
-            </div>
-      {{ else }}
-            <div class="section-parent">
-                {{- i18n "sectionParent" -}}:
-            </div>
-            <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
-
-      {{- end -}}
-
-      {{- if not .Params.metaPage -}}
-          <div class="meta">
+              {{- end -}}
+          </div>
+          <div class="spacer">
+          </div>
+          {{- if not .Params.metaPage -}}
               <div class="tag-container">
                 <div class="tags-heading">Tags</div>
-                  {{ partial "meta/tags.html" . }}
+                  {{- partial "meta/tags.html" . -}}
               </div>
-          </div>
-      {{- end -}}
-
+          {{- end -}}
+      </div>
   </article>
 </main>
