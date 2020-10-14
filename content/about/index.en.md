@@ -9,6 +9,12 @@ Since I was heavily involved in the field of [optical character recognition](htt
 
 It's the purpose of this blog to provide high-quality digital copies for [further processing](/reuse/). Therefore, all content is provided under a Creative Commons license (attribution - sharing alike).
 
+## Tags
+
+Tags with less then three occurrences aren't shown.
+
+{{< tagcloud >}}
+
 # Colophon
 
 This page was generated with [Hugo] (https://gohugo.io/).
@@ -17,14 +23,14 @@ The theme is inspired by the [Tumblr](https://www.tumblr.com/) theme [Paper Stac
 
 [Inconsolata](https://github.com/googlefonts/inconsolata) and [Playfair Display](https://github.com/clauseggers/Playfair-Display) are used as fonts - if installed on your computer.
 
-The post-processing of the digitized images was carried out with [ScanTailor Advanced] (https://github.com/4lex4/scantailor-advanced).
+The post-processing of the digitized images was carried out with [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced).
 
-[OpenLayers] (https://openlayers.org/) is used to display the high resolution images. The tiles were generated with [`iiif_static.py`] (https://github.com/zimeon/iiif).
+[OpenLayers](https://openlayers.org/) is used to display the high resolution images. The tiles were generated with [`iiif_static.py`](https://github.com/zimeon/iiif).
 
-The site is hosted by [GitHub] (https://github.com/).
+The site is hosted by [GitHub](https://github.com/).
 
 # Contact
 
-"Vorsatzpapier" is a project by **Christian Mahnke**.
+"Schriftmuster" is a project by **Christian Mahnke**.
 
-Contact is possible via [E-Mail](mailto: vorsatzpapier@projektemacher.org).
+Contact is possible via [E-Mail](mailto:schriftmuster@projektemacher.org).
