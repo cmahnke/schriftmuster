@@ -4,13 +4,13 @@ title = "Schriftmuster"
 publishDir = "docs"
 canonifyurls = true
 DefaultContentLanguage = "de"
-stylesheets = ["https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap"]
 
 [params]
     author = "Christian Mahnke"
     keywords = "Schriftmuster, Schriften, Papier, Bücher, fonts, paper, books"
     description = ""
     copyrightYears = "2020"
+    stylesheets = ["https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap"]
 
 [languages]
     [languages.de]
