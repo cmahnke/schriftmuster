@@ -44,9 +44,7 @@
         				        {{- if eq $previewImg nil -}}
                             {{ errorf "Can't find image %s" $imgLocation }}
                         {{- end -}}
-{{/*
-                        {{- if ne $previewImg nil -}}
-*/}}
+
                         {{- if ne .Kind "term" -}}
                             {{- if gt $previewImg.Width 800 -}}
                                 {{- $previewImg = $previewImg.Resize "800x" -}}

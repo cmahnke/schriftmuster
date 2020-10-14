@@ -13,9 +13,9 @@
 
   {{- range $pages -}}
     {{- $rotate := "" }}
-    {{ range (seq 0 1) }}
+    {{- range (seq 0 1) -}}
         {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
-    {{ end }}
+    {{- end -}}
     {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
     {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
