@@ -1,8 +1,5 @@
 $font-body-font: 'Inconsolata' !default;
-/*
-$body-color: #4d4d4d !default;
-$body-background: #38312f !default;
-*/
+
 $color-body-text: #333333 !default;
 $color-link-text: #333333 !default;
 $color-link-hover: #333333 !default;
@@ -11,6 +8,32 @@ $color-header-text: #333333 !default;
 $color-paper: hsl(48, 93%, 89%);
 $color-paper-dark: darken($color-paper, 4%);
 $color-paper-light: lighten($color-paper, 4%);
+
+/* Fonts downloaded by https://github.com/makovich/google-fonts-offline */
+
+@font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Inconsolata_400_normal.woff2) format('woff2'),
+         url(/fonts/Inconsolata_400_normal.woff) format('woff');
+}
+@font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/Inconsolata_700_normal.woff2) format('woff2'),
+         url(/fonts/Inconsolata_700_normal.woff) format('woff');
+
+}
+@font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/Inconsolata_900_normal.woff2) format('woff2'),
+        url(/fonts/Inconsolata_900_normal.woff) format('woff');
+}
+
 
 @import "icons";
 @import "ol-iiif";
@@ -422,6 +445,7 @@ main {
 
             .menu-item {
                 display: inline;
+                padding: 0 .3rem;
             }
         }
     }
@@ -489,7 +513,7 @@ body.about {
 /*
     &.current {
       text-decoration: underline;
-      font-weight:  bolder;
+      font-weight:  bold;
     }
   */
   }

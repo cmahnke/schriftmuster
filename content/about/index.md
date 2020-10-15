@@ -6,7 +6,7 @@ displayinlist: false
 ---
 
 Da ich vor einigen Jahren mal beruflich stark im Bereich der [Texterkennung](https://de.wikipedia.org/wiki/Texterkennung) (Optical character recognition - OCR) engagiert war, verfüge ich auch über eine recht umfangreiche Sammlung an Schriftmustern. Inzwischen bin ich nicht mehr mit dem Thema beschäftigt, daher möchte diese Sammlung gerne als Ressource für weitere Entwicklungen anbieten. Die gezeigten Schriften sind nicht nur für den (Buch-) Druck, sondern Plakat-, Zier- und Handschriften. Dazu können sich auch mal typographisch interessante Einzelstücke gesellen.
-Viele der gezeigten Muster sind inzwischen auch anderweitig im Netz verfügbar, teilweise sogar als Schriftdatei.
+Viele der gezeigten Muster sind inzwischen auch anderweitig im Netz verfügbar, teilweise sogar als [Schriftdatei](http://www.steffmann.de/wordpress/test-2/).
 
 Daher ist der Zweck diese Blogs hochqualitative Digitalisate zur [Weiterverarbeitung](/reuse/) bereitzustellen. Aus diesem Grund werden alle Inhalte unter einer Creative Commons Lizenz (Namensnennung - Weitergabe unter gleichen Bedingungen) bereitgestellt.
 
