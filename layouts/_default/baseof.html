@@ -19,8 +19,8 @@
     {{- $js := slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
-
-    {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed") -}}
+    {{/* SCSS */}}
+    {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed") -}}
     {{- $ourTemplate := resources.Get "scss/base.scss" -}}
     {{- $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options -}}
     {{- $normalizeStyle := resources.Get "css/normalize/normalize.css" -}}

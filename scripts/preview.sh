@@ -1,6 +1,7 @@
 #!/bin/sh
 
 PREVIEW_WIDTH="800x"
+PREVIEW_WIDTH_MOBILE="320x"
 
 for POST in `ls -1 content/post/**/**/index.md content/post/**/_index.md`
 do
@@ -9,7 +10,11 @@ do
         IMAGE=`ls -1 $DIR/*.jpg | head -1`
         echo "Scaling $IMAGE to $PREVIEW_WIDTH"
         convert $IMAGE -resize "$PREVIEW_WIDTH" $DIR/preview.png
+        echo "Scaling $IMAGE to $PREVIEW_WIDTH_MOBILE for mobile clients"
+        convert $IMAGE -resize "$PREVIEW_WIDTH_MOBILE" $DIR/preview-mobile.png
         echo "Creating preview for $IMAGE"
         convert $DIR/preview.png -alpha set -virtual-pixel transparent  -channel A -blur 0x8  -level 50%,100% +channel $DIR/preview.png
+        echo "Creating mobile preview for $IMAGE"
+        convert $DIR/preview-mobile.png -alpha set -virtual-pixel transparent  -channel A -blur 0x8  -level 50%,100% +channel $DIR/preview-mobile.png
     fi
 done
