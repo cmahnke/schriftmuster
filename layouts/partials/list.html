@@ -26,32 +26,35 @@
                             <h1 class='post-title'>{{ .CurrentSection.Title }}: {{ .Title }}</h1>
                         </div>
 
-                        {{- $previewImg := "" -}}
-                        {{- $imgLocation := "" -}}
                         {{- $class := "" -}}
+                        {{- $imgName := "" -}}
                         {{- if eq .Params.type "font" -}}
-                            {{- $imgName := "preview.png" -}}
-                            {{- $imgLocation = path.Join $context $imgName -}}
-                            {{- $previewImg = (.Resources.ByType "image").GetMatch $imgName -}}
+                            {{- $imgName = "preview.png" -}}
                             {{- $class = "font" -}}
                         {{- else if eq .Params.type "book" -}}
-                            {{- $imgName := "front" -}}
-                            {{- $imgLocation = path.Join $context $imgName -}}
-                            {{- $previewImg = (.Resources.ByType "image").GetMatch $imgName -}}
-
+                            {{- $imgName = "front" -}}
                             {{- $class = "book" -}}
                         {{- end -}}
-        				        {{- if eq $previewImg nil -}}
-                            {{ errorf "Can't find image %s" $imgLocation }}
-                        {{- end -}}
+                        {{- $imgLocation := path.Join $context $imgName -}}
+                        {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
-                        {{- if ne .Kind "term" -}}
+        				{{- if eq $previewImg nil -}}
+                            {{ warnf "Can't find image %s" $imgLocation }}
+                        {{- else -}}
                             {{- if gt $previewImg.Width 800 -}}
                                 {{- $previewImg = $previewImg.Resize "800x" -}}
                             {{- end -}}
+                        {{- end -}}
 
+
+
+                        {{- if ne .Kind "term" -}}
                             <div class="preview {{ $class }}">
-                                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}">
+                                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
+                                         srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
+                                                 {{ $previewImg.RelPermalink }} 800w"
+                                                 sizes="(max-width: 480px) 320px, 800px"
+                                >
                             </div>
                         {{- end -}}
 

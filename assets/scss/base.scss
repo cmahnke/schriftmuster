@@ -382,7 +382,6 @@ main {
 
         img {
             width: 100%;
-            max-width: inherit;
             display: block;
             max-width: 100%;
             height: auto;
@@ -424,6 +423,7 @@ main {
 .date {
     float: right;
     font-size: small;
+    /* margin: .8em 1em .6em; */
     margin-right: 1em;
     margin-bottom: .6em;
 }
