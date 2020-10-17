@@ -79,16 +79,8 @@ DefaultContentLanguage = "de"
         target = "static"
 
     [[module.mounts]]
-        source = "node_modules/ol"
-        target = "assets/css/ol"
-
-    [[module.mounts]]
         source = "assets/js"
         target = "assets/js"
-
-    [[module.mounts]]
-        source = "node_modules/normalize.css"
-        target = "assets/css/normalize"
 
 [imaging]
     quality = 95

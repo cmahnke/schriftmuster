@@ -1,3 +1,5 @@
+@import "normalize";
+
 $font-body-font: 'Inconsolata' !default;
 
 $color-body-text: #333333 !default;
@@ -36,6 +38,7 @@ $color-paper-light: lighten($color-paper, 4%);
 
 
 @import "icons";
+@import "ol";
 @import "ol-iiif";
 
 body {
