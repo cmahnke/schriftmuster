@@ -12,3 +12,4 @@ resources:
     iiif: front/info.json
     class: front
 ---
+This 19th century collection contains print and decorative fonts, even for embroidery.

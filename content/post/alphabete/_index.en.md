@@ -34,3 +34,4 @@ resources:
     iiif: page000b/info.json
     class: order-5
 ---
+This collection of scripts was published for the nibs of the company [Brause & Co] (https://de.wikipedia.org/wiki/Brause_ (company)) (in German only), Iserlohn.

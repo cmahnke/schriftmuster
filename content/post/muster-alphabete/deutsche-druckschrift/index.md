@@ -10,3 +10,4 @@ resources:
     iiif: page007/info.json
     class: sheet
 ---
+Die Deutsche Druckschrift ist heute besser bekannt als Fraktur

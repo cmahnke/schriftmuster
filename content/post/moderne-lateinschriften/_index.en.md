@@ -17,3 +17,4 @@ resources:
     iiif: title/info.json
     class: title
 ---
+This collection is also interesting because of the example words chosen.

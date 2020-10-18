@@ -34,3 +34,4 @@ resources:
     iiif: page000b/info.json
     class: order-5
 ---
+Diese Sammlung von Schreibschriften wurde für die Schreibfedern der Firma [Brause & Co](https://de.wikipedia.org/wiki/Brause_(Unternehmen)), Iserlohn herausgegeben.

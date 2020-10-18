@@ -10,3 +10,4 @@ resources:
     iiif: page020/info.json
     class: sheet
 ---
+Scenes from daily life at the time as letters.

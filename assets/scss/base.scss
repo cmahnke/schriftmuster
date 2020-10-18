@@ -398,8 +398,10 @@ main {
 
     .post-summary {
         padding: 2em;
-        display: flex;
-        justify-content: center;
+
+        .summary-text {
+              padding-bottom: .6em;
+        }
 
         .more {
             max-width: 35vw;
@@ -407,7 +409,8 @@ main {
             border-top: solid 6px darken(#aaa6ab, 40%);
             padding-top: 1.2em;
             text-align: center;
-            display: inline-block;
+            display: block;
+            margin: auto;
         }
     }
 

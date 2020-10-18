@@ -10,3 +10,4 @@ resources:
     iiif: page020/info.json
     class: sheet
 ---
+Szenen aus dem tägliche Leben zu der Zeit als Buchstaben.

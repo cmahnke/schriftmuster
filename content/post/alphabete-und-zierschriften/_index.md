@@ -26,3 +26,4 @@ resources:
     iiif: end-verso/info.json
     class: order-3
 ---
+Diese Sammlung aus dem 19. Jahrhundert enthält Schreib-, Druck- und Zierschriften, sogar zum sticken. Ein Highlight ist die Silhouettenschrift.
