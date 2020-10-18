@@ -10,3 +10,4 @@ resources:
     iiif: page007/info.json
     class: sheet
 ---
+The German letterpress typeface is better known today as Fraktur (black letter or gothic font)

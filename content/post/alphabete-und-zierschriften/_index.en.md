@@ -26,3 +26,4 @@ resources:
     iiif: end-verso/info.json
     class: order-3
 ---
+This 19th century collection contains writing print and decorative fonts, even for embroidery.

@@ -18,3 +18,4 @@ resources:
     iiif: page019/info.json
     class: sheet
 ---
+"Dasselbe" ("Same") here refers to the Arabic script from the previous pages.

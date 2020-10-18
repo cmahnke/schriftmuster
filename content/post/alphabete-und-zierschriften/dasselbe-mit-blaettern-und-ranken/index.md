@@ -18,3 +18,4 @@ resources:
     iiif: page019/info.json
     class: sheet
 ---
+"Dasselbe" bezieht sich hier auf die Arabeskenschrift aus den vorigen Blättern.

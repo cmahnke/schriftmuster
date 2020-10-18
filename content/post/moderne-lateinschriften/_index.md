@@ -17,3 +17,4 @@ resources:
     iiif: title/info.json
     class: title
 ---
+Diese Sammlung ist auch durch die gewählten Beispielwörter interessant.
