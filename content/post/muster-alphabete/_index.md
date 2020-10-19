@@ -12,4 +12,4 @@ resources:
     iiif: front/info.json
     class: front
 ---
-Diese Sammlung aus dem 19. Jahrhundert enthält Druck- und Zierschriften, sogar zum sticken. Besonders interessant ist das Blatt "römische Schriften in amerikanischer Art""
+Diese Sammlung aus dem 19. Jahrhundert enthält Druck- und Zierschriften, sogar zum sticken. Besonders interessant ist das Blatt "römische Schriften in amerikanischer Art"

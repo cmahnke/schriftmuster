@@ -212,6 +212,11 @@ main {
     border-bottom: lighten($color-body-text, 55%) solid 1px;
     margin-bottom: 1em;
 
+   @media (max-width : 20em) {
+       max-width: 95%;
+       clear: both;
+   }
+
     .post-title {
         text-align: center;
         font-size: xx-large;
@@ -227,6 +232,9 @@ main {
        padding: 2em;
        background-color: $color-paper;
        transition: all 250ms ease-out;
+       @media (max-width : 20em) {
+           padding: .5em;
+       }
 }
 
 .content {
@@ -399,6 +407,11 @@ main {
     .post-summary {
         padding: 2em;
 
+        @media (max-width : 20em) {
+            padding: .5em;
+            text-align: center;
+        }
+
         .summary-text {
               padding-bottom: .6em;
         }
@@ -428,9 +441,11 @@ main {
 .date {
     float: right;
     font-size: small;
-    /* margin: .8em 1em .6em; */
     margin-right: 1em;
     margin-bottom: .6em;
+    @media (max-width : 20em) {
+        margin-right: unset;
+    }
 }
 
 .footer {
@@ -661,11 +676,7 @@ body.about {
 .paper-curl:hover:after {
     transform: skew(8deg) rotate(3deg);
 }
-/*
-.paper-curl:hover {
-    border-radius: 0 0 40% 40% / 0 0 30% 30%;
-}
-*/
+
 .paper-curl-right:before {
     display: none;
 }
