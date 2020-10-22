@@ -1,11 +1,10 @@
 ---
-date:
 title: "Weiterverwendung"
 metaPage: true
 displayinlist: false
 ---
 
-Die Digitalisate auf dieser Seite können für eigene Zwecke weiterverwendet werden. 
+Die Digitalisate auf dieser Seite können für eigene Zwecke weiterverwendet werden.
 
 Die Möglichkeiten sind unbegrenzt: von Hintergründen für Webseiten, über Geschenkpapiere zu Papieren für Kästchen und Schubladen lässt sich viel damit anfangen.
 
