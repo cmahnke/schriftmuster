@@ -46,6 +46,12 @@ other = "Blatt"
 [Sheet]
 other = "Blatt"
 
+[singleFind]
+other = "Einzelfundstück"
+
+[singlefind]
+other = "Einzelfundstück"
+
 [allTags]
 other = "Alle Beiträge mit dem Tag"
 

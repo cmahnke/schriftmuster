@@ -9,6 +9,8 @@
 {{- end -}}
 {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
 {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
+{{- $context := path.Dir .File.Path -}}
+{{- $pageURL := .Permalink -}}
 
 <main class="content {{ $class }}">
   <article class="post" style="{{ $style | safeCSS }}">
@@ -25,12 +27,32 @@
           {{ else if eq .Kind "section" }}
             <h1 class='post-title'>{{ .CurrentSection.Title }}</h1>
           {{- else -}}
-            <h1 class='post-title'>{{ .CurrentSection.Title }}: {{ .Title }}</h1>
+            {{- $title := "" -}}
+            {{- if eq .CurrentSection.Dir "" -}}
+                {{- $title = .Title -}}
+            {{- else -}}
+                {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}
+            {{- end -}}
+            <h1 class='post-title'>{{ $title }}</h1>
           {{- end -}}
       </div>
 
       <div class="post-content">
           {{- .Content -}}
+            <div class="iiif post-images">
+                {{- $context := path.Dir .File.Path -}}
+                {{- $pageURL := .Permalink -}}
+                {{- range .Params.resources -}}
+                    {{- if .params.iiif -}}
+                      {{- if ne $.CurrentSection.Dir "" -}}
+                          {{- partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) -}}
+                      {{- else if and (eq $.Params.type "book") (not (or (or (eq .name "front") (eq .name "title")) (eq .name "cover"))) -}}
+                          {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) }}
+                      {{- end -}}
+                    {{- end -}}
+                {{- end -}}
+            </div>
+
       </div>
 
       {{- if .Params.type -}}
@@ -42,17 +64,17 @@
           {{- end -}}
           {{- .Params.description | markdownify -}}
         </div>
+        {{- if and (eq .Params.type "book")  -}}
+          <div class="book-description-images iiif">
+            {{- range .Params.resources -}}
+              {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}
+                {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "heading" (i18n .name) "pageContext" $page) }}
+              {{- end -}}
+            {{- end -}}
+          </div>
+        {{- end -}}
       {{- end -}}
 
-      <div class="iiif post-images">
-          {{- $context := path.Dir .File.Path -}}
-          {{- $pageURL := .Permalink -}}
-          {{- range .Params.resources -}}
-              {{- if .params.iiif -}}
-                {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) }}
-              {{- end -}}
-          {{- end -}}
-      </div>
       <div class="separator"></div>
       <div class="post-footer">
           <div class="post-relations">
@@ -67,6 +89,10 @@
                             {{- end -}}
                         <ul>
                     </div>
+              {{- else if eq .CurrentSection.Dir "" -}}
+                <div class="section-parent">
+                    {{- i18n "singleFind" -}}
+                </div>
               {{- else -}}
                     {{- if not .Params.metaPage -}}
                         <div class="section-parent">

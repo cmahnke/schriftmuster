@@ -4,7 +4,7 @@ metaPage: true
 displayinlist: false
 ---
 
-Since I was heavily involved in the field of [optical character recognition](https://en.wikipedia.org/wiki/Optical_character_recognition) (OCR) a few years ago, I also have a fairly extensive collection of font samples. Since I am no longer working on that topic, I would like to offer this collection as a resource for further developments. Many of the patterns shown are now also available elsewhere on the Internet, sometimes even as [font files](http://www.steffmann.de/wordpress/test-2/).
+Since I was heavily involved in the field of [optical character recognition](https://en.wikipedia.org/wiki/Optical_character_recognition) (OCR) a few years ago, I also have a fairly extensive collection of font samples. Since I am no longer working on that topic, I would like to offer this collection as a resource for further developments. Typographically interesting [individual items](/en/tags/singlefind) can also be added. Many of the patterns shown are now also available elsewhere on the Internet, sometimes even as [font files](http://www.steffmann.de/wordpress/test-2/).
 
 It's the purpose of this blog to provide high-quality digital copies for [further processing](/reuse/). Therefore, all content is provided under a Creative Commons license (attribution - sharing alike).
 

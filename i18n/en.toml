@@ -46,6 +46,12 @@ other = "Sheet"
 [Sheet]
 other = "Sheet"
 
+[singleFind]
+other = "Single find"
+
+[singlefind]
+other = "Single find"
+
 [allTags]
 other = "View all posts tagged"
 
