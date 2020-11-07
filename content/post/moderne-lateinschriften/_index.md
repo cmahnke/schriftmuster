@@ -11,10 +11,10 @@ resources:
   params:
     iiif: front/info.json
     class: front
-- src: "title.jpg"
-  name: title
+- src: "end.jpg"
+  name: end
   params:
-    iiif: title/info.json
-    class: title
+    iiif: end/info.json
+    class: end
 ---
 Diese Sammlung ist auch durch die gewählten Beispielwörter interessant.

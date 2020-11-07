@@ -64,7 +64,7 @@
           {{- end -}}
           {{- .Params.description | markdownify -}}
         </div>
-        {{- if and (eq .Params.type "book")  -}}
+        {{- if and (eq .Params.type "book") (ne .Kind "section") -}}
           <div class="book-description-images iiif">
             {{- range .Params.resources -}}
               {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}
