@@ -40,6 +40,9 @@
                         {{- else if eq .Params.type "book" -}}
                             {{- $imgName = "front" -}}
                             {{- $class = "book" -}}
+                        {{- else if eq .Params.type "single" -}}
+                            {{- $imgName = (index .Params.resources 0).src -}}
+                            {{- $class = "single" -}}
                         {{- end -}}
                         {{- $imgLocation := path.Join $context $imgName -}}
                         {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
@@ -51,8 +54,6 @@
                                 {{- $previewImg = $previewImg.Resize "800x" -}}
                             {{- end -}}
                         {{- end -}}
-
-
 
                         {{- if ne .Kind "term" -}}
                             <div class="preview {{ $class }}">
