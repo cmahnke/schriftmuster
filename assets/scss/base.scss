@@ -568,6 +568,11 @@ body.about {
             }
         }
 
+        &.presentation-api {
+            height: 95vh;
+            position: relative;
+        }
+
     }
 
     .iiif-image {

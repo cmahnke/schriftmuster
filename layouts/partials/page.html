@@ -42,20 +42,24 @@
             <div class="iiif post-images">
                 {{- $context := path.Dir .File.Path -}}
                 {{- $pageURL := .Permalink -}}
-                {{- range .Params.resources -}}
-                    {{- if .params.iiif -}}
-                      {{- if ne $.CurrentSection.Dir "" -}}
-                          {{- partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) -}}
-                      {{- else if eq $.Params.type "book" -}}
-                          {{- if (not (or (or (eq .name "front") (eq .name "title")) (eq .name "cover"))) -}}
+                {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
+                    {{- range .Params.resources -}}
+                        {{- if .params.iiif -}}
+                          {{- if ne $.CurrentSection.Dir "" -}}
+                              {{- partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) -}}
+                          {{- else if eq $.Params.type "book" -}}
+                              {{- if (not (or (or (eq .name "front") (eq .name "title")) (eq .name "cover"))) -}}
+                                  {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) }}
+                              {{- end -}}
+                          {{- else if eq $.Params.type "single" -}}
                               {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) }}
+                          {{- else -}}
+                              {{ errorf "Unable to render content for post %s - maybe no resources given." $pageURL }}
                           {{- end -}}
-                      {{- else if eq $.Params.type "single" -}}
-                          {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page) }}
-                      {{- else -}}
-                          {{ errorf "Unable to render content for post %s - maybe no resources given." $pageURL }}
-                      {{- end -}}
+                        {{- end -}}
                     {{- end -}}
+                {{- else -}}
+                   {{- partial "mirador.html" . -}}
                 {{- end -}}
             </div>
 
@@ -71,13 +75,15 @@
           {{- .Params.description | markdownify -}}
         </div>
         {{- if and (eq .Params.type "book") (ne .Kind "section") -}}
-          <div class="book-description-images iiif">
-            {{- range .Params.resources -}}
-              {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}
-                {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "heading" (i18n .name) "pageContext" $page) }}
-              {{- end -}}
-            {{- end -}}
-          </div>
+          {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
+              <div class="book-description-images iiif">
+                {{- range .Params.resources -}}
+                  {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}
+                    {{ partial "iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "heading" (i18n .name) "pageContext" $page) }}
+                  {{- end -}}
+                {{- end -}}
+              </div>
+          {{- end -}}
         {{- end -}}
       {{- end -}}
 

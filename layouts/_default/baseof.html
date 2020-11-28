@@ -14,10 +14,20 @@
 
     {{/* JavaScript */}}
     {{- $defines := dict "process.env.NODE_ENV" `"production"` -}}
-    {{- $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" true -}}
-    {{- $main := resources.Get "js/main.js" | js.Build $opts -}}
-    {{- $js := slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{- $mainOpts := dict "targetPath" "js/main.js" "defines" $defines "minify" true -}}
+    {{- $main := resources.Get "js/main.js" | js.Build $mainOpts -}}
+
+    {{- $mainJs := "" -}}
+    {{- if (hasPrefix .Page.Params.iiifcontext "http://iiif.io/api/presentation/") -}}
+        {{- $iiifOpts := dict "targetPath" "js/iiif-presentation-viewer.js" "defines" $defines "minify" true -}}
+        {{- $iiif := resources.Get "js/iiif-presentation-viewer.js" | js.Build $iiifOpts -}}
+        {{- $mainJs = slice $main $iiif | resources.Concat "js/main-iiif-p.js" | minify | fingerprint -}}
+    {{- else -}}
+        {{- $iiifOpts := dict "targetPath" "js/iiif-image-viewer.js" "defines" $defines "minify" true -}}
+        {{- $iiif := resources.Get "js/iiif-image-viewer.js" | js.Build $iiifOpts -}}
+        {{- $mainJs = slice $main $iiif | resources.Concat "js/main-iiif-i.js" | minify | fingerprint -}}
+    {{- end -}}
+    <script src="{{ $mainJs.RelPermalink }}" integrity="{{ $mainJs.Data.Integrity }}"></script>
 
     {{/* SCSS */}}
     {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/normalize.css" "node_modules/ol")) -}}

@@ -85,6 +85,9 @@ DefaultContentLanguage = "de"
 [imaging]
     quality = 95
 
+[outputs]
+    page = ["HTML", "JSON"]
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]

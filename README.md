@@ -16,6 +16,28 @@ find . -name '*.tif.jpg' -print -exec bash -c 'mv "{}"  $(dirname "{}")/$(basena
 find content/post/ -name info.json -exec dirname {} \; | xargs rm -r
 ```
 
+# Generating Tiles
+
+We start to use [LibVIPS]https://github.com/libvips/libvips(), since it's very fast:
+
+On Mac OS X just run:
+
+```
+brew install vips
+```
+
+## Generate tiles for a single file
+
+```
+vips dzsave front.jpg front -t 512 --layout iiif --id '.'
+```
+
+## Generating tiles for IIIF Presentation API
+
+```
+URL_PREFIX=http://localhost:1313/ ./scripts/iiif.sh
+```
+
 # Running hugo
 
 ## Without watching

@@ -1,7 +1,7 @@
 ---
 title: "Sonderbund Denkschrift"
 date: 2020-11-01T11:25:43+01:00
-description: 'The Book "Malerische Impression und koloristischer Rhythmus : Beobachtungen über Malerei der Gegenwart ; Denkschrift des Sonderbundes auf die Ausstellung 1910" by Wilhelm Niemeyer published 1911 by Bagel, Düsseldorf. <a class="worldcat" href="http://www.worldcat.org/oclc/886476252">&nbsp;</a>'
+description: 'The Book "Malerische Impression und koloristischer Rhythmus: Beobachtungen über Malerei der Gegenwart; Denkschrift des Sonderbundes auf die Ausstellung 1910" by Wilhelm Niemeyer published 1911 by Bagel, Düsseldorf. <a class="worldcat" href="http://www.worldcat.org/oclc/886476252">&nbsp;</a>'
 type: book
 tags:
 - Book
