@@ -25,6 +25,7 @@ resources:
   params:
     iiif: page000-001/info.json
     label: Advertising supplement
+    hint: non-paged
 - src: "page000-002.jpg"
   params:
     iiif: page000-002/info.json
@@ -37,6 +38,7 @@ resources:
   params:
     iiif: page000-004/info.json
     label: Advertising supplement
+    hint: non-paged
 - src: "page000.jpg"
   params:
     iiif: page000/info.json
