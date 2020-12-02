@@ -12,4 +12,4 @@ resources:
   params:
     iiif: img002/info.json
 ---
-Pünktlich zum Freitag dem 13. gibt es heute zwei Rechnungen von 1910, die Kopfzeilen sind besonders schön anzusehen, aber auch die das Mischung an unterschiedlichen Schriftarten erinnert auch die finsteren Zeiten von Microsoft WordArt Ender der 90er Jahre.
+Pünktlich zum Freitag dem 13. gibt es heute zwei Rechnungen von 1910, die Kopfzeilen sind besonders schön anzusehen, aber auch die das Mischung an unterschiedlichen Schriftarten erinnert auch die finsteren Zeiten von Microsoft WordArt Ende der 90er Jahre.
