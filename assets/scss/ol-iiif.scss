@@ -19,7 +19,7 @@ $left: "data:image/svg+xml;utf8,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' vie
 
 .rotate-left {
     left: .5em;
-    top: 4em;
+    top: 5em;
     .icon-left:after {
         content: ' ';
         display: block;
@@ -30,11 +30,16 @@ $left: "data:image/svg+xml;utf8,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' vie
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    @media (max-width: 37.5em) {
+        left: 3em;
+        top: .5em;
+    }
 }
 
 .rotate-right {
     left: .5em;
-    top: 6em;
+    top: 7em;
     .icon-right:after {
         content: ' ';
         display: block;
@@ -44,5 +49,10 @@ $left: "data:image/svg+xml;utf8,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' vie
         /* width: 28px; */
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    @media (max-width: 37.5em) {
+        left: 3em;
+        top: 2.5em;
     }
 }
