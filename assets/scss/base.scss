@@ -547,6 +547,11 @@ body.about {
         height: 65vh;
         display: block;
 
+        @media (max-width: 37.5em) {
+           min-height: calc(7em + 1.375em + 1.5em + 2px);
+        }
+
+
         &.portrait {
             width: 60vw;
             height: calc(60vw * 1.6);
@@ -564,7 +569,7 @@ body.about {
 
             @media (max-width: 37.5em) {
                width: 70vw;
-               height: calc(70vw * 1.5);
+               height: calc(70vw / 1.5);
             }
         }
 

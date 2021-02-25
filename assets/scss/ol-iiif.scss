@@ -29,11 +29,13 @@ $left: "data:image/svg+xml;utf8,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' vie
         /* width: 28px; */
         background-repeat: no-repeat;
         background-position: center;
+        margin: 1px;
     }
 
     @media (max-width: 37.5em) {
-        left: 3em;
-        top: .5em;
+        height: 1.375em;
+        width: 1.375em;
+        top: 5em;
     }
 }
 
@@ -49,10 +51,13 @@ $left: "data:image/svg+xml;utf8,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' vie
         /* width: 28px; */
         background-repeat: no-repeat;
         background-position: center;
+        margin: 1px;
     }
 
     @media (max-width: 37.5em) {
-        left: 3em;
-        top: 2.5em;
+        height: 1.375em;
+        width: 1.375em;
+
+        top: calc(7em + 1px);
     }
 }
