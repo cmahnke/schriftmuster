@@ -17,7 +17,8 @@
   },
   "scripts": {
     "patch": "yarn run patch-package",
-    "postinstall-mirador": "cd node_modules/mirador && yarn install && yarn run build",
-    "postinstall": "yarn run patch && yarn run postinstall-mirador"
+    "postinstall-manifesto": "cd node_modules/manifesto.js && yarn install && yarn run build:esmodule",
+    "postinstall-mirador": "cd node_modules/mirador && yarn install && rm -r node_modules/manifesto.js && ln -s ../manifesto.js node_modules/manifesto.js && yarn run build && yarn run build:es",
+    "postinstall": "yarn run patch && yarn run postinstall-manifesto && yarn run postinstall-mirador"
   }
 }

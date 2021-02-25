@@ -1,2 +1,2 @@
 window.$ = window.jQuery = require('jquery');
-require('./iiif-viewer');
+require('./iiif-image-viewer');
