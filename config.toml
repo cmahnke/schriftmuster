@@ -31,13 +31,18 @@ DefaultContentLanguage = "de"
                 url = "reuse/"
 
             [[languages.de.menu.main]]
-                name = "Sammlungen"
+                name = "Links"
                 weight = 3
+                url = "links/"
+
+            [[languages.de.menu.main]]
+                name = "Sammlungen"
+                weight = 4
                 url = "collections/"
 
             [[languages.de.menu.main]]
                 name = "Über"
-                weight = 4
+                weight = 5
                 url = "about/"
 
     [languages.en]
@@ -59,13 +64,18 @@ DefaultContentLanguage = "de"
                 url = "reuse/"
 
             [[languages.en.menu.main]]
-                name = "Collections"
+                name = "Links"
                 weight = 3
+                url = "links/"
+
+            [[languages.en.menu.main]]
+                name = "Collections"
+                weight = 4
                 url = "collections/"
 
             [[languages.en.menu.main]]
                 name = "About"
-                weight = 4
+                weight = 5
                 url = "about/"
 
 
