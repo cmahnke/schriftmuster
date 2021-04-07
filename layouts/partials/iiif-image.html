@@ -1,6 +1,10 @@
 {{- $contextPath := .contextPath -}}
 {{- $pageURL := .pageURL -}}
 {{- $page := .pageContext }}
+{{- $site := .site }}
+{{- if eq $site nil -}}
+    {{- $site = .Site -}}
+{{- end -}}
 {{- $imgLocation := path.Join $contextPath .context.src -}}
 {{- $class := "" -}}
 {{- $orientation := "" -}}
@@ -9,11 +13,11 @@
 {{- end -}}
 
 {{- $previewImg := "" -}}
-{{ if .context.name }}
+{{- if .context.name -}}
     {{- $previewImg = ($page.Resources.GetMatch .context.name) -}}
-{{ else }}
+{{- else -}}
     {{- $previewImg = ($page.Resources.GetMatch .context.src) -}}
-{{ end }}
+{{- end -}}
 {{- if eq $previewImg nil -}}
     {{ errorf "Can't find image %s" $imgLocation }}
 {{- end -}}
@@ -24,8 +28,21 @@
 {{- end -}}
 
 {{- $mapName := replace (replace (replace .context.params.iiif "/" "_") "." "") "-" "_" -}}
+{{/*
 {{- $infoJson := printf "/%s" (path.Join $contextPath .context.params.iiif) -}}
 {{- $baseURL := printf "/%s/%s/" $contextPath (path.Dir .context.params.iiif) -}}
+*/}}
+{{- $infoJson := "" -}}
+{{- $baseURL := "" -}}
+
+{{- if or $site.IsServer (not (isset $site.Params "productioniiifurlprefix")) -}}
+    {{- $infoJson = printf "/%s" (path.Join $contextPath .context.params.iiif) -}}
+    {{- $baseURL = printf "/%s/%s/" $contextPath (path.Dir .context.params.iiif) -}}
+    {{- warnf "Setting IIIF URL locally to %s" $infoJson -}}
+{{- else -}}
+    {{- $infoJson = printf "%s%s" $site.Params.productionIIIFURLPrefix (path.Join $contextPath .context.params.iiif) -}}
+    {{- $baseURL = "" -}}
+{{- end -}}
 
 <div class="iiif-image {{ $class | safeHTML }} {{ $orientation | safeHTML }}">
     <a name="{{ $mapName }}"></a>

@@ -83,7 +83,7 @@ window.addMap = function(element, url, rotation, baseURL) {
     if (document.documentElement.lang !== undefined) {
         lang = document.documentElement.lang;
     }
-    var toolTips = { 'de': {'zoomIn': 'Vergrößern', 'zoomOut': 'Verkleinern', 'fullscreen': 'Vollbildansicht', 'rotate': 'Rotation zurücksetzen', 'rotateLeft': '90° nach links drehen', 'rotateRight': '90° nach rechts drehen'},
+    var toolTips = { 'de': {'zoomIn': 'Vergrößern', 'zoomOut': 'Verkleinern', 'fullscreen': 'Vollbildansicht', 'rotate': 'Rotation zurücksetzen', 'rotateLeft': '90° nach links drehen', 'rotateRight': '90° nach rechst drehen'},
                      'en': {'zoomIn': 'Zoom in', 'zoomOut': 'Zoom out', 'fullscreen': 'Toggle full-screen', 'rotate': 'Reset rotation', 'rotateLeft': 'Rotate 90° left', 'rotateRight': 'Rotate 90° right'}};
 
     console.log('Setting up ' + lang);
@@ -110,7 +110,7 @@ window.addMap = function(element, url, rotation, baseURL) {
                         return;
                     }
                     options.zDirection = -1;
-                    if (baseURL !== undefined) {
+                    if (baseURL !== undefined && baseURL != '') {
                         options.url = baseURL;
                     }
                     var iiifTileSource = new IIIF(options);

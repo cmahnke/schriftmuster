@@ -14,3 +14,5 @@ content/post/*/end-*/
 content/post/*/back-*/
 content/post/*/front-*/
 content/post/*/*/page*/
+content/post/*/*/img*/
+content/post/**/back/

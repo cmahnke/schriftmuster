@@ -48,7 +48,7 @@
                         {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
         				{{- if eq $previewImg nil -}}
-                            {{ warnf "Can't find image %s" $imgLocation }}
+                            {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
                         {{- else -}}
                             {{- if gt $previewImg.Width 800 -}}
                                 {{- $previewImg = $previewImg.Resize "800x" -}}

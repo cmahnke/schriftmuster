@@ -11,6 +11,7 @@ DefaultContentLanguage = "de"
     description = ""
     copyrightYears = "MMXX"
     stylesheets = []
+#    productionIIIFURLPrefix="https://static.projektemacher.org/vorsatzpapier/"
 
 [languages]
     [languages.de]
