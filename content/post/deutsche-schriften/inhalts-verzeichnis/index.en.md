@@ -1,13 +1,13 @@
 ---
-title: "Schwabacher-Schriften"
+title: "Table of contents"
 date: 2021-08-25T18:47:43+01:00
 displayinlist: false
 type: font
 tags:
 - Font
 resources:
-- src: "page082.jpg"
+- src: "page112.jpg"
   params:
-    iiif: page082/info.json
+    iiif: page112/info.json
     class: sheet
 ---

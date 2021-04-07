@@ -1,5 +1,5 @@
 ---
-title: "Schwabacher-Schriften"
+title: "Inhalts-Verzeichnis"
 date: 2021-08-25T18:47:43+01:00
 displayinlist: false
 type: font
