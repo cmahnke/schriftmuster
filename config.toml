@@ -4,6 +4,7 @@ title = "Schriftmuster"
 publishDir = "docs"
 canonifyurls = true
 DefaultContentLanguage = "de"
+theme = ["projektemacher-base"]
 
 [params]
     author = "Christian Mahnke"
