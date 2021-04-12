@@ -1,10 +1,15 @@
 #!/bin/sh
 
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
-
 if [[ -z "$SKIP_IIIF" ]] ; then
     ./scripts/iiif.sh
 fi
+
+echo "Calling theme scripts"
+for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
+    echo "Running $SCRIPT"
+    bash "$SCRIPT"
+done
 
 ./scripts/preview.sh
 
@@ -17,5 +22,3 @@ convert static/images/favicon-128.png -resize 16x16 static/images/favicon-16.png
 convert static/images/favicon-128.png -resize 32x32 static/images/favicon-32.png
 convert static/images/favicon-128.png -resize 64x64 static/images/favicon-64.png
 convert static/images/favicon-16.png static/images/favicon-32.png static/images/favicon-64.png static/images/favicon-128.png -colors 256 static/images/favicon.ico
-
-yarn install
