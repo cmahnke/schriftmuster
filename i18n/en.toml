@@ -43,3 +43,15 @@ other = "Single find"
 
 [singlefind]
 other = "Single find"
+
+[portfolio]
+other = "Portfolio"
+
+[Portfolio]
+other = "Portfolio"
+
+[postcard]
+other = "Postcard"
+
+[Postcard]
+other = "Postcard"

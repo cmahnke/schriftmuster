@@ -44,3 +44,15 @@ other = "Einzelfundstück"
 
 [singlefind]
 other = "Einzelfundstück"
+
+[portfolio]
+other = "Mappe"
+
+[Portfolio]
+other = "Mappe"
+
+[postcard]
+other = "Postkarte"
+
+[Postcard]
+other = "Postkarte"
