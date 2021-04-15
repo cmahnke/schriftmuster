@@ -3,10 +3,6 @@
 {{ end }}
 {{ define "content" }}
     <div class="page-container">
-      {{- if hasPrefix .File.Dir "collections" -}}
-          {{- partial "collections.html" . -}}
-      {{- else -}}
-          {{- partial "page.html" . -}}
-      {{- end -}}
+        {{- partial "page.html" . -}}
     </div>
 {{ end }}
