@@ -13,7 +13,7 @@ Daher ist der Zweck diese Blogs hochqualitative Digitalisate zur [Weiterverarbei
 
 Tags mit weniger als drei Vorkommen werden hier nicht angezeigt.
 
-{{< tags/cloud-i18n >}}
+{{< tags/cloud tag="i18n" >}}
 
 # Kolophon
 

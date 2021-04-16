@@ -12,7 +12,7 @@ It's the purpose of this blog to provide high-quality digital copies for [furthe
 
 Tags with less then three occurrences aren't shown.
 
-{{< tags/cloud-i18n >}}
+{{< tags/cloud tag="i18n" >}}
 
 # Colophon
 
