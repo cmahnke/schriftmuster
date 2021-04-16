@@ -17,6 +17,7 @@ $color-paper-light: lighten($color-paper, 4%);
 @import "ol-iiif";
 @import "share";
 @import "media-info";
+@import "footer";
 
 body {
     font-family: $font-body-font, monospace;
@@ -444,25 +445,6 @@ main {
             .menu-item {
                 display: inline;
                 padding: 0 .3rem;
-            }
-        }
-    }
-
-    .credit {
-        text-align: center;
-        margin-top: 0.8em;
-        font-size: x-small;
-
-        p {
-            margin: auto;
-
-            &.projektemacher {
-                margin: 0.6em 0;
-            }
-
-            &.cc {
-                color: #aaa6ab;
-                padding-bottom: 0.4em;
             }
         }
     }

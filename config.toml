@@ -10,8 +10,9 @@ theme = ["projektemacher-base"]
     author = "Christian Mahnke"
     keywords = "Schriftmuster, Schriften, Papier, Bücher, fonts, paper, books"
     description = ""
-    copyrightYears = "MMXX"
+    copyrightYears = "MMXXI"
     stylesheets = []
+    cc = true
 #    productionIIIFURLPrefix="https://static.projektemacher.org/vorsatzpapier/"
 
 [languages]
