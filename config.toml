@@ -5,6 +5,7 @@ publishDir = "docs"
 canonifyurls = true
 DefaultContentLanguage = "de"
 theme = ["projektemacher-base"]
+copyright = false
 
 [params]
     author = "Christian Mahnke"
