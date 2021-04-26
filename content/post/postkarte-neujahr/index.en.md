@@ -15,5 +15,10 @@ resources:
 ---
 
 A new single find, a post card for New year's eve. It's rather kitschy and very likely older than the postmark suggests. This is supported by the execution as a lithograph and the motif ...
-
+<!--more-->
 What qualifies the card for this blog is the typographically outstanding stamp: "Deliver Christmas and New Years mail early!" ("Weihnachts- und Neujahrspost frühzeitig einliefern!").
+
+<!--more-->
+<div class="source">
+Found at <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
+</div>

@@ -13,3 +13,7 @@ resources:
     iiif: img002/info.json
 ---
 The backs of two Christmas postcards.
+<!--more-->
+<div class="source">
+Found at <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
+</div>

@@ -13,3 +13,7 @@ resources:
     iiif: back/info.json
 ---
 Metal letters for business or delivery vans - also available gold-plated - are now rarely found in modern cities.
+<!--more-->
+<div class="source">
+Found at <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
+</div>

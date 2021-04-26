@@ -13,3 +13,7 @@ resources:
     iiif: back/info.json
 ---
 Metallbuchstaben für Geschäft oder den Lieferwagen - auch vergoldet - inzwischen nur noch selten im Stadtbild zu finden.
+<!--more-->
+<div class="source">
+Gefunden bei <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
+</div>

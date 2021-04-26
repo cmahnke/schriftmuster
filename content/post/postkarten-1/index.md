@@ -13,3 +13,7 @@ resources:
     iiif: img002/info.json
 ---
 Die Rückseiten zweier Weihnachtspostkarten.
+<!--more-->
+<div class="source">
+Gefunden bei <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
+</div>

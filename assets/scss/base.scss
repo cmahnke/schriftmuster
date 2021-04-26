@@ -695,3 +695,14 @@ body.about {
 .page-numbers.current {
     text-decoration: underline;
 }
+
+.source {
+    font-size: small;
+    text-align: right;
+    margin: 1.5em;
+    color: lighten($color-body-text, 20%);
+
+    a {
+        color: lighten($color-link-text, 20%);
+    }
+}
