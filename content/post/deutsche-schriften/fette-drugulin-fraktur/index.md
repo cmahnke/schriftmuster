@@ -1,5 +1,5 @@
 ---
-title: "Halbfette Drugulin-Fraktur"
+title: "Fette Drugulin-Fraktur"
 date: 2021-03-24T18:47:43+01:00
 type: font
 tags:
