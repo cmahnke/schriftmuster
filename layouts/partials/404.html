@@ -1,23 +1,12 @@
+{{- $rotate := "" }}
+{{ range (seq 0 1) }}
+    {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
+{{ end }}
+{{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
+{{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
-  {{- $rotate := "" }}
-  {{ range (seq 0 1) }}
-      {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) }}
-  {{ end }}
-  {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
-  {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
-
-    <main class="content error404">
-          <article class="post error404" style="{{ $style | safeCSS }}">
-
-            <div class='post-header'>
-              <h1 class='entry-title'>404</h1>
-              <h1 class='entry-title'>Nicht gefunden</h1>
-            </div>
-
-            <div class="post-content">
-               <p>Die angeforderte URL konnte auf dem Server nicht gefunden werden.</p>
-               <p>Du kannst hier zurück zur <a href="{{ .Site.BaseURL | safeHTML }}">Startseite</a>.</p>
-            </div>
-
-        </article>
-    </main>
+<main class="content error404">
+    <article class="post error404" style="{{ $style | safeCSS }}">
+        {{- partialCached "404-content.html" . -}}
+    </article>
+</main>

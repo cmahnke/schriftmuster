@@ -39,6 +39,17 @@
 
       <div class="post-content">
           {{- .Content -}}
+
+          <div class="post-relations">
+              {{- if or (eq .Kind "section") (ne .CurrentSection.Dir "")  -}}
+                  {{- partial "post-relations" . -}}
+              {{- else -}}
+                  <div class="section-parent">
+                      {{- i18n "singleFind" -}}
+                  </div>
+              {{- end -}}
+          </div>
+
             <div class="iiif post-images">
                 {{- $context := path.Dir .File.Path -}}
                 {{- $pageURL := .Permalink -}}
@@ -65,6 +76,8 @@
 
       </div>
 
+{{/* TODO: Check if media partial works here - it's not tested with sections */}}
+
       {{- if .Params.type -}}
         <div class="{{ .Params.type }}-description">
           {{- if eq .Params.type "book" -}}
@@ -89,33 +102,6 @@
 
       <div class="separator"></div>
       <div class="post-footer">
-          <div class="post-relations">
-              {{- if eq .Kind "section" -}}
-                    <div class="section-contents-list">
-                        {{- i18n "sectionContentsList" -}}:
-                    </div>
-                    <div class="section-posts">
-                        <ul>
-                            {{- range .CurrentSection.Pages.Reverse -}}
-                                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                            {{- end -}}
-                        <ul>
-                    </div>
-              {{- else if eq .CurrentSection.Dir "" -}}
-                <div class="section-parent">
-                    {{- i18n "singleFind" -}}
-                </div>
-              {{- else -}}
-                    {{- if not .Params.metaPage -}}
-                        <div class="section-parent">
-                            {{- i18n "sectionParent" -}}:
-                        </div>
-                        <ul>
-                            <li><a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a></li>
-                        </ul>
-                    {{- end -}}
-              {{- end -}}
-          </div>
           <div class="spacer">
           </div>
           {{- if not .Params.metaPage -}}
