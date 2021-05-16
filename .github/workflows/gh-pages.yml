@@ -23,20 +23,23 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
+      - name: Set up Python
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: 3.9
+
       - name: Install required dependencies
         run: |
           ./themes/projektemacher-base/scripts/github/setup-dependencies.sh
+          ./themes/projektemacher-base/scripts/github/setup-inkscape.sh
           ./themes/projektemacher-base/scripts/github/docker-images.sh
+          ./themes/projektemacher-base/scripts/github/python-dependencies.sh
 
       - name: Setup deploy env
         env:
           DEPLOY_SSH_IDENTITY: ${{ secrets.DEPLOY_SSH_IDENTITY }}
         run: |
           mkdir -p ~/.ssh && echo "$DEPLOY_SSH_IDENTITY" >>  ~/.ssh/known_hosts
-
-      - name: Setup dependencies
-        run: |
-          sudo apt-get install imagemagick
 
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
