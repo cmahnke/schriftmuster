@@ -13,7 +13,14 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
     bash "$SCRIPT"
 done
 
+# Logo
+convert "Source Files/Favicon/Favicon.psd[1]" static/images/logo.png
+
 ./scripts/preview.sh
+
+# Generate Previews
+python3 ./themes/projektemacher-base/scripts/preview.py
+find content -name ogPreview.svg -print -exec bash -c 'inkscape "{}" --export-filename=$(dirname "{}")/$(basename -s .svg "{}").png' \;
 
 # Favicons
 SOURCE="Source Files/Favicon/Favicon.psd[1]" OPTIONS="-background 'rgba(255, 255, 255, .0)' -resize 300x300 -gravity center -extent 300x300" ./themes/projektemacher-base/scripts/favicon.sh

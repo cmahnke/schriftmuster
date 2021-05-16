@@ -18,3 +18,5 @@ content/post/*/front-*/
 content/post/*/*/page*/
 content/post/*/*/img*/
 content/post/**/back/
+static/images/logo.png
+content/**/ogPreview.*g

@@ -1,0 +1,19 @@
+[params]
+    author = "Christian Mahnke"
+    keywords = "Schriftmuster, Schriften, Papier, Bücher, fonts, paper, books"
+    description = ""
+    copyrightYears = "MMXXI"
+    stylesheets = []
+    cc = true
+#    productionIIIFURLPrefix="https://static.projektemacher.org/vorsatzpapier/"
+
+    [params.preview]
+        outputPrefix = "ogPreview"
+        format =  "svg"
+        image = "preview.png"
+        source = "file"
+        [params.preview.size]
+            height = 630
+            width = 1200
+        [params.preview.svg]
+            template = "./Source Files/Other/preview-template.svg"

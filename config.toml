@@ -7,15 +7,6 @@ DefaultContentLanguage = "de"
 theme = ["projektemacher-base"]
 copyright = false
 
-[params]
-    author = "Christian Mahnke"
-    keywords = "Schriftmuster, Schriften, Papier, Bücher, fonts, paper, books"
-    description = ""
-    copyrightYears = "MMXXI"
-    stylesheets = []
-    cc = true
-#    productionIIIFURLPrefix="https://static.projektemacher.org/vorsatzpapier/"
-
 [languages]
     [languages.de]
         languagename = "Deutsch"
