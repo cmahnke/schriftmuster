@@ -420,6 +420,6 @@
 
     <image id="site-logo" xlink:href="../../static/images/logo.png" preserveAspectRatio="xMidYMid meet" width="75" height="75" x="100" y="56.402187"/>
     <image id="logo" xlink:href="../../themes/projektemacher-base/static/images/cm.svg" preserveAspectRatio="xMidYMid meet" width="75" height="75" x="1025" y="57.415752"/>
-    <image id="hanger" xlink:href="../../content/post/alphabete/antiqua/preview.png" y="200" x="200" style="image-rendering:optimizeQuality" preserveAspectRatio="xMidYMin slice" height="500" width="800"/>
+    <image id="preview-image" xlink:href="../../content/post/alphabete/antiqua/preview.png" y="200" x="200" style="image-rendering:optimizeQuality" preserveAspectRatio="xMidYMin slice" height="500" width="800"/>
     <text id="text-container" xml:space="preserve" style="shape-inside:url(#textbox);font-style:normal;font-weight:normal;font-size:80px;line-height:1.25;font-family:Inconsolata;text-align:center;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;text-align:center;" >Die Antiqua</text>
 </svg>

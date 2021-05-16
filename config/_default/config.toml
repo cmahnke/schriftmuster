@@ -9,6 +9,7 @@
 
     [params.preview]
         outputPrefix = "ogPreview"
+        outputSuffix = ".jpg"
         format =  "svg"
         image = "preview.png"
         source = "file"
