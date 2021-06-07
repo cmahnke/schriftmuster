@@ -33,6 +33,6 @@ Die Seite wird von [GitHub](https://github.com/) gehosted.
 
 # Kontakt
 
-"Schriftmuster" ist ein Projekt von **Christian Mahnke**.
+"Schriftmuster" ist ein Projekt von **[Christian Mahnke](https://christianmahnke.de/)**.
 
 Kontakt ist via [E-Mail](mailto:schriftmuster@projektemacher.org) möglich.
