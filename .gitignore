@@ -2,6 +2,7 @@ package.json
 node_modules
 docs
 static/images/favicon*
+static/pdfjs/**
 resources
 patches
 content/post/**/preview.png
