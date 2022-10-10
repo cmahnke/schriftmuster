@@ -5,6 +5,8 @@ static/images/favicon*
 static/pdfjs/**
 resources
 patches
+.hugo_build.lock
+hugo_stats.json
 content/post/**/preview.png
 content/post/**/preview-mobile.png
 content/post/*/front/
