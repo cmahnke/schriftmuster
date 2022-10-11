@@ -24,7 +24,7 @@
                         </div>
                         <div class="post-header">
                             {{- $title := "" -}}
-                            {{- if eq .CurrentSection.Dir "" -}}
+                            {{- if eq .CurrentSection.File.Dir "" -}}
                                 {{- $title = .Title -}}
                             {{- else -}}
                                 {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}
