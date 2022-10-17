@@ -47,7 +47,7 @@
                         {{- $imgLocation := path.Join $context $imgName -}}
                         {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
-        				{{- if eq $previewImg nil -}}
+        				        {{- if eq $previewImg nil -}}
                             {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
                         {{- else -}}
                             {{- if gt $previewImg.Width 800 -}}
@@ -55,14 +55,18 @@
                             {{- end -}}
                         {{- end -}}
 
-                        {{- if ne .Kind "term" -}}
-                            <div class="preview {{ $class }}">
-                                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
-                                         srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
-                                                 {{ $previewImg.RelPermalink }} 800w"
-                                                 sizes="(max-width: 480px) 320px, 800px"
-                                >
-                            </div>
+                        {{- if eq .Kind "term" -}}
+                            {{- if ne $previewImg nil -}}
+                                <div class="preview {{ $class }}">
+                                    <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
+                                             srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
+                                                     {{ $previewImg.RelPermalink }} 800w"
+                                                     sizes="(max-width: 480px) 320px, 800px"
+                                    >
+                                </div>
+                            {{- else -}}
+                                {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
+                            {{- end -}}
                         {{- end -}}
 
                         <div class='post-summary'>
