@@ -23,3 +23,4 @@ content/post/*/*/img*/
 content/post/**/back/
 static/images/logo.png
 content/**/ogPreview.*g
+**/.DS_Store

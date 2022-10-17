@@ -3,7 +3,7 @@ title: "Die Weihnachtsgeschichte"
 date: 2020-11-29T07:15:43+01:00
 iiifContext: http://iiif.io/api/presentation/2/context.json
 iiifManifest: ./manifest.json
-description: 'Das Buch "Die Weihnachtsgeschichte" von Rudolf Koch erschien 1936 bei Insel-Verlag, Leipzig. <a class="worldcat" href="http://www.worldcat.org/oclc/476816936">&nbsp;</a>'
+description: 'Das Buch "Die Weihnachtsgeschichte" von Rudolf Koch erschien 1936 im Insel-Verlag, Leipzig. <a class="worldcat" href="http://www.worldcat.org/oclc/476816936">&nbsp;</a>'
 type: book
 outputs:
 - html
