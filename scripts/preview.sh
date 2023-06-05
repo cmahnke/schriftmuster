@@ -13,7 +13,7 @@ do
             IMAGE=`ls -1 $DIR/*.jpg | head -1`
         fi
         echo "Scaling $IMAGE to $PREVIEW_WIDTH"
-        if [ ! -f $DIR/preview.png ] ;
+        if [ ! -f $DIR/preview.png ] ; then
             convert $IMAGE -resize "$PREVIEW_WIDTH" $DIR/preview.png
             #echo "Scaling $IMAGE to $PREVIEW_WIDTH_MOBILE for mobile clients"
             #convert $IMAGE -resize "$PREVIEW_WIDTH_MOBILE" $DIR/preview-mobile.png
