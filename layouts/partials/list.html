@@ -14,7 +14,7 @@
             {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
             {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
-            <div class="list-entry paper-curl-right" style="{{ $style | safeCSS }}">
+            <div class="list-entry paper-curl-right {{ .Params.type }}" style="{{ $style | safeCSS }}">
 
             <div class="workaround paper-curl-right">
                 {{- $context := path.Dir .File.Path -}}
@@ -32,18 +32,16 @@
                             <h1 class='post-title'>{{ $title }}</h1>
                         </div>
 
-                        {{- $class := "" -}}
+                        {{- $class := .Params.type -}}
                         {{- $imgName := "" -}}
                         {{- if eq .Params.type "font" -}}
                             {{- $imgName = "preview.png" -}}
-                            {{- $class = "font" -}}
                         {{- else if eq .Params.type "book" -}}
                             {{- $imgName = "front" -}}
-                            {{- $class = "book" -}}
                         {{- else if eq .Params.type "single" -}}
                             {{- $imgName = (index .Params.resources 0).src -}}
-                            {{- $class = "single" -}}
                         {{- end -}}
+
                         {{- $imgLocation := path.Join $context $imgName -}}
                         {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
@@ -55,7 +53,7 @@
                             {{- end -}}
                         {{- end -}}
 
-                        {{- if eq .Kind "term" -}}
+                        {{- if or (eq .Kind "term") (eq .Kind "page") -}}
                             {{- if ne $previewImg nil -}}
                                 <div class="preview {{ $class }}">
                                     <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
@@ -67,6 +65,8 @@
                             {{- else -}}
                                 {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
                             {{- end -}}
+                        {{- else -}}
+                            {{ warnf "Ignoring image %s for context %s in 'partials/list.html'" $imgLocation $context}}
                         {{- end -}}
 
                         <div class='post-summary'>

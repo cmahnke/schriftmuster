@@ -2,7 +2,7 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-    <div class="page-container">
+    <div class="page-container collections">
         {{- $pages := where .Site.Pages "Section" "post" -}}
         {{- $pages = where $pages "Params.type" "eq" "book" -}}
         {{- $pages = where $pages "Kind" "eq" "section" -}}
@@ -32,7 +32,7 @@
                         {{- $imgLocation := path.Join $context $imgName -}}
                         {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
-            			{{- if eq $previewImg nil -}}
+            			      {{- if eq $previewImg nil -}}
                             {{ warnf "Can't find image %s" $imgLocation }}
                         {{- else -}}
                             {{- if gt $previewImg.Width 800 -}}
