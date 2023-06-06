@@ -76,6 +76,7 @@ main.list {
     float: right;
     margin: 1em auto;
     display: inline-block;
+    background-color: unset;
 
     @media (max-width: 56em) {
         /* display: block; */
@@ -83,6 +84,7 @@ main.list {
         /* width: unset; */
         margin: unset;
         vertical-align: sub;
+        background-color: #fff;
     }
 
     .menu-button {
