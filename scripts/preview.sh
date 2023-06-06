@@ -10,7 +10,7 @@ do
         if [ -r $DIR/front.jpg ] ; then
             IMAGE="$DIR/front.jpg"
         else
-            IMAGE=`ls -1 $DIR/*.jpg | head -1`
+            IMAGE=`ls -1 $DIR/*.jpg | grep -v '/ogPreview.*' | head -1`
         fi
         echo "Scaling $IMAGE to $PREVIEW_WIDTH"
         if [ ! -f $DIR/preview.png ] ; then
