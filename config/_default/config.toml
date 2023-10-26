@@ -5,7 +5,7 @@
     copyrightYears = "MMXXI -MMXXIII"
     stylesheets = []
     cc = true
-#    productionIIIFURLPrefix="https://static.projektemacher.org/vorsatzpapier/"
+    productionIIIFURLPrefix="https://static.projektemacher.org/schriftmuster/"
 
     [params.preview]
         outputPrefix = "ogPreview"
