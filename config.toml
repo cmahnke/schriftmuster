@@ -5,7 +5,7 @@ publishDir = "docs"
 canonifyurls = true
 DefaultContentLanguage = "de"
 theme = ["projektemacher-base"]
-copyright = false
+copyright = '<a href="https://projektemacher.org/" target="_blank">Projektemacher</a>'
 
 [languages]
     [languages.de]
