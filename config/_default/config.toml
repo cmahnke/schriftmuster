@@ -6,6 +6,7 @@
     stylesheets = []
     cc = true
     productionIIIFURLPrefix="https://static.projektemacher.org/schriftmuster/"
+    disableScale = true
 
     [params.preview]
         outputPrefix = "ogPreview"
