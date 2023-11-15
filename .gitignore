@@ -26,3 +26,6 @@ content/**/ogPreview.*g
 content/**/ogPreview/
 content/**/ogPreview.en/
 **/.DS_Store
+**/vips-properties.xml
+assets/css/**
+static/fonts/**
