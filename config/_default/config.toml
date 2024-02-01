@@ -7,6 +7,7 @@
     productionIIIFURLPrefix="https://static.projektemacher.org/schriftmuster/"
     disableScale = true
     description = "Specimens of old typefaces from catalogues for printers and from documents"
+    debug = false
 
     [params.preview]
         outputPrefix = "ogPreview"

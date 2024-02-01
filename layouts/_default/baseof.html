@@ -22,11 +22,13 @@
     {{- end -}}
 
   </head>
+    {{- $class := "" }}
+    {{- with .Page.File -}}
+      {{- if or (hasPrefix .Path "about") (hasPrefix .Path "/about") -}}
+          {{- $class = "about" -}}
+      {{- end -}}
+    {{- end -}}
 
-     {{ $class := "" }}
-     {{- if or (hasPrefix .Page.File.Path "about") (hasPrefix .Page.File.Path "/about") -}}
-         {{ $class = "about" }}
-     {{ end }}
      {{ if .Params.metaPage }}
          {{ $class = printf "%s %s" $class "meta" }}
      {{ end }}

@@ -17,14 +17,21 @@
             <div class="list-entry paper-curl-right {{ .Params.type }}" style="{{ $style | safeCSS }}">
 
             <div class="workaround paper-curl-right">
-                {{- $context := path.Dir .File.Path -}}
+              {{- $context := "" -}}
+              {{- if and (ne .File nil) (ne .File.Dir nil) -}}
+                {{- $context = path.Dir .File.Path -}}
+              {{- end -}}
                     <a class="post-link" href="{{ .Permalink }}">
                         <div class="date">
                             <span class="date">{{ partial "date.html" . }}</span>
                         </div>
                         <div class="post-header">
                             {{- $title := "" -}}
-                            {{- if eq .CurrentSection.File.Dir "" -}}
+                            {{- $currentSectionDir := "" -}}
+                            {{- if and (ne .CurrentSection.File nil) (ne .CurrentSection.File.Dir nil) -}}
+                              {{- $currentSectionDir = .CurrentSection.File.Dir -}}
+                            {{- end -}}
+                            {{- if eq $currentSectionDir "" -}}
                                 {{- $title = .Title -}}
                             {{- else -}}
                                 {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}

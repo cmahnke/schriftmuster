@@ -12,6 +12,11 @@
 {{- $context := path.Dir .File.Path -}}
 {{- $pageURL := .Permalink -}}
 
+{{- $currentSectionDir := "" -}}
+{{- if and (ne .CurrentSection.File nil) (ne .CurrentSection.File.Dir nil) -}}
+  {{- $currentSectionDir = .CurrentSection.File.Dir -}}
+{{- end -}}
+
 <main class="content {{ $class }}">
   <article class="post" style="{{ $style | safeCSS }}">
       {{- if not .Params.metaPage -}}
@@ -28,7 +33,7 @@
             <h1 class='post-title'>{{ .CurrentSection.Title }}</h1>
           {{- else -}}
             {{- $title := "" -}}
-            {{- if eq .CurrentSection.File.Dir "" -}}
+            {{- if eq $currentSectionDir "" -}}
                 {{- $title = .Title -}}
             {{- else -}}
                 {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}
@@ -41,7 +46,7 @@
           {{- .Content -}}
 
           <div class="post-relations">
-              {{- if or (eq .Kind "section") (ne .CurrentSection.File.Dir "")  -}}
+              {{- if or (eq .Kind "section") (ne $currentSectionDir "")  -}}
                   {{- partial "post-relations" . -}}
               {{- else -}}
                   <div class="section-parent">
@@ -56,7 +61,7 @@
                 {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
                     {{- range .Params.resources -}}
                         {{- if .params.iiif -}}
-                          {{- if ne $.CurrentSection.File.Dir "" -}}
+                          {{- if ne $currentSectionDir "" -}}
                               {{- partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) -}}
                           {{- else if eq $.Params.type "book" -}}
                               {{- if (not (or (or (eq .name "front") (eq .name "title")) (eq .name "cover"))) -}}
