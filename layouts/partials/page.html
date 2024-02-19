@@ -59,7 +59,10 @@
           </div>
 
             <div class="iiif post-images">
-                {{- $contextPath := path.Dir .File.Path -}}
+                {{- $contextPath := "" -}}
+                {{- if and (ne .File nil) (ne .File.Path nil) -}}
+                  {{- $contextPath = path.Dir .File.Path -}}
+                {{- end -}}
                 {{- $pageURL := .Permalink -}}
                 {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
                     {{- range .Params.resources -}}
