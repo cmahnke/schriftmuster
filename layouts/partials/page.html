@@ -9,7 +9,10 @@
 {{- end -}}
 {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
 {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
-{{- $context := path.Dir .File.Path -}}
+{{- $contextPath := "" -}}
+{{- if and (ne .File nil) (ne .File.Path nil) -}}
+  {{- $contextPath = path.Dir .File.Path -}}
+{{- end -}}
 {{- $pageURL := .Permalink -}}
 
 {{- $currentSectionDir := "" -}}
@@ -56,19 +59,19 @@
           </div>
 
             <div class="iiif post-images">
-                {{- $context := path.Dir .File.Path -}}
+                {{- $contextPath := path.Dir .File.Path -}}
                 {{- $pageURL := .Permalink -}}
                 {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
                     {{- range .Params.resources -}}
                         {{- if .params.iiif -}}
                           {{- if ne $currentSectionDir "" -}}
-                              {{- partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) -}}
+                              {{- partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) -}}
                           {{- else if eq $.Params.type "book" -}}
                               {{- if (not (or (or (eq .name "front") (eq .name "title")) (eq .name "cover"))) -}}
-                                  {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
+                                  {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
                               {{- end -}}
                           {{- else if eq $.Params.type "single" -}}
-                              {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
+                              {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
                           {{- else -}}
                               {{ errorf "Unable to render content for post %s - maybe no resources given." $pageURL }}
                           {{- end -}}
@@ -97,7 +100,7 @@
               <div class="book-description-images iiif">
                 {{- range .Params.resources -}}
                   {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}
-                    {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "heading" (i18n .name) "pageContext" $page "site" $.Site) }}
+                    {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "heading" (i18n .name) "pageContext" $page "site" $.Site) }}
                   {{- end -}}
                 {{- end -}}
               </div>
