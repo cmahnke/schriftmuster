@@ -1,5 +1,5 @@
 ---
-title: "Uhlih Metallbuchstabenfabrik"
+title: "Uhlig Metallbuchstabenfabrik"
 date: 2021-04-17T11:22:44+02:00
 type: single
 tags:
