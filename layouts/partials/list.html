@@ -1,89 +1,88 @@
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}
-    {{- $pages = where (where .Site.Pages "Section" "post") "Path" "!=" "post" -}}
+  {{- $pages = where .Site.Pages "Section" "post" -}}
+  {{- $pages = where $pages "Path" "!=" "/post" -}}
 {{- end -}}
 
 {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 <main class="list">
-    	{{- range $paginator.Pages -}}
+	{{- range $paginator.Pages -}}
+    {{- $rotate := "" }}
+    {{- range (seq 0 1) -}}
+        {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) -}}
+    {{- end -}}
+    {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
+    {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
-            {{- $rotate := "" }}
-            {{- range (seq 0 1) -}}
-                {{- $rotate = printf "%s%d" $rotate (index (shuffle (seq 0 99)) 0) -}}
+    <div class="list-entry paper-curl-right {{ .Params.type }}" style="{{ $style | safeCSS }}">
+
+    <div class="workaround paper-curl-right">
+      {{- $context := "" -}}
+      {{- if and (ne .File nil) (ne .File.Dir nil) -}}
+        {{- $context = path.Dir .File.Path -}}
+      {{- end -}}
+        <a class="post-link" href="{{ .Permalink }}">
+          <div class="date">
+            <span class="date">{{ partial "date.html" . }}</span>
+          </div>
+          <div class="post-header">
+            {{- $title := "" -}}
+            {{- $currentSectionDir := "" -}}
+            {{- if and (ne .CurrentSection.File nil) (ne .CurrentSection.File.Dir nil) -}}
+              {{- $currentSectionDir = .CurrentSection.File.Dir -}}
             {{- end -}}
-            {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
-            {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
+            {{- if eq $currentSectionDir "" -}}
+              {{- $title = .Title -}}
+            {{- else -}}
+              {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}
+            {{- end -}}
+            <h1 class='post-title'>{{ $title }}</h1>
+          </div>
 
-            <div class="list-entry paper-curl-right {{ .Params.type }}" style="{{ $style | safeCSS }}">
+          {{- $class := .Params.type -}}
+          {{- $imgName := "" -}}
+          {{- if eq .Params.type "font" -}}
+            {{- $imgName = "preview.png" -}}
+          {{- else if eq .Params.type "book" -}}
+            {{- $imgName = "front" -}}
+          {{- else if eq .Params.type "single" -}}
+            {{- $imgName = (index .Params.resources 0).src -}}
+          {{- end -}}
 
-            <div class="workaround paper-curl-right">
-              {{- $context := "" -}}
-              {{- if and (ne .File nil) (ne .File.Dir nil) -}}
-                {{- $context = path.Dir .File.Path -}}
-              {{- end -}}
-                    <a class="post-link" href="{{ .Permalink }}">
-                        <div class="date">
-                            <span class="date">{{ partial "date.html" . }}</span>
-                        </div>
-                        <div class="post-header">
-                            {{- $title := "" -}}
-                            {{- $currentSectionDir := "" -}}
-                            {{- if and (ne .CurrentSection.File nil) (ne .CurrentSection.File.Dir nil) -}}
-                              {{- $currentSectionDir = .CurrentSection.File.Dir -}}
-                            {{- end -}}
-                            {{- if eq $currentSectionDir "" -}}
-                                {{- $title = .Title -}}
-                            {{- else -}}
-                                {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}
-                            {{- end -}}
-                            <h1 class='post-title'>{{ $title }}</h1>
-                        </div>
+          {{- $imgLocation := path.Join $context $imgName -}}
+          {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
-                        {{- $class := .Params.type -}}
-                        {{- $imgName := "" -}}
-                        {{- if eq .Params.type "font" -}}
-                            {{- $imgName = "preview.png" -}}
-                        {{- else if eq .Params.type "book" -}}
-                            {{- $imgName = "front" -}}
-                        {{- else if eq .Params.type "single" -}}
-                            {{- $imgName = (index .Params.resources 0).src -}}
-                        {{- end -}}
+	        {{- if eq $previewImg nil -}}
+            {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
+          {{- else -}}
+            {{- if gt $previewImg.Width 800 -}}
+              {{- $previewImg = $previewImg.Resize "800x" -}}
+            {{- end -}}
+          {{- end -}}
 
-                        {{- $imgLocation := path.Join $context $imgName -}}
-                        {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
-
-        				        {{- if eq $previewImg nil -}}
-                            {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
-                        {{- else -}}
-                            {{- if gt $previewImg.Width 800 -}}
-                                {{- $previewImg = $previewImg.Resize "800x" -}}
-                            {{- end -}}
-                        {{- end -}}
-
-                        {{- if or (eq .Kind "term") (eq .Kind "page") -}}
-                            {{- if ne $previewImg nil -}}
-                                <div class="preview {{ $class }}">
-                                    <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
-                                             srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
-                                                     {{ $previewImg.RelPermalink }} 800w"
-                                                     sizes="(max-width: 480px) 320px, 800px"
-                                    >
-                                </div>
-                            {{- else -}}
-                                {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
-                            {{- end -}}
-                        {{- else -}}
-                            {{ warnf "Ignoring image %s for context %s in 'partials/list.html'" $imgLocation $context}}
-                        {{- end -}}
-
-                        <div class='post-summary'>
-                          <div class="summary-text">
-                            {{ .Summary }}
-                          </div>
-                        	<div class="more">{{ i18n "readPost" }}</div>
-                        </div>
-                    </a>
+          {{- if or (eq .Kind "term") (eq .Kind "page") -}}
+            {{- if ne $previewImg nil -}}
+              <div class="preview {{ $class }}">
+                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
+                  srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
+                  {{ $previewImg.RelPermalink }} 800w" sizes="(max-width: 480px) 320px, 800px"
+                >
               </div>
+            {{- else -}}
+              {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
+            {{- end -}}
+          {{- else -}}
+            {{ warnf "Ignoring image %s for context %s in 'partials/list.html'" $imgLocation $context}}
+          {{- end -}}
+
+          <div class='post-summary'>
+            <div class="summary-text">
+              {{ .Summary }}
             </div>
-        {{- end -}}
+          	<div class="more">{{ i18n "readPost" }}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  {{- end -}}
 </main>
