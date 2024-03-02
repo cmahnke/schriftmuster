@@ -104,8 +104,11 @@ copyright = '<a href="https://projektemacher.org/" target="_blank">Projektemache
     baseName = "manifest"
     notAlternative = true
 
+[sitemap]
+  changeFreq = 'weekly'
+
 [markup]
-defaultMarkdownHandler = 'goldmark'
+  defaultMarkdownHandler = 'goldmark'
 
 [markup.goldmark]
     [markup.goldmark.renderer]
