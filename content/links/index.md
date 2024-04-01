@@ -4,8 +4,19 @@ metaPage: true
 displayinlist: false
 ---
 
-# Frei verwendbare Fonts
+# Frei verwendbare Schriftarten
 
 * [Google Fonts](https://fonts.google.com/)
 * [Dieter Steffmann](http://www.steffmann.de/wordpress/)
 * [The league of moveable type](https://www.theleagueofmoveabletype.com/)
+
+# Andere Seiten über Schriftarten
+
+* [Variable Fonts](https://v-fonts.com)
+* ['On Snot and fonts' by Luc Devroye](http://luc.devroye.org/fonts.html)
+* [](https://www.typografie.info/3/startseite/)
+
+# "Schriftgießereien" und Designer
+
+* [David Jonathan Ross](https://djr.com/)
+* [Rosetta Type](https://rosettatype.com/)
