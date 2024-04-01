@@ -14,7 +14,8 @@ displayinlist: false
 
 * [Variable Fonts](https://v-fonts.com)
 * ['On Snot and fonts' by Luc Devroye](http://luc.devroye.org/fonts.html)
-* [](https://www.typografie.info/3/startseite/)
+* [Typografie.info](https://www.typografie.info/3/startseite/)
+* [Letter Library](https://letterlibrary.org/)
 
 # "Schriftgießereien" und Designer
 
