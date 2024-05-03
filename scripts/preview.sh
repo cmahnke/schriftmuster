@@ -9,6 +9,8 @@ do
         DIR=`dirname "$POST"`
         if [ -r $DIR/front.jpg ] ; then
             IMAGE="$DIR/front.jpg"
+        elif [ -r $DIR/front.jxl ] ; then
+            IMAGE="$DIR/front.jxl"
         else
             IMAGE=`ls -1 $DIR/*.jpg | grep -v '/ogPreview.*' | head -1`
         fi

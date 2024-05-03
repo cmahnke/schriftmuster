@@ -11,7 +11,7 @@ $color-paper-dark: darken($color-paper, 4%);
 $color-paper-light: lighten($color-paper, 4%);
 @import "fonts/inconsolata";
 @import "icons";
-@import "ol";
+/* @import "ol"; */
 @import "ol-iiif";
 @import "share";
 @import "media-info";
