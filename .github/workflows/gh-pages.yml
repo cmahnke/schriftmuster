@@ -78,7 +78,8 @@ jobs:
           sshpass -e rsync -aP --size-only --delete --relative $(cat files.lst) $DEPLOY_USER@$DEPLOY_SERVER:$DEPLOY_PATH/schriftmuster/
           rm -f files.lst index.html
           cd ..
-          find content/post/ -name info.json -exec dirname {} \; | xargs rm -r
+          find content/post/ -name info.json -exec dirname {} \; | xargs -I {} find {} -mindepth 1 -type d -not -path '*/full*' | xargs rm -fr
+          #find content/post/ -name info.json -exec dirname {} \; | xargs rm -r
 
       - name: Generate Files
         env:
