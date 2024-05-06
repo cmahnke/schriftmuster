@@ -1,10 +1,9 @@
 ---
 title: "Der Tanz"
-date: 2020-12-22T17:18:43+01:00
+date: 2024-04-01T22:10:43+01:00
 type: single
 tags:
 - singlefind
-draft: true
 resources:
 - src: "front.jxl"
   name: front

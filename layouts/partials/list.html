@@ -72,8 +72,13 @@
 
           {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
-          {{- if or (eq $previewImg nil) (eq (string $previewImg.MediaType) "image/jxl") -}}
-            {{- $previewImg := partial "preview/preview-internal.html" (dict "context" . "fit" $fit "postProcess" false) -}}
+          {{- if and (eq $previewImg nil) (eq .Section "tags") -}}
+            {{- warnf "[list.html] Preview for tag %s is nil!" .RelPermalink -}}
+          {{- else if (eq $previewImg nil) -}}
+            {{- errorf "[list.html] Preview for post %s is nil!" .RelPermalink -}}
+          {{- else if eq (string $previewImg.MediaType) "image/jxl" -}}
+            {{ warnf "[list.html] %s is of type %s" $imgName (string $previewImg.MediaType) }}
+            {{- $previewImg = partial "preview/preview-internal.html" (dict "context" . "fit" $fit "postProcess" false) -}}
           {{- end -}}
 
 	        {{- if and (eq $previewImg nil) (eq $contextPath "") -}}
@@ -104,7 +109,7 @@
 
           <div class='post-summary'>
             <div class="summary-text">
-              {{ .Summary }}
+              {{ .Summary | plainify }}
             </div>
           	<div class="more">{{ i18n "readPost" }}</div>
           </div>
