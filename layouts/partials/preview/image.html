@@ -1,0 +1,9 @@
+{{- $context := .context -}}
+{{- $width := .width -}}
+{{- $height := .height -}}
+
+{{- $previewImg := "" -}}
+
+{{- $previewImg = partial "preview/preview-internal.html" (dict "context" $context "fit" nil "postProcess" true) -}}
+
+{{- return $previewImg -}}

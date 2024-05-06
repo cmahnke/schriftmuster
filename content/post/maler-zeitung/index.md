@@ -4,6 +4,7 @@ date: 2023-11-10T17:18:43+01:00
 type: single
 tags:
 - singlefind
+preview: true
 resources:
 - src: "page001.jpg"
   params:

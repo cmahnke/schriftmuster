@@ -4,6 +4,8 @@
   {{- $pages = where $pages "Path" "!=" "/post" -}}
 {{- end -}}
 
+{{- $debug := partialCached "partials/functions/debug/enabled.html" . -}}
+
 {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 <main class="list">
 	{{- range $paginator.Pages -}}
@@ -17,9 +19,9 @@
     <div class="list-entry paper-curl-right {{ .Params.type }}" style="{{ $style | safeCSS }}">
 
     <div class="workaround paper-curl-right">
-      {{- $context := "" -}}
+      {{- $contextPath := "" -}}
       {{- if and (ne .File nil) (ne .File.Dir nil) -}}
-        {{- $context = path.Dir .File.Path -}}
+        {{- $contextPath = path.Dir .File.Path -}}
       {{- end -}}
         <a class="post-link" href="{{ .Permalink }}">
           <div class="date">
@@ -46,16 +48,38 @@
           {{- else if eq .Params.type "book" -}}
             {{- $imgName = "front" -}}
           {{- else if eq .Params.type "single" -}}
-            {{- $imgName = (index .Params.resources 0).src -}}
+            {{- if isset .Params "preview" -}}
+              {{- if .Resources.GetMatch .Params.preview  -}}
+                {{- $imgName = .Params.preview -}}
+              {{- else -}}
+                {{- $imgName = "preview.png" -}}
+              {{- end -}}
+            {{- else -}}
+              {{- $imgName = (index .Params.resources 0).src -}}
+            {{- end -}}
+            {{- if $debug -}}
+            {{ warnf "[list.html] Using %s as list preview for %s" $imgName .RelPermalink }}
+            {{- end -}}
           {{- end -}}
 
-          {{- $imgLocation := path.Join $context $imgName -}}
+          {{- $imgLocation := path.Join $contextPath $imgName -}}
+          {{- $defaultWidth := 800 -}}
+          {{- $defaultHeight := 400 -}}
+
+          {{/* Preview */}}
+          {{/* Format: width x height */}}
+          {{- $fit := printf "%dx%d" $defaultWidth $defaultHeight -}}
+
           {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
 
-	        {{- if and (eq $previewImg nil) (eq $context "") -}}
-            {{ warnf "[list.html] Can't find image '%s' for context '%s'" $imgLocation $context}}
+          {{- if or (eq $previewImg nil) (eq (string $previewImg.MediaType) "image/jxl") -}}
+            {{- $previewImg := partial "preview/preview-internal.html" (dict "context" . "fit" $fit "postProcess" false) -}}
+          {{- end -}}
+
+	        {{- if and (eq $previewImg nil) (eq $contextPath "") -}}
+            {{ warnf "[list.html] Can't find image '%s' for context '%s'" $imgLocation $contextPath}}
           {{- else if (eq $previewImg nil) -}}
-            {{ errorf "[list.html] Can't find image '%s' for context '%s'" $imgLocation $context}}
+            {{ errorf "[list.html] Can't find image '%s' for context '%s'" $imgLocation $contextPath}}
 
           {{- else -}}
             {{- if gt $previewImg.Width 800 -}}
@@ -72,10 +96,10 @@
                 >
               </div>
             {{- else -}}
-              {{ warnf "Can't find image %s for context %s" $imgLocation $context}}
+              {{ warnf "[list.html] Can't find image '%s' for context '%s'" $imgLocation $contextPath}}
             {{- end -}}
           {{- else -}}
-            {{ warnf "Ignoring image %s for context %s in 'partials/list.html'" $imgLocation $context}}
+            {{ warnf "[list.html] Ignoring image %s for context %s in 'partials/list.html'" $imgLocation $contextPath}}
           {{- end -}}
 
           <div class='post-summary'>
