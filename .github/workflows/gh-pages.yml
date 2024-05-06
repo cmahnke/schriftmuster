@@ -109,6 +109,14 @@ jobs:
       - name: Archive links
         run: python ./themes/projektemacher-base/scripts/archive.py -d docs/ -e schriftmuster.projektemacher.org,projektemacher.org
 
+      - name: Cleanup Build
+        run: |
+          echo "Removing files not needed to be deployed on GitHub Pages"
+          #find docs -type f -size +10M -name '*.jpg' -print -exec rm {} \;
+          find docs -type f -name '*.jxl' -print -exec rm {} \;
+          find docs -type f -name 'vips-properties.xml' -print -exec rm {} \;
+          find docs -type f -path '*/full/full/0/default.jpg' -print -exec rm {} \;
+
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
