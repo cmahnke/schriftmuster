@@ -29,3 +29,4 @@ content/**/ogPreview.en/
 **/vips-properties.xml
 assets/css/**
 static/fonts/**
+data/stats.json
