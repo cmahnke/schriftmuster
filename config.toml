@@ -7,6 +7,7 @@ DefaultContentLanguage = "de"
 theme = ["projektemacher-base"]
 copyright = '<a href="https://projektemacher.org/" target="_blank">Projektemacher</a>'
 timeout = 60
+enableGitInfo = true
 
 [languages]
     [languages.de]
