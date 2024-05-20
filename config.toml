@@ -135,3 +135,6 @@ timeout = 60
           rightAngleQuote = '&raquo;'
           rightDoubleQuote = '&rdquo;'
           rightSingleQuote = '&rsquo;'
+
+[build]
+  writeStats = true
