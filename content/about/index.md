@@ -31,6 +31,10 @@ Für die Darstellung der Digitalisate wird [OpenLayers](https://openlayers.org/)
 
 Die Seite wird von [GitHub](https://github.com/) gehosted.
 
+# Datenschutzerklärung
+
+Die Datenschutzerklärung ist [hier](/privacy) verfügbar.
+
 # Kontakt
 
 "Schriftmuster" ist ein Projekt von **[Christian Mahnke](https://christianmahnke.de/)**.
