@@ -734,3 +734,8 @@ body.about {
         color: lighten($color-link-text, 20%);
     }
 }
+
+p.small {
+    font-size: smaller;
+    text-align: end;
+}
