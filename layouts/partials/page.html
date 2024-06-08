@@ -48,15 +48,17 @@
       <div class="post-content">
           {{- .Content -}}
 
-          <div class="post-relations">
-              {{- if or (eq .Kind "section") (ne $currentSectionDir "")  -}}
-                  {{- partial "post-relations" . -}}
-              {{- else -}}
-                  <div class="section-parent">
-                      {{- i18n "singleFind" -}}
-                  </div>
-              {{- end -}}
-          </div>
+            {{- if not .Params.metaPage -}}
+                <div class="post-relations">
+                    {{- if or (eq .Kind "section") (ne $currentSectionDir "")  -}}
+                        {{- partial "post-relations" . -}}
+                    {{- else -}}
+                        <div class="section-parent">
+                            {{- i18n "singleFind" -}}
+                        </div>
+                    {{- end -}}
+                </div>
+            {{- end -}}
 
             <div class="iiif post-images">
                 {{- $contextPath := "" -}}
