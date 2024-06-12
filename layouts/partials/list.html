@@ -25,7 +25,12 @@
       {{- end -}}
         <a class="post-link" href="{{ .Permalink }}">
           <div class="date">
-            <span class="date">{{ partial "date.html" . }}</span>
+            <span class="date">
+              {{- .Date | time.Format ":date_full" -}}
+              {{/*
+                {{ partial "date.html" . }}
+              */}}
+            </span>
           </div>
           <div class="post-header">
             {{- $title := "" -}}
