@@ -16,6 +16,7 @@ displayinlist: false
 * ['On Snot and fonts' by Luc Devroye](http://luc.devroye.org/fonts.html)
 * [Typografie.info](https://www.typografie.info/3/startseite/)
 * [Letter Library](https://letterlibrary.org/)
+* [Handschriften für Grundschulen](https://primarium.info/)
 
 # "Schriftgießereien" und Designer
 

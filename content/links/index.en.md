@@ -16,6 +16,8 @@ displayinlist: false
 * ['On Snot and fonts' by Luc Devroye](http://luc.devroye.org/fonts.html)
 * [Typografie.info](https://www.typografie.info/3/startseite/) (German)
 * [Letter Library](https://letterlibrary.org/) (German)
+* [Handwriting for primary schools](https://primarium.info/)
+
 
 # Foundries and designers
 
