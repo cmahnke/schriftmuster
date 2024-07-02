@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Schriftmuster</title>
+    <link>https://schriftmuster.projektemacher.org/tags/</link>
+    <description>Recent content in Tags on Schriftmuster</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <copyright>&lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Projektemacher&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 02 Jul 2024 08:11:03 +0200</lastBuildDate>
+    <atom:link href="https://schriftmuster.projektemacher.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Singlefind</title>
+      <link>https://schriftmuster.projektemacher.org/tags/singlefind/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/tags/singlefind/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Font</title>
+      <link>https://schriftmuster.projektemacher.org/tags/font/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/tags/font/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://schriftmuster.projektemacher.org/tags/book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postcard</title>
+      <link>https://schriftmuster.projektemacher.org/tags/postcard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/tags/postcard/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
