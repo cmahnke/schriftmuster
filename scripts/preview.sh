@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 PREVIEW_WIDTH="800x"
 #PREVIEW_WIDTH_MOBILE="320x"
@@ -12,7 +12,11 @@ do
         elif [ -r $DIR/front.jxl ] ; then
             IMAGE="$DIR/front.jxl"
         else
-            IMAGE=`ls -1 $DIR/*.jpg | grep -v '/ogPreview.*' | head -1`
+            if ls *.jpg >/dev/null 2>&1 ; then
+                IMAGE=`ls -1 $DIR/*.jpg | grep -v '/ogPreview.*' | head -1`
+            else
+                IMAGE=`ls -1 $DIR/*.jxl | grep -v '/ogPreview.*' | head -1`
+            fi
         fi
         echo "Scaling $IMAGE to $PREVIEW_WIDTH"
         if [ ! -f $DIR/preview.png ] ; then
