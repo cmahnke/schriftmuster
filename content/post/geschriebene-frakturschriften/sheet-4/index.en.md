@@ -1,0 +1,13 @@
+---
+title: "Sheet 4"
+date: 2024-08-27T18:47:43+01:00
+type: font
+weight: 4
+tags:
+- Font
+resources:
+- src: "page004.jxl"
+  params:
+    iiif: page004/info.json
+    class: sheet
+---
