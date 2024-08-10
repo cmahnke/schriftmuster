@@ -19,7 +19,7 @@ resources:
 - src: "back.jxl"
   name: back
   params:
-    iiif: front/info.json
+    iiif: back/info.json
     class: order-2
 ---
 Diesmal keine Druckschrift, aber immerhin eine Fraktur- Variante. In Zukunft werden noch weitere Beispiele für Plakat- und Schildermaler veröffentlicht...

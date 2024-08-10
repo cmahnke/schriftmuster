@@ -6,9 +6,9 @@ weight: 2
 tags:
 - Font
 resources:
-- src: "page001.jxl"
+- src: "page002.jxl"
   name: preview
   params:
-    iiif: page001/info.json
+    iiif: page002/info.json
     class: sheet
 ---
