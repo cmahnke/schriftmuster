@@ -1,8 +1,7 @@
 ---
 title: "Sheet 11"
-date: 2024-10-07T18:47:43+01:00
+date: 2024-10-14T18:47:43+01:00
 type: font
-weight: 11
 tags:
 - Font
 resources:
