@@ -18,7 +18,7 @@
                 {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
                 <div class="list-entry paper-curl-right" style="{{ $style | safeCSS }}">
-                    {{- $context := path.Dir .File.Path -}}
+                    {{- $contextDir := path.Dir .File.Path -}}
                     <div class="workaround paper-curl-right">
                         {{- $class := "" -}}
                         {{- $imgName := "" -}}
@@ -29,8 +29,11 @@
                             {{- $imgName = "front" -}}
                             {{- $class = "book" -}}
                         {{- end -}}
-                        {{- $imgLocation := path.Join $context $imgName -}}
-                        {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
+                        {{- $imgLocation := path.Join $contextDir $imgName -}}
+                        {{/*
+                          {{- $previewImg := ((.Resources.ByType "image").GetMatch $imgName) -}}
+                        */}}
+                        {{- $previewImg := partial "preview/preview-internal.html" (dict "context" .) -}}
 
             			      {{- if eq $previewImg nil -}}
                             {{ warnf "Can't find image %s" $imgLocation }}
