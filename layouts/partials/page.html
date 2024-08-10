@@ -27,9 +27,6 @@
               <div class="date">
                   <span class="date">
                     {{- .Date | time.Format ":date_full" -}}
-                    {{/*
-                      {{ partial "date.html" . }}
-                    */}}
                   </span>
               </div>
           </div>
@@ -83,7 +80,7 @@
                           {{- else if eq $.Params.type "single" -}}
                               {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
                           {{- else -}}
-                              {{ errorf "Unable to render content for post %s - maybe no resources given." $pageURL }}
+                              {{ errorf "[page.html] Unable to render content for post %s - maybe no resources given." $pageURL }}
                           {{- end -}}
                         {{- end -}}
                     {{- end -}}
