@@ -7,6 +7,7 @@ tags:
 - Font
 resources:
 - src: "page012.jxl"
+  name: preview
   params:
     iiif: page012/info.json
     class: sheet
