@@ -12,7 +12,7 @@ do
         elif [ -r $DIR/front.jxl ] ; then
             IMAGE="$DIR/front.jxl"
         else
-            if ls *.jpg >/dev/null 2>&1 ; then
+            if ls $DIR/*.jpg >/dev/null 2>&1 ; then
                 IMAGE=`ls -1 $DIR/*.jpg | grep -v '/ogPreview.*' | head -1`
             else
                 IMAGE=`ls -1 $DIR/*.jxl | grep -v '/ogPreview.*' | head -1`
