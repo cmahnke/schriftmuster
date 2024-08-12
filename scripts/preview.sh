@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+DOCKER_IMAGE="ghcr.io/cmahnke/jpeg-xl-action/imagemagick:latest"
+DOCKER_PREFIX="docker run -w ${PWD} -v ${PWD}:${PWD} ${DOCKER_IMAGE} "
+
 PREVIEW_WIDTH="800x"
 #PREVIEW_WIDTH_MOBILE="320x"
 
@@ -24,8 +27,14 @@ do
             #echo "Scaling $IMAGE to $PREVIEW_WIDTH_MOBILE for mobile clients"
             #convert $IMAGE -resize "$PREVIEW_WIDTH_MOBILE" $DIR/preview-mobile.png
             if [ -n "$IMAGE" ] ; then
-                echo "Creating preview for $IMAGE"
-                convert $DIR/preview.png -alpha set -virtual-pixel transparent  -channel A -blur 0x8  -level 50%,100% +channel $DIR/preview.png
+                if [[ $IMAGE == *jxl ]] ; then
+                    CMD="$DOCKER_PREFIX convert"
+                else
+                    CMD="convert"
+                fi
+                echo "Creating preview for $IMAGE (using '$CMD')"
+
+                $CMD $DIR/preview.png -alpha set -virtual-pixel transparent  -channel A -blur 0x8  -level 50%,100% +channel $DIR/preview.png
             fi
         fi
         #echo "Creating mobile preview for $IMAGE"
