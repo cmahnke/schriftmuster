@@ -23,17 +23,16 @@ do
         fi
         echo "Scaling $IMAGE to $PREVIEW_WIDTH"
         if [ ! -f $DIR/preview.png ] ; then
-            convert $IMAGE -resize "$PREVIEW_WIDTH" $DIR/preview.png
+            if [[ $IMAGE == *jxl ]] ; then
+                CMD="$DOCKER_PREFIX magick"
+            else
+                CMD="convert"
+            fi
+            $CMD $IMAGE -resize "$PREVIEW_WIDTH" $DIR/preview.png
             #echo "Scaling $IMAGE to $PREVIEW_WIDTH_MOBILE for mobile clients"
             #convert $IMAGE -resize "$PREVIEW_WIDTH_MOBILE" $DIR/preview-mobile.png
             if [ -n "$IMAGE" ] ; then
-                if [[ $IMAGE == *jxl ]] ; then
-                    CMD="$DOCKER_PREFIX magick"
-                else
-                    CMD="convert"
-                fi
                 echo "Creating preview for $IMAGE (using '$CMD')"
-
                 $CMD $DIR/preview.png -alpha set -virtual-pixel transparent  -channel A -blur 0x8  -level 50%,100% +channel $DIR/preview.png
             fi
         fi
