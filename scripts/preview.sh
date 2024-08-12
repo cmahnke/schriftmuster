@@ -28,7 +28,7 @@ do
             #convert $IMAGE -resize "$PREVIEW_WIDTH_MOBILE" $DIR/preview-mobile.png
             if [ -n "$IMAGE" ] ; then
                 if [[ $IMAGE == *jxl ]] ; then
-                    CMD="$DOCKER_PREFIX convert"
+                    CMD="$DOCKER_PREFIX magick"
                 else
                     CMD="convert"
                 fi
