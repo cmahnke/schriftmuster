@@ -18,4 +18,4 @@ resources:
 Die Rückseite des ["Führer durch Magdeburg"](https://backsteinexpressionismus.projektemacher.org/post/fuehrer-durch-magdeburg) bietet eine sehr schön typografisch umgesetzte Werbung für das Kaufhaus Klavehn. <!--more-->
 Wie die Anordnung der Buchstaben andeutet, wurde dort besonders Kleidung angeboten.
 
-<div class="source">Gefunden im <a href="https://antiquariat-pretzsch.de/">Antiquariat Pretzsch N°1</a>.</div>
+<div class=‘source’>Gefunden im <a href="https://antiquariat-pretzsch.de/">Antiquariat Pretzsch N°1</a>.</div>

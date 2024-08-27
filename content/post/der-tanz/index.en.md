@@ -24,6 +24,6 @@ resources:
     iiif: page001/info.json
 ---
 
-Die Schrift [Ehmcke Antiqua](https://www.typografie.info/3/artikel.htm/wissen/ehmcke-antiqua/) ist von [Fritz Helmuth Ehmcke](https://de.wikipedia.org/wiki/Fritz_Helmuth_Ehmcke).
+The font [Ehmcke Antiqua](https://www.typografie.info/3/artikel.htm/wissen/ehmcke-antiqua/) is by [Fritz Helmuth Ehmcke](https://de.wikipedia.org/wiki/Fritz_Helmuth_Ehmcke).
 <!--more-->
-Es existiert eine Neuinterpretation names [Antiqua Roman](https://yuanchenjiang.cargo.site/Antiqua-Roman-Typeface) von [Yuanchen Jiang](https://yuanchenjiang.cargo.site/)
+There is a new interpretation called [Antiqua Roman](https://yuanchenjiang.cargo.site/Antiqua-Roman-Typeface) by [Yuanchen Jiang](https://yuanchenjiang.cargo.site/)

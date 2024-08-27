@@ -6,6 +6,9 @@ iiifManifest: ./manifest.json
 description: 'Das Buch "Die Weihnachtsgeschichte" von Rudolf Koch erschien 1936 im Insel-Verlag, Leipzig. <a class="worldcat" href="http://www.worldcat.org/oclc/476816936">&nbsp;</a>'
 type: book
 outputs:
+  - iiif-manifest
+  - html
+outputs:
 - html
 - iiif
 tags:

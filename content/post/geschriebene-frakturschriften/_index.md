@@ -3,6 +3,9 @@ title: "Geschriebene Frakturschriften"
 date: 2024-07-30T22:30:43+01:00
 description: 'Geschriebene Frakturschriften " von Wilhelm Krause erschien 1922 im Verlag Otto Maier, Ravensburg. <a class="worldcat" href="http://www.worldcat.org/oclc/72584478">&nbsp;</a>'
 type: book
+outputs:
+  - iiif-manifest
+  - html
 tags:
 - Book
 resources:

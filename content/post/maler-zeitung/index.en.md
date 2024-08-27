@@ -19,8 +19,8 @@ resources:
   params:
     iiif: page003/info.json
 ---
-Undatierte Beilagen der Malerzeitung
+Undated supplements to the Malerzeitung.
 <!--more-->
 <div class="source">
-Gefunden bei <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
+Found at <a target="_blank" href="http://zeitzeug.de/">Zeitzeug</a>.
 </div>

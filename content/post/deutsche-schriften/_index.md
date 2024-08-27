@@ -3,6 +3,9 @@ title: "Deutsche Schriften"
 date: 2021-03-01T22:30:43+01:00
 description: 'Deutsche Schriften " erschien ca. 1930 als Musterbuch der Schriftgießerei D. Stempel Aktien-Gesellschaft, Frankfurt. <a class="worldcat" href="http://www.worldcat.org/oclc/724064772">&nbsp;</a>'
 type: book
+outputs:
+  - iiif-manifest
+  - html
 tags:
 - Book
 resources:
