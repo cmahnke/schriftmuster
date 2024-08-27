@@ -53,9 +53,9 @@
           {{- else if eq .Params.type "book" -}}
             {{- $imgName = "front" -}}
           {{- else if eq .Params.type "single" -}}
-            {{- if isset .Params "preview" -}}
-              {{- if .Resources.GetMatch .Params.preview  -}}
-                {{- $imgName = .Params.preview -}}
+            {{- if isset .Params "view" -}}
+              {{- if .Resources.GetMatch .Params.view  -}}
+                {{- $imgName = .Params.view -}}
               {{- else -}}
                 {{- $imgName = "preview.png" -}}
               {{- end -}}

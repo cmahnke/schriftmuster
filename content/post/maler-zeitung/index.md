@@ -7,7 +7,7 @@ outputs:
   - html
 tags:
 - singlefind
-preview: true
+view: true
 resources:
 - src: "page001.jpg"
   params:
