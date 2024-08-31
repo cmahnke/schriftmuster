@@ -164,3 +164,8 @@ timeout = "180s"
 
 [build]
   writeStats = true
+
+[[cascade]]
+  outputs = ['html','rss', 'iiif-collection']
+  [cascade._target]
+    kind = "term"
