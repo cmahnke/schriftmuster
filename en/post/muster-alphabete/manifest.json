@@ -1,0 +1,484 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/en/post/muster-alphabete/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "en": [
+      "This collection \"Muster-Alphabete verschiedener Schriftarten in den neuesten Formen\", published around 1885 by R. Bauer, Leipzig. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/67320154\"\u003e\u0026nbsp;\u003c/a\u003e"
+    ],
+      "de": [
+        "Die Sammlung \"Muster-Alphabete verschiedener Schriftarten in den neuesten Formen\" erschien ca. 1885 bei R. Bauer, Leipzig. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/67320154\"\u003e\u0026nbsp;\u003c/a\u003e"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/front_hu7416425808357704419.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 199,
+    "width": 300
+  }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/en/post/muster-alphabete/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "en": [
+          "Schriftmuster: Muster Alphabete"
+        ],
+          "de": [
+            "Schriftmuster: Muster Alphabete"
+          ]
+        }
+  }
+],"label": {
+    "en": [
+      "Muster Alphabete"
+    ],
+      "de": [
+        "Muster Alphabete"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 3548,
+            "width": 5342,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/front_hu7416425808357704419.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 199,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3548,
+                  "width": 5342,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altdeutsche-initialen/canvas/page012",
+          "type": "Canvas","label": {"none":["page012"]},"height": 3537,
+            "width": 5152,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/altdeutsche-initialen/page012_hu13446033017414706823.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 206,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altdeutsche-initialen/annotation/page012",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altdeutsche-initialen/annotation/page012/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altdeutsche-initialen/page012/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3537,
+                  "width": 5152,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altdeutsche-initialen/page012",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altdeutsche-initialen/canvas/page012"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-stickerei-schrift/canvas/page011",
+          "type": "Canvas","label": {"none":["page011"]},"height": 3549,
+            "width": 5140,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/verzierte-stickerei-schrift/page011_hu13347470830592038124.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 207,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-stickerei-schrift/annotation/page011",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-stickerei-schrift/annotation/page011/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-stickerei-schrift/page011/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3549,
+                  "width": 5140,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-stickerei-schrift/page011",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-stickerei-schrift/canvas/page011"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/canvas/page009",
+          "type": "Canvas","label": {"none":["page009"]},"height": 3514,
+            "width": 4906,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/moderne-schriften/page009_hu11106581133843156355.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 215,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/annotation/page009",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/annotation/page009/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/page009/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3514,
+                  "width": 4906,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/page009",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/canvas/page009"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/canvas/page010",
+          "type": "Canvas","label": {"none":["page010"]},"height": 3513,
+            "width": 4904,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/moderne-schriften/page010_hu13898007707943481302.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 215,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/annotation/page010",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/annotation/page010/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/page010/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3513,
+                  "width": 4904,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/page010",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/moderne-schriften/canvas/page010"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/canvas/page008",
+          "type": "Canvas","label": {"none":["page008"]},"height": 3537,
+            "width": 4905,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/page008_hu7619495562388235439.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 216,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/annotation/page008",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/annotation/page008/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/page008/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3537,
+                  "width": 4905,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/page008",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/roemische-schriften-in-amerikanischer-art/canvas/page008"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-druckschrift/canvas/page007",
+          "type": "Canvas","label": {"none":["page007"]},"height": 3535,
+            "width": 4923,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/deutsche-druckschrift/page007_hu13334345939857512261.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 215,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-druckschrift/annotation/page007",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-druckschrift/annotation/page007/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-druckschrift/page007/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3535,
+                  "width": 4923,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-druckschrift/page007",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-druckschrift/canvas/page007"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altgothische-fantasie-schrift/canvas/page006",
+          "type": "Canvas","label": {"none":["page006"]},"height": 3546,
+            "width": 4916,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/altgothische-fantasie-schrift/page006_hu11447853688493861027.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 216,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altgothische-fantasie-schrift/annotation/page006",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altgothische-fantasie-schrift/annotation/page006/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altgothische-fantasie-schrift/page006/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3546,
+                  "width": 4916,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altgothische-fantasie-schrift/page006",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/altgothische-fantasie-schrift/canvas/page006"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-gothisch/canvas/page005",
+          "type": "Canvas","label": {"none":["page005"]},"height": 3536,
+            "width": 4945,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/verzierte-gothisch/page005_hu8954069229489967707.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 215,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-gothisch/annotation/page005",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-gothisch/annotation/page005/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-gothisch/page005/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3536,
+                  "width": 4945,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-gothisch/page005",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/verzierte-gothisch/canvas/page005"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/canvas/page003",
+          "type": "Canvas","label": {"none":["page003"]},"height": 3537,
+            "width": 4979,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/romanisches-alphabet/page003_hu1988014920091618810.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 213,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/annotation/page003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/annotation/page003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/page003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3537,
+                  "width": 4979,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/page003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/canvas/page003"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/canvas/page004",
+          "type": "Canvas","label": {"none":["page004"]},"height": 3550,
+            "width": 4935,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/romanisches-alphabet/page004_hu7188079820596145111.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 216,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/annotation/page004",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/annotation/page004/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/page004/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3550,
+                  "width": 4935,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/page004",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/romanisches-alphabet/canvas/page004"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/canvas/page001",
+          "type": "Canvas","label": {"none":["page001"]},"height": 3534,
+            "width": 4988,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/deutsche-plakatschrift/page001_hu17896794503146988024.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 213,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/annotation/page001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/annotation/page001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/page001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3534,
+                  "width": 4988,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/page001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/canvas/page001"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/canvas/page002",
+          "type": "Canvas","label": {"none":["page002"]},"height": 3548,
+            "width": 4976,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/deutsche-plakatschrift/page002_hu17445348827003172509.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 214,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/annotation/page002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/annotation/page002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/page002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3548,
+                  "width": 4976,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/page002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/muster-alphabete/deutsche-plakatschrift/canvas/page002"
+            }]
+          }]
+       }]
+}
