@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "normalize";
 $font-body-font: 'Inconsolata' !default;
 $color-body-text: #333333 !default;
@@ -7,8 +9,8 @@ $color-link-hover: #333333 !default;
 $color-link-active: #333333 !default;
 $color-header-text: #333333 !default;
 $color-paper: hsl(48, 93%, 89%);
-$color-paper-dark: darken($color-paper, 4%);
-$color-paper-light: lighten($color-paper, 4%);
+$color-paper-dark: color.adjust($color-paper, $lightness: -4%);
+$color-paper-light: color.adjust($color-paper, $lightness: 4%);
 @import "fonts/inconsolata";
 @import "icons";
 /* @import "ol"; */
@@ -231,7 +233,7 @@ main.list {
     width: fit-content;
     max-width: 75%;
     margin: auto;
-    border-bottom: lighten($color-body-text, 55%) solid 1px;
+    border-bottom: color.adjust($color-body-text, $lightness: 55%) solid 1px;
     margin-bottom: 1em;
 
     @media (max-width : 37.5em) {
@@ -429,7 +431,7 @@ main.list {
         .more {
             max-width: 35vw;
             width: 35%;
-            border-top: solid 6px darken(#aaa6ab, 40%);
+            border-top: solid 6px color.adjust(#aaa6ab, $lightness: -40%);
             padding-top: 1.2em;
             text-align: center;
             display: block;
@@ -747,10 +749,10 @@ body.about {
     font-size: small;
     text-align: right;
     margin: 1.5em;
-    color: lighten($color-body-text, 20%);
+    color: color.adjust($color-body-text, $lightness: 20%);
 
     a {
-        color: lighten($color-link-text, 20%);
+        color: color.adjust($color-link-text, $lightness: 20%);
     }
 }
 
