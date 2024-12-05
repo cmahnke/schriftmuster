@@ -1,0 +1,546 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "de": [
+      "Geschriebene Frakturschriften \" von Wilhelm Krause erschien 1922 im Verlag Otto Maier, Ravensburg. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/72584478\"\u003e\u0026nbsp;\u003c/a\u003e"
+    ],
+      "en": [
+        "Geschriebene Frakturschriften \" by Wilhelm Krause published 1922 by Verlag Otto Maier, Ravensburg. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/72584478\"\u003e\u0026nbsp;\u003c/a\u003e"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/front/full/full/0/default_hu500752444529252104.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 231,
+    "width": 300
+  }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Geschriebene Frakturschriften"
+        ],
+          "en": [
+            "Schriftmuster: Geschriebene Frakturschriften"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Geschriebene Frakturschriften"
+    ],
+      "en": [
+        "Geschriebene Frakturschriften"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 4475,
+            "width": 5822,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/front/full/full/0/default_hu500752444529252104.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 231,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4475,
+                  "width": 5822,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/canvas/front-verso",
+          "type": "Canvas","label": {"de":["ungezählt"],"en":["uncounted"]},"height": 4472,
+            "width": 2065,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/side/full/full/0/default_hu1524211502049432519.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 650,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/annotation/side",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/annotation/side/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/side/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4472,
+                  "width": 2065,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/side",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/canvas/front-verso"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/canvas/back",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 4488,
+            "width": 5887,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/back/full/full/0/default_hu7177826917188791821.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 229,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/annotation/back",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/annotation/back/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/back/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4488,
+                  "width": 5887,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/back",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/canvas/back"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-12/canvas/preview",
+          "type": "Canvas","label": {"none":["page012"]},"height": 4198,
+            "width": 5621,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-12/page012/full/full/0/default_hu2152962766729335207.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 224,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-12/annotation/page012",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-12/annotation/page012/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-12/page012/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4198,
+                  "width": 5621,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-12/page012",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-12/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-11/canvas/preview",
+          "type": "Canvas","label": {"none":["page011"]},"height": 4206,
+            "width": 5656,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-11/page011/full/full/0/default_hu15080572460575750823.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 223,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-11/annotation/page011",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-11/annotation/page011/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-11/page011/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4206,
+                  "width": 5656,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-11/page011",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-11/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-10/canvas/preview",
+          "type": "Canvas","label": {"none":["page010"]},"height": 4253,
+            "width": 5641,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-10/page010/full/full/0/default_hu17824844751377741059.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 226,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-10/annotation/page010",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-10/annotation/page010/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-10/page010/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4253,
+                  "width": 5641,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-10/page010",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-10/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-9/canvas/preview",
+          "type": "Canvas","label": {"none":["page009"]},"height": 4216,
+            "width": 5621,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-9/page009/full/full/0/default_hu12112710875306968430.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 225,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-9/annotation/page009",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-9/annotation/page009/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-9/page009/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4216,
+                  "width": 5621,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-9/page009",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-9/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-8/canvas/preview",
+          "type": "Canvas","label": {"none":["page008"]},"height": 4250,
+            "width": 5616,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-8/page008/full/full/0/default_hu1056168192780635008.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 227,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-8/annotation/page008",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-8/annotation/page008/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-8/page008/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4250,
+                  "width": 5616,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-8/page008",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-8/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-7/canvas/preview",
+          "type": "Canvas","label": {"none":["page007"]},"height": 4215,
+            "width": 5631,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-7/page007/full/full/0/default_hu4528654908703076362.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 225,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-7/annotation/page007",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-7/annotation/page007/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-7/page007/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4215,
+                  "width": 5631,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-7/page007",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-7/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-6/canvas/preview",
+          "type": "Canvas","label": {"none":["page006"]},"height": 4252,
+            "width": 5640,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-6/page006/full/full/0/default_hu8213101790836183046.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 226,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-6/annotation/page006",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-6/annotation/page006/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-6/page006/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4252,
+                  "width": 5640,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-6/page006",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-6/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-5/canvas/preview",
+          "type": "Canvas","label": {"none":["page005"]},"height": 4201,
+            "width": 5624,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-5/page005/full/full/0/default_hu18092202733264618297.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 224,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-5/annotation/page005",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-5/annotation/page005/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-5/page005/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4201,
+                  "width": 5624,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-5/page005",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-5/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-4/canvas/preview",
+          "type": "Canvas","label": {"none":["page004"]},"height": 4245,
+            "width": 5636,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-4/page004/full/full/0/default_hu17786106410061089813.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 226,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-4/annotation/page004",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-4/annotation/page004/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-4/page004/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4245,
+                  "width": 5636,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-4/page004",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-4/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-3/canvas/preview",
+          "type": "Canvas","label": {"none":["page003"]},"height": 4260,
+            "width": 5630,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-3/page003/full/full/0/default_hu10821711865997103784.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 227,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-3/annotation/page003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-3/annotation/page003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-3/page003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4260,
+                  "width": 5630,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-3/page003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-3/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-2/canvas/preview",
+          "type": "Canvas","label": {"none":["page002"]},"height": 4247,
+            "width": 5636,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-2/page002/full/full/0/default_hu13583166058062146787.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 226,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-2/annotation/page002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-2/annotation/page002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-2/page002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4247,
+                  "width": 5636,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-2/page002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-2/canvas/preview"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-1/canvas/preview",
+          "type": "Canvas","label": {"none":["page001"]},"height": 4237,
+            "width": 5639,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/sheet-1/page001/full/full/0/default_hu9449372618881393207.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 225,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-1/annotation/page001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-1/annotation/page001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-1/page001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4237,
+                  "width": 5639,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-1/page001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/geschriebene-frakturschriften/sheet-1/canvas/preview"
+            }]
+          }]
+       }]
+}
