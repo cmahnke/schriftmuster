@@ -125,4 +125,4 @@ Da die Adventszeit beginnt, ein passendes Einzelfundstück: Die Weihnachtsgeschi
 
 <!--more-->
 Falls sich ein Leser fragt, warum die Weihnachtsgeschichte auf diesem Blog erscheint:
-Der Autor des Buches ist der Typograph [Rudolf Koch](https://en.wikipedia.org/wiki/Rudolf_Koch), ab Frühjahr 2021 werden hier einige seiner (Fraktur-) Schriften präsentiert. Er ist auch der Schöpfer der Schrift [Neuland](https://en.wikipedia.org/wiki/Neuland) ist, die für die Überschriften im Schwesterblog [backsteinexpressionismus](https://backsteinexpressionismus.projektemacher.org/) zum Einsatz kommt.
+Der Autor des Buches ist der Typograph [Rudolf Koch](https://de.wikipedia.org/wiki/Rudolf_Koch_(Schriftk%C3%BCnstler)), ab Frühjahr 2021 werden hier einige seiner (Fraktur-) Schriften präsentiert. Er ist auch der Schöpfer der Schrift [Neuland](https://en.wikipedia.org/wiki/Neuland) ist, die für die Überschriften im Schwesterblog [backsteinexpressionismus](https://backsteinexpressionismus.projektemacher.org/) zum Einsatz kommt.
