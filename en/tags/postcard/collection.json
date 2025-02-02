@@ -1,0 +1,40 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://schriftmuster.projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "en": [
+        "Schriftmuster"
+      ],
+        "de": [
+          ""
+        ]
+      },
+  "items": [{
+        "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/front_hu_bedad25081e805.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 453,
+    "width": 300
+  },{
+        "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/front.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 3196,
+        "width": 2117,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/en/post/postkarte-neujahr/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "en": [
+            "Viel Glück und Freude im Neuen Jahre"
+          ],
+                "de": [
+                  "Viel Glück und Freude im Neuen Jahre"
+                ]}
+      }]
+}
