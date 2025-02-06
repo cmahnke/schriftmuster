@@ -1,0 +1,176 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/page001_hu_2aca8bb8232b5867.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 414,
+    "width": 300
+  },{
+        "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/page001.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 8377,
+        "width": 6063,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page001",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Malerzeitung"
+        ],
+          "en": [
+            "Schriftmuster: Malerzeitung"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Malerzeitung"
+    ],
+      "en": [
+        "Malerzeitung"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/canvas/page001",
+          "type": "Canvas","label": {"none":["page001"]},"height": 8377,
+            "width": 6063,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/page001_hu_2aca8bb8232b5867.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 414,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/annotation/page001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/annotation/page001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 8377,
+                  "width": 6063,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/canvas/page001"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/canvas/page002",
+          "type": "Canvas","label": {"none":["page002"]},"height": 6064,
+            "width": 8419,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/page002_hu_593f6459f03f3f59.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 216,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/annotation/page002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/annotation/page002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6064,
+                  "width": 8419,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/canvas/page002"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/canvas/page003",
+          "type": "Canvas","label": {"none":["page003"]},"height": 6108,
+            "width": 8370,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/page003_hu_d6c5347e55f870b1.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 219,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/annotation/page003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/annotation/page003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6108,
+                  "width": 8370,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/canvas/page003"
+            }]
+          }]
+       }]
+}
