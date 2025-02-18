@@ -1,0 +1,156 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://schriftmuster.projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Schriftmuster"
+      ],
+        "en": [
+          "Schriftmuster"
+        ]
+      },
+  "items": [{
+        "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/geschriebene-frakturschriften/front/full/full/0/default_hu_c22716d4f9b17c87.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 231,
+    "width": 300
+  }],"label": {
+          "de": [
+            "Geschriebene Frakturschriften"
+          ],
+                "en": [
+                  "Geschriebene Frakturschriften"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/deutsche-schriften/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/deutsche-schriften/front_hu_8aeaa521d317ee36.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 209,
+    "width": 300
+  }],"label": {
+          "de": [
+            "Deutsche Schriften"
+          ],
+                "en": [
+                  "Deutsche Schriften"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/alphabete-und-zierschriften/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/alphabete-und-zierschriften/front_hu_d4466c59e30e00b.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 208,
+    "width": 300
+  }],"label": {
+          "de": [
+            "Alphabete und Zierschriften"
+          ],
+                "en": [
+                  "Alphabete und Zierschriften"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/alphabete/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/alphabete/front_hu_3f1ceab62c7dc5d2.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 212,
+    "width": 300
+  }],"label": {
+          "de": [
+            "Alphabete"
+          ],
+                "en": [
+                  "Alphabete"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front_hu_89fd0340e5989959.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 430,
+    "width": 300
+  },{
+        "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6539,
+        "width": 4561,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Die Weihnachtsgeschichte"
+          ],
+                "en": [
+                  "Die Weihnachtsgeschichte"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/front_hu_29513541cc231495.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 230,
+    "width": 300
+  }],"label": {
+          "de": [
+            "Moderne Lateinschriften"
+          ],
+                "en": [
+                  "Moderne Lateinschriften"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/sonderbund-denkschrift/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/sonderbund-denkschrift/front_hu_a1520d5d3a834248.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 394,
+    "width": 300
+  },{
+        "id": "https://schriftmuster.projektemacher.org/post/sonderbund-denkschrift/front.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 5794,
+        "width": 4416,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/sonderbund-denkschrift/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Sonderbund Denkschrift"
+          ],
+                "en": [
+                  "Sonderbund Denkschrift"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/muster-alphabete/front_hu_c45430e30f5897f5.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 199,
+    "width": 300
+  }],"label": {
+          "de": [
+            "Muster Alphabete"
+          ],
+                "en": [
+                  "Muster Alphabete"
+                ]}
+      }]
+}

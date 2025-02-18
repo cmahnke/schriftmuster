@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Schriftmuster</title>
+    <link>https://schriftmuster.projektemacher.org/en/tags/</link>
+    <description>Recent content in Tags on Schriftmuster</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Projektemacher&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 18 Feb 2025 06:51:48 +0100</lastBuildDate>
+    <atom:link href="https://schriftmuster.projektemacher.org/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Font</title>
+      <link>https://schriftmuster.projektemacher.org/en/tags/font/</link>
+      <pubDate>Mon, 21 Oct 2024 18:47:43 +0100</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/en/tags/font/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://schriftmuster.projektemacher.org/en/tags/book/</link>
+      <pubDate>Tue, 30 Jul 2024 22:30:43 +0100</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/en/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Singlefind</title>
+      <link>https://schriftmuster.projektemacher.org/en/tags/singlefind/</link>
+      <pubDate>Mon, 01 Apr 2024 22:10:43 +0100</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/en/tags/singlefind/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postcard</title>
+      <link>https://schriftmuster.projektemacher.org/en/tags/postcard/</link>
+      <pubDate>Thu, 31 Dec 2020 10:25:43 +0100</pubDate>
+      <guid>https://schriftmuster.projektemacher.org/en/tags/postcard/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

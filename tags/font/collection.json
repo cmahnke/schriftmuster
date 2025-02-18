@@ -1,0 +1,14 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://schriftmuster.projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Schriftmuster"
+      ],
+        "en": [
+          "Schriftmuster"
+        ]
+      },
+  "items": []
+}
