@@ -158,6 +158,11 @@ main.list {
             vertical-align: middle;
             display: inline;
             padding-left: unset;
+
+            .navigation-link i.link-icon {
+                display: none;
+            }
+
             @media (max-width : 56em) {
                 float: none !important;
                 text-align: center;
