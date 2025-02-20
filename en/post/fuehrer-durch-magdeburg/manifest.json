@@ -1,0 +1,123 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/en/post/fuehrer-durch-magdeburg/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "en": [
+      "Führer durch Magdeburg. Herausgegeben vom Wirtschafts- und Verkehrsamt Magdeburg 1929. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/174016887\"\u003e\u0026nbsp;\u003c/a\u003e"
+    ],
+      "de": [
+        "Führer durch Magdeburg. Herausgegeben vom Wirtschafts- und Verkehrsamt Magdeburg 1929. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/174016887\"\u003e\u0026nbsp;\u003c/a\u003e"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/fuehrer-durch-magdeburg/back_hu_163fa6710649e5a5.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 427,
+    "width": 300
+  },{
+        "id": "https://schriftmuster.projektemacher.org/post/fuehrer-durch-magdeburg/back.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4135,
+        "width": 2905,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/en/post/fuehrer-durch-magdeburg/back",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/en/post/fuehrer-durch-magdeburg/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "en": [
+          "Schriftmuster: Führer durch Magdeburg"
+        ],
+          "de": [
+            "Schriftmuster: Führer durch Magdeburg"
+          ]
+        }
+  }
+],"label": {
+    "en": [
+      "Führer durch Magdeburg"
+    ],
+      "de": [
+        "Führer durch Magdeburg"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/canvas/back",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 4135,
+            "width": 2905,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/fuehrer-durch-magdeburg/back_hu_163fa6710649e5a5.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/annotation/back",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/annotation/back/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/back/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4135,
+                  "width": 2905,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/back",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/canvas/back"
+            }]
+          }]
+       }]
+}
