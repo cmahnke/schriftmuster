@@ -1,0 +1,274 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://schriftmuster.projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Schriftmuster"
+      ],
+        "en": [
+          "Schriftmuster"
+        ]
+      },
+  "items": [{
+        "id": "https://schriftmuster.projektemacher.org/post/der-tanz/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/der-tanz/front/full/full/0/default_hu_54934704d7f45ce9.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 389,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/der-tanz/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 5738,
+        "width": 4424,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/der-tanz/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Der Tanz"
+          ],
+                "en": [
+                  "Der Tanz"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/maler-zeitung/page001_hu_2aca8bb8232b5867.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 414,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page001/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 8377,
+        "width": 6063,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/maler-zeitung/page001",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Malerzeitung"
+          ],
+                "en": [
+                  "Malerzeitung"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/fuehrer-durch-magdeburg/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/fuehrer-durch-magdeburg/back_hu_163fa6710649e5a5.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 427,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/back/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4135,
+        "width": 2905,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/fuehrer-durch-magdeburg/back",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Führer durch Magdeburg"
+          ],
+                "en": [
+                  "Führer durch Magdeburg"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/front_hu_2e1ccac30ad06851.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 421,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6933,
+        "width": 4946,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Uhlig Metallbuchstabenfabrik"
+          ],
+                "en": [
+                  "Uhlig Metallbuchstabenfabrik"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/front_hu_bedad25081e805.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 453,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 3196,
+        "width": 2117,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Viel Glück und Freude im Neuen Jahre"
+          ],
+                "en": [
+                  "Viel Glück und Freude im Neuen Jahre"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/postkarten-1/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/postkarten-1/img001_hu_bb88e732e921b7c.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 189,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/img001/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 2078,
+        "width": 3295,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/img001",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Postkarten"
+          ],
+                "en": [
+                  "Postkarten"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/stickmuster-1/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/stickmuster-1/front_hu_875d0475c3ef2e97.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 291,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/stickmuster-1/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 7704,
+        "width": 7939,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/stickmuster-1/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Stickmuster"
+          ],
+                "en": [
+                  "Stickmuster"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front_hu_89fd0340e5989959.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 430,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6539,
+        "width": 4561,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Die Weihnachtsgeschichte"
+          ],
+                "en": [
+                  "Die Weihnachtsgeschichte"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/rechnungen/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/rechnungen/img001_hu_b61d3ed830451103.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 238,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/img001/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4019,
+        "width": 5070,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/rechnungen/img001",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Rechnungen"
+          ],
+                "en": [
+                  "Rechnungen"
+                ]}
+      },{
+        "id": "https://schriftmuster.projektemacher.org/post/sonderbund-denkschrift/manifest.json",
+        "type": "Manifest","thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/sonderbund-denkschrift/front_hu_a1520d5d3a834248.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 394,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/sonderbund-denkschrift/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 5794,
+        "width": 4416,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/sonderbund-denkschrift/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"label": {
+          "de": [
+            "Sonderbund Denkschrift"
+          ],
+                "en": [
+                  "Sonderbund Denkschrift"
+                ]}
+      }]
+}
