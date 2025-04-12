@@ -4,7 +4,7 @@
   {{- $pages = where $pages "Path" "!=" "/post" -}}
 {{- end -}}
 
-{{- $debug := partialCached "partials/functions/debug/enabled.html" . -}}
+{{- $debug := partialCached "functions/debug/enabled.html" . -}}
 
 {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 <main class="list">
