@@ -31,3 +31,4 @@ content/**/ogPreview.en/
 assets/css/**
 static/fonts/**
 data/stats.json
+static/images/apple-touch-icon.png
