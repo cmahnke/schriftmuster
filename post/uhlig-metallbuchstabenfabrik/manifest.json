@@ -1,0 +1,145 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/front_hu_2e1ccac30ad06851.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 421,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6933,
+        "width": 4946,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Uhlig Metallbuchstabenfabrik"
+        ],
+          "en": [
+            "Schriftmuster: Uhlig Metallbuchstabenfabrik"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Uhlig Metallbuchstabenfabrik"
+    ],
+      "en": [
+        "Uhlig Metallbuchstabenfabrik"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 6933,
+            "width": 4946,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/front_hu_2e1ccac30ad06851.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 421,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6933,
+                  "width": 4946,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/canvas/back",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 6953,
+            "width": 4956,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/uhlig-metallbuchstabenfabrik/back_hu_59a2a699939c4329.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 421,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/annotation/back",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/annotation/back/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/back/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6953,
+                  "width": 4956,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/back",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/uhlig-metallbuchstabenfabrik/canvas/back"
+            }]
+          }]
+       }]
+}
