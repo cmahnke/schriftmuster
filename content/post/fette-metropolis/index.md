@@ -18,3 +18,5 @@ resources:
 Die Rückseite des ["Die deutsche Zeitung ihr Werden, Wesen und Wirken"](https://backsteinexpressionismus.projektemacher.org/post/fuehrer-durch-magdeburg) bietet eine Schriftprobe der [Schriftgießerei D. Stempel](https://de.wikipedia.org/wiki/D._Stempel).<!--more-->
 
 Der Name der Schrift ist "Fette Metropolis", wie der [bekannte Film](https://en.wikipedia.org/wiki/Metropolis_(1927_film)). Heute startet übrigens ein neuer Superman Film in den Kinos.
+
+Der Rest der Publikation ist auf [Backsteinexpressionismus](https://backsteinexpressionismus.projektemacher.org/post/die-deutsche-zeitung) zu finden.
