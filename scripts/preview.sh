@@ -25,6 +25,10 @@ do
         if [ ! -f $DIR/preview.png ] ; then
             if [[ $IMAGE == *jxl ]] ; then
                 CMD="$DOCKER_PREFIX magick"
+                if [ $? != 0 ] ; then
+                  echo " IS docker running?"
+                  exit 10
+                fi
             else
                 CMD="convert"
             fi
