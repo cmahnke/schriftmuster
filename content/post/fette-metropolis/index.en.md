@@ -9,7 +9,7 @@ outputs:
 tags:
 - singlefind
 resources:
-- src: "back.jpg"
+- src: "back.jxl"
   name: back
   params:
     iiif: back/info.json

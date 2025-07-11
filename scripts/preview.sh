@@ -25,14 +25,15 @@ do
         if [ ! -f $DIR/preview.png ] ; then
             if [[ $IMAGE == *jxl ]] ; then
                 CMD="$DOCKER_PREFIX magick"
-                if [ $? != 0 ] ; then
-                  echo " IS docker running?"
-                  exit 10
-                fi
             else
                 CMD="convert"
             fi
             $CMD $IMAGE -resize "$PREVIEW_WIDTH" $DIR/preview.png
+
+            if [ ! -f $DIR/preview.png ] ; then
+              echo "No preview image created, check if Docker is running"
+              exit 10
+            fi
             #echo "Scaling $IMAGE to $PREVIEW_WIDTH_MOBILE for mobile clients"
             #convert $IMAGE -resize "$PREVIEW_WIDTH_MOBILE" $DIR/preview-mobile.png
             if [ -n "$IMAGE" ] ; then
