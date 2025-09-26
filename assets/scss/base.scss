@@ -549,6 +549,15 @@ body.about {
         &.presentation-api {
           .tify {
             width: 100%;
+
+            .tify-header {
+              background: unset !important;
+            }
+
+            .tify-header-button {
+              backdrop-filter: blur(8px);
+              background: oklch(from var(--tify-bg-color, light-dark(#fff, oklch(from var(--tify-base-color-dark, oklch(from var(--tify-base-color, #06b) calc(l * 1.5) c h)) calc(l / 4) calc(c / 20) h))) l c h / 38.2%);
+            }
           }
         }
 
