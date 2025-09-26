@@ -6,9 +6,11 @@ DOCKER_PREFIX="docker run -w ${PWD} -v ${PWD}:${PWD} ${DOCKER_IMAGE} "
 RED='\033[0;31m'
 NC='\033[0m'
 
+IMAGEMAGIC="convert"
+#IMAGEMAGIC="magick"
+
 PREVIEW_WIDTH="800x"
 #PREVIEW_WIDTH_MOBILE="320x"
-
 
 if ! docker info > /dev/null 2>&1; then
   printf "${RED}Docker isn't running! - Start Docker / Rancher Desktop!${NC}\n"
@@ -35,7 +37,7 @@ do
             if [[ $IMAGE == *jxl ]] ; then
                 CMD="$DOCKER_PREFIX magick"
             else
-                CMD="convert"
+                CMD="$IMAGEMAGIC"
             fi
             $CMD $IMAGE -resize "$PREVIEW_WIDTH" $DIR/preview.png
 

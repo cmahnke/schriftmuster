@@ -88,6 +88,10 @@ timeout = "180s"
     [[module.mounts]]
         source = "assets/js"
         target = "assets/js"
+        
+    [[module.mounts]]
+      source = "node_modules/tify/dist/"
+      target = "static/tify"
 
 [imaging]
     quality = 95

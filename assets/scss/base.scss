@@ -20,6 +20,9 @@ $color-paper-light: color.adjust($color-paper, $lightness: 4%);
 @import "footer";
 @import "menu";
 
+@import "tify";
+@import "iiif/tify";
+
 body {
     font-family: $font-body-font, monospace;
     color: $color-body-text;
@@ -541,6 +544,12 @@ body.about {
         justify-content: center;
         @media (max-width: 37.5em) {
             min-height: calc(7em + 1.375em + 1.5em + 2px);
+        }
+
+        &.presentation-api {
+          .tify {
+            width: 100%;
+          }
         }
 
         &.portrait {
