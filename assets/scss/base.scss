@@ -556,7 +556,12 @@ body.about {
 
             .tify-header-button {
               backdrop-filter: blur(8px);
-              background: oklch(from var(--tify-bg-color, light-dark(#fff, oklch(from var(--tify-base-color-dark, oklch(from var(--tify-base-color, #06b) calc(l * 1.5) c h)) calc(l / 4) calc(c / 20) h))) l c h / 38.2%);
+              /* background: oklch(from var(--tify-bg-color, light-dark(#fff, oklch(from var(--tify-base-color-dark, oklch(from var(--tify-base-color, #06b) calc(l * 1.5) c h)) calc(l / 4) calc(c / 20) h))) l c h / 38.2%); */
+              background: color-mix(in srgb, #fdf3c9, black 10%);
+            }
+
+            .tify-icon {
+              fill: unset;
             }
           }
         }
