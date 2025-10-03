@@ -14,7 +14,7 @@ concurrency:
 
 env:
   HUGO_VERSION: 0.151.0
-  DEPENDENCY_MANAGER: yarn
+  DEPENDENCY_MANAGER: npm
   PYTHON_VERSION: '3.12'
 
 jobs:
@@ -113,7 +113,7 @@ jobs:
         env:
           OSTYPE: linux
         run: |
-          yarn run validate
+          $DEPENDENCY_MANAGER run validate
 
       - name: Puppeteer
         run: |
