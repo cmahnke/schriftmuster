@@ -8,9 +8,7 @@ type: book
 outputs:
   - iiif-manifest
   - html
-outputs:
-- html
-- iiif
+  - iiif
 tags:
 - Book
 - singlefind
