@@ -1,0 +1,145 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/rechnungen/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/rechnungen/img001_hu_b61d3ed830451103.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 238,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/img001/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 4019,
+        "width": 5070,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/rechnungen/img001",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/rechnungen/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Rechnungen"
+        ],
+          "en": [
+            "Schriftmuster: Rechnungen"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Rechnungen"
+    ],
+      "en": [
+        "Rechnungen"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/rechnungen/canvas/img001",
+          "type": "Canvas","label": {"de":["ungezählt"],"en":["uncounted"]},"height": 4019,
+            "width": 5070,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/rechnungen/img001_hu_b61d3ed830451103.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 238,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/annotation/img001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/annotation/img001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/img001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4019,
+                  "width": 5070,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/rechnungen/img001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/rechnungen/canvas/img001"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/rechnungen/canvas/img002",
+          "type": "Canvas","label": {"de":["ungezählt"],"en":["uncounted"]},"height": 5346,
+            "width": 4617,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/rechnungen/img002_hu_8b2caeae93acef88.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 347,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/annotation/img002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/annotation/img002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/rechnungen/img002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 5346,
+                  "width": 4617,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/rechnungen/img002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/rechnungen/canvas/img002"
+            }]
+          }]
+       }]
+}
