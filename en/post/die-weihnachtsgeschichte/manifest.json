@@ -1,0 +1,960 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/en/post/die-weihnachtsgeschichte/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "en": [
+      "The book \"Die Weihnachtsgeschichte\" by Rudolf Koch published 1936 by Insel-Verlag, Leipzig. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/476816936\"\u003e\u0026nbsp;\u003c/a\u003e"
+    ],
+      "de": [
+        "Das Buch \"Die Weihnachtsgeschichte\" von Rudolf Koch erschien 1936 im Insel-Verlag, Leipzig. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/476816936\"\u003e\u0026nbsp;\u003c/a\u003e"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front_hu_89fd0340e5989959.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 430,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/en/post/die-weihnachtsgeschichte/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 6539,
+        "width": 4561,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/en/post/die-weihnachtsgeschichte/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/en/post/die-weihnachtsgeschichte/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "en": [
+          "Schriftmuster: Die Weihnachtsgeschichte"
+        ],
+          "de": [
+            "Schriftmuster: Die Weihnachtsgeschichte"
+          ]
+        }
+  }
+],"label": {
+    "en": [
+      "Die Weihnachtsgeschichte"
+    ],
+      "de": [
+        "Die Weihnachtsgeschichte"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 6539,
+            "width": 4561,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front_hu_89fd0340e5989959.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 430,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6539,
+                  "width": 4561,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/front-verso",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 6426,
+            "width": 4510,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front-verso_hu_9ddf447921341350.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/front-verso",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/front-verso/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front-verso/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6426,
+                  "width": 4510,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front-verso",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/front-verso"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/front-recto",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 6430,
+            "width": 4533,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/front-recto_hu_4fab5a1cc7f79325.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 426,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/front-recto",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/front-recto/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front-recto/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6430,
+                  "width": 4533,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/front-recto",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/front-recto"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-001",
+          "type": "Canvas","label": {"none":["Advertising supplement"]},"behavior": ["non-paged"],"height": 6246,
+            "width": 4214,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page000-001_hu_dc5db551b7994d35.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 445,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6246,
+                  "width": 4214,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-001"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-002",
+          "type": "Canvas","label": {"none":["Advertising supplement"]},"height": 6256,
+            "width": 4234,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page000-002_hu_f4f4912af9299327.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 443,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6256,
+                  "width": 4234,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-002"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-003",
+          "type": "Canvas","label": {"none":["Advertising supplement"]},"height": 6249,
+            "width": 4242,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page000-003_hu_22426dfd8052a1cb.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 442,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6249,
+                  "width": 4242,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-003"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-004",
+          "type": "Canvas","label": {"none":["Advertising supplement"]},"behavior": ["non-paged"],"height": 6241,
+            "width": 4238,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page000-004_hu_4b728bcdbd099c69.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 442,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-004",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000-004/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-004/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6241,
+                  "width": 4238,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000-004",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000-004"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000",
+          "type": "Canvas","label": {"none":["page000"]},"height": 6448,
+            "width": 4362,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page000_hu_364d2afa5d099d75.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 443,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page000/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6448,
+                  "width": 4362,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page000",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page000"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page001",
+          "type": "Canvas","label": {"none":["page001"]},"height": 6441,
+            "width": 4402,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page001_hu_f83a508135e88aef.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 439,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6441,
+                  "width": 4402,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page001"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page002",
+          "type": "Canvas","label": {"none":["page002"]},"height": 6433,
+            "width": 4543,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page002_hu_bc47a0a656094275.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 425,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6433,
+                  "width": 4543,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page002"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page003",
+          "type": "Canvas","label": {"none":["page003"]},"height": 6456,
+            "width": 4531,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page003_hu_bfa67edd433275e8.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6456,
+                  "width": 4531,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page003"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page004",
+          "type": "Canvas","label": {"none":["page004"]},"height": 6445,
+            "width": 4548,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page004_hu_ca2e98dc60eaaaca.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 425,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page004",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page004/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page004/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6445,
+                  "width": 4548,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page004",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page004"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page005",
+          "type": "Canvas","label": {"none":["page005"]},"height": 6459,
+            "width": 4553,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page005_hu_4ec95de3a1d87968.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 426,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page005",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page005/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page005/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6459,
+                  "width": 4553,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page005",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page005"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page006",
+          "type": "Canvas","label": {"none":["page006"]},"height": 6447,
+            "width": 4537,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page006_hu_db5ddddcd28c1b63.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 426,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page006",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page006/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page006/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6447,
+                  "width": 4537,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page006",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page006"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page007",
+          "type": "Canvas","label": {"none":[7]},"height": 6461,
+            "width": 4538,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page007_hu_2ad80cd476cd35a9.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page007",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page007/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page007/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6461,
+                  "width": 4538,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page007",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page007"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page008",
+          "type": "Canvas","label": {"none":[8]},"height": 6429,
+            "width": 4509,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page008_hu_35468779a9c22fe6.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 428,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page008",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page008/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page008/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6429,
+                  "width": 4509,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page008",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page008"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page009",
+          "type": "Canvas","label": {"none":[9]},"height": 6452,
+            "width": 4541,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page009_hu_6c49103c4aa914d5.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 426,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page009",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page009/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page009/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6452,
+                  "width": 4541,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page009",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page009"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page010",
+          "type": "Canvas","label": {"none":[10]},"height": 6449,
+            "width": 4526,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page010_hu_9ab106339b137a9b.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page010",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page010/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page010/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6449,
+                  "width": 4526,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page010",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page010"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page011",
+          "type": "Canvas","label": {"none":[11]},"height": 6454,
+            "width": 4538,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page011_hu_baa7891a2f1e16d9.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page011",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page011/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page011/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6454,
+                  "width": 4538,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page011",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page011"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page012",
+          "type": "Canvas","label": {"none":[12]},"height": 6444,
+            "width": 4530,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page012_hu_b2b7da4e81cdae01.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 427,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page012",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page012/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page012/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6444,
+                  "width": 4530,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page012",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page012"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page013",
+          "type": "Canvas","label": {"none":[13]},"height": 6446,
+            "width": 4540,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page013_hu_5561edf7c68546a8.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 426,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page013",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page013/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page013/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6446,
+                  "width": 4540,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page013",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page013"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page014",
+          "type": "Canvas","label": {"none":[14]},"height": 6456,
+            "width": 4556,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page014_hu_1f813c01e4cb8c5e.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 425,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page014",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page014/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page014/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6456,
+                  "width": 4556,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page014",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page014"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page015",
+          "type": "Canvas","label": {"none":[15]},"height": 6430,
+            "width": 4555,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page015_hu_6898e371e32bfa25.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 423,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page015",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page015/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page015/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6430,
+                  "width": 4555,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page015",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page015"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page016",
+          "type": "Canvas","label": {"none":[16]},"height": 6439,
+            "width": 4359,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page016_hu_2005d141292b5f80.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 443,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page016",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page016/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page016/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6439,
+                  "width": 4359,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page016",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page016"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page017",
+          "type": "Canvas","label": {"none":[17]},"height": 6455,
+            "width": 4358,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/page017_hu_2c240d56e9c694e2.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 444,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page017",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/page017/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page017/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6455,
+                  "width": 4358,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/page017",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/page017"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/back-verso",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 6447,
+            "width": 4438,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/back-verso_hu_e44a9038fe49ade.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 436,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/back-verso",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/back-verso/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/back-verso/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6447,
+                  "width": 4438,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/back-verso",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/back-verso"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/back-recto",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 6434,
+            "width": 4550,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/back-recto_hu_5720a3a612fe3691.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 424,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/back-recto",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/back-recto/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/back-recto/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6434,
+                  "width": 4550,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/back-recto",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/back-recto"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/back",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 6508,
+            "width": 4528,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/die-weihnachtsgeschichte/back_hu_d75c2dcedd5d2da6.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 431,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/back",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/annotation/back/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/back/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 6508,
+                  "width": 4528,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/back",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/die-weihnachtsgeschichte/canvas/back"
+            }]
+          }]
+       }]
+}
