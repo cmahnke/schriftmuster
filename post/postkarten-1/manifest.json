@@ -1,0 +1,145 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/postkarten-1/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/postkarten-1/img001_hu_411e76b81f01f663.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 189,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/img001/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 2078,
+        "width": 3295,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/img001",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/postkarten-1/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Postkarten"
+        ],
+          "en": [
+            "Schriftmuster: Postkarten"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Postkarten"
+    ],
+      "en": [
+        "Postkarten"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/canvas/img001",
+          "type": "Canvas","label": {"de":["ungezählt"],"en":["uncounted"]},"height": 2078,
+            "width": 3295,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/postkarten-1/img001_hu_411e76b81f01f663.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 189,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/annotation/img001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/annotation/img001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/img001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 2078,
+                  "width": 3295,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/img001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/canvas/img001"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/canvas/img002",
+          "type": "Canvas","label": {"de":["ungezählt"],"en":["uncounted"]},"height": 2087,
+            "width": 3317,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/postkarten-1/img002_hu_ac89f686b2c207c4.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 189,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/annotation/img002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/annotation/img002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/postkarten-1/img002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 2087,
+                  "width": 3317,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/img002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/postkarten-1/canvas/img002"
+            }]
+          }]
+       }]
+}

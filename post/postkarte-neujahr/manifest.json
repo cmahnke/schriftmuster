@@ -1,0 +1,145 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/front_hu_f8efa28664302aa3.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 453,
+    "width": 300
+  },{
+        "id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 3196,
+        "width": 2117,
+        "service": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Viel Glück und Freude im Neuen Jahre"
+        ],
+          "en": [
+            "Schriftmuster: Viel Glück und Freude im Neuen Jahre"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Viel Glück und Freude im Neuen Jahre"
+    ],
+      "en": [
+        "Viel Glück und Freude im Neuen Jahre"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 3196,
+            "width": 2117,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/front_hu_f8efa28664302aa3.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 453,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3196,
+                  "width": 2117,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/canvas/back",
+          "type": "Canvas","label": {"de":["Rückansicht"],"en":["Back"]},"height": 2120,
+            "width": 3190,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/postkarte-neujahr/back_hu_64cd89bf81afec7b.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 199,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/annotation/back",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/annotation/back/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/back/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 2120,
+                  "width": 3190,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/back",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/postkarte-neujahr/canvas/back"
+            }]
+          }]
+       }]
+}

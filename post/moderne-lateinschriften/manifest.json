@@ -1,0 +1,515 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "de": [
+      "Die Sammlung \"Moderne Lateinschriften : 12 Alphabete\" von Julius Nitsche erschien 1922 bei O. Maier, Ravensburg. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/908617991\"\u003e\u0026nbsp;\u003c/a\u003e"
+    ],
+      "en": [
+        "This collection \"Moderne Lateinschriften : 12 Alphabete\" by Julius Nitsche, published around 1922 by O. Maier, Ravensburg. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/908617991\"\u003e\u0026nbsp;\u003c/a\u003e"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/front_hu_f367e645d5955de4.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 230,
+    "width": 300
+  }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "de": [
+          "Schriftmuster: Moderne Lateinschriften"
+        ],
+          "en": [
+            "Schriftmuster: Moderne Lateinschriften"
+          ]
+        }
+  }
+],"label": {
+    "de": [
+      "Moderne Lateinschriften"
+    ],
+      "en": [
+        "Moderne Lateinschriften"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 4382,
+            "width": 5723,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/front_hu_f367e645d5955de4.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 230,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4382,
+                  "width": 5723,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/canvas/end",
+          "type": "Canvas","label": {"de":["Letze Seite"],"en":["Last page"]},"height": 4398,
+            "width": 5779,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/end_hu_b45aeb1734ca503b.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 228,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/annotation/end",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/annotation/end/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/end/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4398,
+                  "width": 5779,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/end",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/canvas/end"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/12/canvas/page012",
+          "type": "Canvas","label": {"none":["page012"]},"height": 4224,
+            "width": 5694,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/12/page012_hu_a8651b195ee478b8.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 223,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/12/annotation/page012",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/12/annotation/page012/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/12/page012/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4224,
+                  "width": 5694,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/12/page012",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/12/canvas/page012"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/11/canvas/page011",
+          "type": "Canvas","label": {"none":["page011"]},"height": 4151,
+            "width": 5693,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/11/page011_hu_91ebd7e131e9fb3f.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 219,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/11/annotation/page011",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/11/annotation/page011/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/11/page011/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4151,
+                  "width": 5693,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/11/page011",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/11/canvas/page011"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/10/canvas/page010",
+          "type": "Canvas","label": {"none":["page010"]},"height": 4203,
+            "width": 5707,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/10/page010_hu_fbcccf3390a38dd4.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 221,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/10/annotation/page010",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/10/annotation/page010/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/10/page010/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4203,
+                  "width": 5707,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/10/page010",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/10/canvas/page010"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/9/canvas/page009",
+          "type": "Canvas","label": {"none":["page009"]},"height": 4129,
+            "width": 5689,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/9/page009_hu_abb97f797a623344.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 218,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/9/annotation/page009",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/9/annotation/page009/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/9/page009/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4129,
+                  "width": 5689,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/9/page009",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/9/canvas/page009"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/8/canvas/page008",
+          "type": "Canvas","label": {"none":["page008"]},"height": 4238,
+            "width": 5702,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/8/page008_hu_17f7f7e39c4797e1.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 223,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/8/annotation/page008",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/8/annotation/page008/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/8/page008/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4238,
+                  "width": 5702,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/8/page008",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/8/canvas/page008"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/7/canvas/page007",
+          "type": "Canvas","label": {"none":["page007"]},"height": 4216,
+            "width": 5699,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/7/page007_hu_89383ba7a9c1c946.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 222,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/7/annotation/page007",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/7/annotation/page007/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/7/page007/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4216,
+                  "width": 5699,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/7/page007",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/7/canvas/page007"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/6/canvas/page006",
+          "type": "Canvas","label": {"none":["page006"]},"height": 4171,
+            "width": 5670,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/6/page006_hu_f5337322364c99ac.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 221,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/6/annotation/page006",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/6/annotation/page006/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/6/page006/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4171,
+                  "width": 5670,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/6/page006",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/6/canvas/page006"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/5/canvas/page005",
+          "type": "Canvas","label": {"none":["page005"]},"height": 4212,
+            "width": 5697,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/5/page005_hu_ac9e9ca5a8102f50.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 222,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/5/annotation/page005",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/5/annotation/page005/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/5/page005/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4212,
+                  "width": 5697,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/5/page005",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/5/canvas/page005"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/4/canvas/page004",
+          "type": "Canvas","label": {"none":["page004"]},"height": 4221,
+            "width": 5671,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/4/page004_hu_2190973c9a1f227d.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 223,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/4/annotation/page004",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/4/annotation/page004/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/4/page004/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4221,
+                  "width": 5671,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/4/page004",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/4/canvas/page004"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/3/canvas/page003",
+          "type": "Canvas","label": {"none":["page003"]},"height": 4205,
+            "width": 5690,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/3/page003_hu_bb40fe8d7d5e4e2b.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 222,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/3/annotation/page003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/3/annotation/page003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/3/page003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4205,
+                  "width": 5690,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/3/page003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/3/canvas/page003"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/2/canvas/page002",
+          "type": "Canvas","label": {"none":["page002"]},"height": 4221,
+            "width": 5692,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/2/page002_hu_8eb78a814f998c78.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 222,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/2/annotation/page002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/2/annotation/page002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/2/page002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4221,
+                  "width": 5692,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/2/page002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/2/canvas/page002"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/1/canvas/page001",
+          "type": "Canvas","label": {"none":["page001"]},"height": 4157,
+            "width": 5658,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/moderne-lateinschriften/1/page001_hu_aba4b7aece9f5a6.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 220,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/1/annotation/page001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/1/annotation/page001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/1/page001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 4157,
+                  "width": 5658,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/1/page001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/moderne-lateinschriften/1/canvas/page001"
+            }]
+          }]
+       }]
+}

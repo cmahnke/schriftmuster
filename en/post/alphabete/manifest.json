@@ -1,0 +1,484 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://schriftmuster.projektemacher.org/en/post/alphabete/manifest.json",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "en": [
+      "This collection \"7 Alphabete\" by Hans Kühne, published 1953 by Brause, Iserlohn. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/73515779\"\u003e\u0026nbsp;\u003c/a\u003e"
+    ],
+      "de": [
+        "Die Sammlung \"7 Alphabete\" von Hans Kühne erschien 1953 bei Brause, Iserlohn. \u003ca class=\"worldcat\" href=\"http://www.worldcat.org/oclc/73515779\"\u003e\u0026nbsp;\u003c/a\u003e"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://schriftmuster.projektemacher.org/post/alphabete/front_hu_a4dd077969171f7e.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 212,
+    "width": 300
+  }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://schriftmuster.projektemacher.org/en/post/alphabete/manifest.json",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "en": [
+          "Schriftmuster: Alphabete"
+        ],
+          "de": [
+            "Schriftmuster: Alphabete"
+          ]
+        }
+  }
+],"label": {
+    "en": [
+      "Alphabete"
+    ],
+      "de": [
+        "Alphabete"
+      ]
+    }
+,"items": [{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 3613,
+            "width": 5109,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/front_hu_a4dd077969171f7e.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 212,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3613,
+                  "width": 5109,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/front-verso",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 3608,
+            "width": 5100,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/front-verso_hu_52722a49491fa11.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 212,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/front-verso",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/front-verso/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/front-verso/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3608,
+                  "width": 5100,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/front-verso",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/front-verso"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/end",
+          "type": "Canvas","label": {"de":["Letze Seite"],"en":["Last page"]},"height": 3610,
+            "width": 5108,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/end_hu_bee2c23629f6308.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 212,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/end",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/end/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/end/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3610,
+                  "width": 5108,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/end",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/end"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/end-verso",
+          "type": "Canvas","label": {"de":["Letze Seite"],"en":["Last page"]},"height": 3576,
+            "width": 5077,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/end-verso_hu_92909d45a802548c.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 211,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/end-verso",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/end-verso/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/end-verso/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3576,
+                  "width": 5077,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/end-verso",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/end-verso"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/page000a",
+          "type": "Canvas","label": {"none":["page000a"]},"height": 3480,
+            "width": 4978,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/page000a_hu_6f1836ee38d33908.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 210,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/page000a",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/page000a/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/page000a/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3480,
+                  "width": 4978,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/page000a",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/page000a"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/page000b",
+          "type": "Canvas","label": {"none":["page000b"]},"height": 3468,
+            "width": 4972,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/page000b_hu_a07aba3210d74aab.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 209,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/page000b",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/annotation/page000b/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/page000b/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3468,
+                  "width": 4972,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/page000b",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/canvas/page000b"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/fraktur/canvas/page007",
+          "type": "Canvas","label": {"none":["page007"]},"height": 3480,
+            "width": 4969,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/fraktur/page007_hu_16daa08eed336907.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 210,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/fraktur/annotation/page007",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/fraktur/annotation/page007/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/fraktur/page007/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3480,
+                  "width": 4969,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/fraktur/page007",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/fraktur/canvas/page007"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/gotische-schrift/canvas/page006",
+          "type": "Canvas","label": {"none":["page006"]},"height": 3476,
+            "width": 4987,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/gotische-schrift/page006_hu_507bb2ec4afc6c40.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 209,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/gotische-schrift/annotation/page006",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/gotische-schrift/annotation/page006/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/gotische-schrift/page006/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3476,
+                  "width": 4987,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/gotische-schrift/page006",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/gotische-schrift/canvas/page006"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/kursiv/canvas/page005",
+          "type": "Canvas","label": {"none":["page005"]},"height": 3472,
+            "width": 4973,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/kursiv/page005_hu_3dfb837bc7657cf4.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 209,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/kursiv/annotation/page005",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/kursiv/annotation/page005/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/kursiv/page005/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3472,
+                  "width": 4973,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/kursiv/page005",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/kursiv/canvas/page005"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/rustika/canvas/page004",
+          "type": "Canvas","label": {"none":["page004"]},"height": 3472,
+            "width": 4953,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/rustika/page004_hu_f563d90d55d0eb19.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 210,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/rustika/annotation/page004",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/rustika/annotation/page004/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/rustika/page004/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3472,
+                  "width": 4953,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/rustika/page004",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/rustika/canvas/page004"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/antiqua/canvas/page003",
+          "type": "Canvas","label": {"none":["page003"]},"height": 3466,
+            "width": 4955,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/antiqua/page003_hu_9c8ecf92d48d94c6.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 210,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/antiqua/annotation/page003",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/antiqua/annotation/page003/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/antiqua/page003/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3466,
+                  "width": 4955,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/antiqua/page003",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/antiqua/canvas/page003"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/unizialschrift/canvas/page002",
+          "type": "Canvas","label": {"none":["page002"]},"height": 3459,
+            "width": 4978,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/unizialschrift/page002_hu_f83a721dfdaa7012.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 208,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/unizialschrift/annotation/page002",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/unizialschrift/annotation/page002/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/unizialschrift/page002/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3459,
+                  "width": 4978,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/unizialschrift/page002",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/unizialschrift/canvas/page002"
+            }]
+          }]
+       },{
+          "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/blockschrift/canvas/page001",
+          "type": "Canvas","label": {"none":["page001"]},"height": 3474,
+            "width": 4991,
+            "thumbnail": [{
+                "id": "https://schriftmuster.projektemacher.org/post/alphabete/blockschrift/page001_hu_85d23474e0ca3150.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 209,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/blockschrift/annotation/page001",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://static.projektemacher.org/schriftmuster/post/alphabete/blockschrift/annotation/page001/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://static.projektemacher.org/schriftmuster/post/alphabete/blockschrift/page001/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 3474,
+                  "width": 4991,
+                  "service": [{
+                    "id":"https://static.projektemacher.org/schriftmuster/post/alphabete/blockschrift/page001",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://static.projektemacher.org/schriftmuster/post/alphabete/blockschrift/canvas/page001"
+            }]
+          }]
+       }]
+}
