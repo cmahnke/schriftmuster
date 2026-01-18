@@ -1,7 +1,7 @@
 [params]
     author = "Christian Mahnke"
     keywords = "Schriftmuster, Schriften, Papier, Bücher, fonts, paper, books"
-    copyrightYears = "MMXXI - MMXXV"
+    copyrightYears = "MMXXI - MMXXVI"
     stylesheets = []
     cc = true
     productionIIIFURLPrefix="https://static.projektemacher.org/schriftmuster/"
