@@ -17,6 +17,9 @@
     <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon">
     <link rel="icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon">
 
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{- partial "data/schema.org.html" . -}}
+
     {{/* External Styles - Fonts etc */}}
     {{ range .Site.Params.stylesheets -}}
     <link href="{{ . }}" rel="stylesheet">
