@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Schriftmuster</title>
+    <link>https://schriftmuster.projektemacher.org/tags/</link>
+    <description>Recent content in Tags on Schriftmuster</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <copyright>&lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Projektemacher&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 26 Feb 2026 06:00:43 +0100</lastBuildDate>
+    <atom:link href="https://schriftmuster.projektemacher.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Singlefind</title>
+      <link>https://schriftmuster.projektemacher.org/tags/singlefind/</link>
+      <pubDate>Thu, 10 Jul 2025 12:25:06 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://schriftmuster.projektemacher.org/tags/singlefind/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Font</title>
+      <link>https://schriftmuster.projektemacher.org/tags/font/</link>
+      <pubDate>Mon, 21 Oct 2024 18:47:43 +0100</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://schriftmuster.projektemacher.org/tags/font/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book</title>
+      <link>https://schriftmuster.projektemacher.org/tags/book/</link>
+      <pubDate>Tue, 30 Jul 2024 22:30:43 +0100</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://schriftmuster.projektemacher.org/tags/book/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Postcard</title>
+      <link>https://schriftmuster.projektemacher.org/tags/postcard/</link>
+      <pubDate>Thu, 31 Dec 2020 10:25:43 +0100</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://schriftmuster.projektemacher.org/tags/postcard/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

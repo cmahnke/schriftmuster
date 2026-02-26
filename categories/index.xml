@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Schriftmuster</title>
+    <link>https://schriftmuster.projektemacher.org/categories/</link>
+    <description>Recent content in Categories on Schriftmuster</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <copyright>&lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Projektemacher&lt;/a&gt;</copyright>
+    <atom:link href="https://schriftmuster.projektemacher.org/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
