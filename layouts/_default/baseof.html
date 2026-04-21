@@ -18,7 +18,7 @@
     <link rel="icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon">
 
     <link rel="canonical" href="{{ .Permalink }}">
-    {{- partial "data/schema.org.html" . -}}
+    {{- partial "metadata/schema.org/schema.org.html" . -}}
 
     {{/* External Styles - Fonts etc */}}
     {{ range .Site.Params.stylesheets -}}
