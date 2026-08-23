@@ -1,5 +1,5 @@
 baseURL = "https://schriftmuster.projektemacher.org/"
-languageCode = "de"
+locale = "de"
 title = "Schriftmuster"
 publishDir = "docs"
 canonifyurls = true
@@ -11,7 +11,7 @@ timeout = "180s"
 
 [languages]
     [languages.de]
-        languagename = "Deutsch"
+        label = "Deutsch"
 
         [languages.de.params]
 
@@ -43,7 +43,7 @@ timeout = "180s"
                 url = "about/"
 
     [languages.en]
-        languagename = "English"
+        label = "English"
 
         [languages.en.params]
 
@@ -88,7 +88,7 @@ timeout = "180s"
     [[module.mounts]]
         source = "assets/js"
         target = "assets/js"
-        
+
     [[module.mounts]]
       source = "node_modules/tify/dist/"
       target = "static/tify"
