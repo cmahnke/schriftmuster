@@ -22,7 +22,6 @@ Diese Seite wurde mit [Hugo](https://gohugo.io/) generiert.
 Das Theme ist inspiriert vom [Tumblr](https://www.tumblr.com/) theme [Paper Stacks](https://www.tumblr.com/theme/36202), [Inconsolata](https://github.com/googlefonts/inconsolata) wird als Schriftart verwendet.
 
 Die folgenden JavaScript und CSS Frameworks werden benutzt:
-* [jQuery](https://jquery.com/)
 * [normalize.css](https://necolas.github.io/normalize.css/)
 
 Die Nachbearbeitung der Digitalisate wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt.

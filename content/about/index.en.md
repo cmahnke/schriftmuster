@@ -21,7 +21,6 @@ This page was generated with [Hugo] (https://gohugo.io/).
 The theme is inspired by the [Tumblr](https://www.tumblr.com/) theme [Paper Stacks](https://www.tumblr.com/theme/36202), [Inconsolata](https://github.com/googlefonts/inconsolata) is used as font.
 
 The following JavaScript and CSS frameworks are used:
-* [jQuery](https://jquery.com/)
 * [normalize.css](https://necolas.github.io/normalize.css/)
 
 The post-processing of the digitized images was carried out with [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced).
