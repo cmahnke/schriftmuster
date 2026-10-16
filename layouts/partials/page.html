@@ -68,7 +68,8 @@
                   {{- $contextPath = path.Dir .File.Path -}}
                 {{- end -}}
                 {{- $pageURL := .Permalink -}}
-                {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
+                {{- $iiifCtx := or .Params.iiifcontext .Params.iiif.context "" -}}
+                {{- if not (hasPrefix $iiifCtx "http://iiif.io/api/presentation/") -}}
                     {{- range .Params.resources -}}
                         {{- if .params.iiif -}}
                           {{- if ne $currentSectionDir "" -}}
@@ -103,7 +104,7 @@
           {{- .Params.description | markdownify -}}
         </div>
         {{- if and (eq .Params.type "book") (ne .Kind "section") -}}
-          {{- if not (hasPrefix .Params.iiifContext "http://iiif.io/api/presentation/") -}}
+          {{- if not (hasPrefix $iiifCtx "http://iiif.io/api/presentation/") -}}
               <div class="book-description-images iiif">
                 {{- range .Params.resources -}}
                   {{- if or (or (eq .name "front") (eq .name "title")) (eq .name "cover") -}}

@@ -99,6 +99,9 @@ timeout = "180s"
 #[outputs]
 #    page = ["HTML", "JSON"]
 
+[outputs]
+  home = ["html", "rss", "iiif-collection"]
+
 [mediaTypes]
   [mediaTypes."application/ld+json"]
     suffixes = ["json"]
@@ -107,13 +110,6 @@ timeout = "180s"
     suffixes = ["jxl"]
 
 [outputFormats]
-  [outputFormats.iiif]
-    mediaType = "application/ld+json"
-    isPlainText = true
-    isHTML = false
-    baseName = "manifest"
-    notAlternative = true
-
   [outputFormats.iiif-manifest]
     mediaType = "application/ld+json"
     isPlainText = true
