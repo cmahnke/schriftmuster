@@ -23,7 +23,6 @@
     {{ range .Site.Params.stylesheets -}}
     <link href="{{ . }}" rel="stylesheet">
     {{- end -}}
-    {{- partial "metadata/schema.org/schema.org.html" . -}}
   </head>
     {{- $class := "" }}
     {{- with .Page.File -}}
@@ -35,8 +34,9 @@
      {{ if .Params.metaPage }}
          {{ $class = printf "%s %s" $class "meta" }}
      {{ end }}
-     <body class="{{ $class }} {{ if .IsHome }}home{{ end }}">
-       <div id="page">
+    <body class="{{ $class }} {{ if .IsHome }}home{{ end }}">
+        <a class="skip-link" href="#main">{{ i18n "skipToContent" }}</a>
+        <div id="page">
          {{ partial "header.html" . }}
          <div id="main">
              {{ block "content" . }}{{ end }}

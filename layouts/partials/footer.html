@@ -1,5 +1,5 @@
-<footer class="footer" role="contentinfo">
-	<div class="menu-container menu-footer" role="navigation">
+<footer class="footer">
+	<nav class="menu-container menu-footer" aria-label="{{ i18n "footerNavigation" }}">
 		<div class="menu menu-bottom">
           <ul id="menu-footer-items" class="menu-footer-items">
             {{- with .Site.Menus.main -}}
@@ -14,6 +14,6 @@
 						</li>
           </ul>
         </div>
-    </div>
+    </nav>
     {{ partialCached "footer-content.html" . }}
 </footer>

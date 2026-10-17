@@ -97,9 +97,9 @@
       {{- if .Params.type -}}
         <div class="{{ .Params.type }}-description">
           {{- if eq .Params.type "book" -}}
-              <h1>{{ i18n "aboutTheNeu" }} {{ i18n "book" }}</h1>
+              <h2>{{ i18n "aboutTheNeu" }} {{ i18n "book" }}</h2>
           {{- else if eq .Params.itemType "font" -}}
-              <h1>{{ i18n "aboutTheFem" }} {{ i18n "font" }}</h1>
+              <h2>{{ i18n "aboutTheFem" }} {{ i18n "font" }}</h2>
           {{- end -}}
           {{- .Params.description | markdownify -}}
         </div>
@@ -122,7 +122,7 @@
           </div>
           {{- if not .Params.metaPage -}}
               <div class="tag-container">
-                <div class="tags-heading">Tags</div>
+                <h2 class="tags-heading">Tags</h2>
                   {{- partial "meta/i18n-tags.html" . -}}
               </div>
           {{- end -}}

@@ -8,6 +8,7 @@
 
 {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 <main class="list">
+	<h1 class="visually-hidden">{{ .Title | default .Site.Title }}</h1>
 	{{- range $paginator.Pages -}}
     {{- $rotate := "" }}
     {{- range (seq 0 1) -}}
@@ -43,7 +44,7 @@
             {{- else -}}
               {{- $title = printf "%s: %s" .CurrentSection.Title .Title -}}
             {{- end -}}
-            <h1 class='post-title'>{{ $title }}</h1>
+            <h2 class='post-title'>{{ $title }}</h2>
           </div>
 
           {{- $class := .Params.type -}}
@@ -100,7 +101,8 @@
           {{- if or (eq .Kind "term") (eq .Kind "page") -}}
             {{- if ne $previewImg nil -}}
               <div class="preview {{ $class }}">
-                <img alt="{{ i18n "preview" }}" src="{{ $previewImg.RelPermalink }}"
+                <img alt="{{ $title }}" src="{{ $previewImg.RelPermalink }}"
+                  width="{{ $previewImg.Width }}" height="{{ $previewImg.Height }}"
                   srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
                   {{ $previewImg.RelPermalink }} 800w" sizes="(max-width: 480px) 320px, 800px"
                 >
