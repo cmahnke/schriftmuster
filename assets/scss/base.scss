@@ -25,6 +25,8 @@ $color-paper-light: color.adjust($color-paper, $lightness: 4%);
 body {
     font-family: $font-body-font, monospace;
     color: $color-body-text;
+    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 /* Accessibility utilities */
