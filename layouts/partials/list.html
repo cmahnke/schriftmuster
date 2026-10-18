@@ -1,6 +1,6 @@
 {{- $pages := .Pages -}}
 {{- if .IsHome -}}
-  {{- $pages = where .Site.Pages "Section" "post" -}}
+  {{- $pages = where site.Pages "Section" "post" -}}
   {{- $pages = where $pages "Path" "!=" "/post" -}}
 {{- end -}}
 
@@ -8,7 +8,7 @@
 
 {{ $paginator := .Paginate (where $pages "Params.displayinlist" "!=" false) -}}
 <main class="list">
-	<h1 class="visually-hidden">{{ .Title | default .Site.Title }}</h1>
+	<h1 class="visually-hidden">{{ .Title | default site.Title }}</h1>
 	{{- range $paginator.Pages -}}
     {{- $rotate := "" }}
     {{- range (seq 0 1) -}}

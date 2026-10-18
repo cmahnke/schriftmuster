@@ -2,7 +2,7 @@ baseURL = "https://schriftmuster.projektemacher.org/"
 locale = "de"
 title = "Schriftmuster"
 publishDir = "docs"
-canonifyurls = true
+canonifyURLs = true
 DefaultContentLanguage = "de"
 theme = ["projektemacher-base"]
 copyright = '<a href="https://projektemacher.org/" target="_blank">Projektemacher</a>'
@@ -93,7 +93,7 @@ timeout = "180s"
       source = "node_modules/tify/dist/"
       target = "static/tify"
 
-[imaging]
+[imaging.jpeg]
     quality = 95
 
 #[outputs]

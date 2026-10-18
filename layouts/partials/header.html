@@ -1,7 +1,7 @@
 <header class="top-nav">
   <section class="container">
-    <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
-      {{ .Site.Title }}
+    <a class="navigation-title" href="{{ site.BaseURL | relLangURL }}">
+      {{ site.Title }}
     </a>
 
     {{- partialCached "menu.html" . -}}

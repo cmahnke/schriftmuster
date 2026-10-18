@@ -1,14 +1,14 @@
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
+  {{ .Title }} · {{ site.Title }}
 {{ end }}
 {{ define "content" }}
     <div class="page-container collections">
-        {{- $pages := where .Site.Pages "Section" "post" -}}
+        {{- $pages := where site.Pages "Section" "post" -}}
         {{- $pages = where $pages "Params.type" "eq" "book" -}}
         {{- $pages = where $pages "Kind" "eq" "section" -}}
 
         <main class="list">
-            <h1 class="visually-hidden">{{ .Title | default .Site.Title }}</h1>
+            <h1 class="visually-hidden">{{ .Title | default site.Title }}</h1>
 
             {{- range $pages -}}
                 {{- $rotate := "" }}
