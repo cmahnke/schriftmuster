@@ -90,6 +90,10 @@ timeout = "180s"
         target = "assets/js"
 
     [[module.mounts]]
+        source = "assets/ts"
+        target = "assets/ts"
+
+    [[module.mounts]]
       source = "node_modules/tify/dist/"
       target = "static/tify"
 
