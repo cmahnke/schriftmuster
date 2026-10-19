@@ -1,6 +1,17 @@
 @use "sass:color";
 
-@import "normalize";
+@use "normalize";
+@use "npm-fonts/inconsolata";
+@use "icons" as *;
+/* @import "ol"; */
+@use "ol-iiif";
+@use "share";
+@use "media-info";
+@use "footer";
+@use "menu" as *;
+
+@use "iiif/presentation-tify";
+
 $font-body-font: 'Inconsolata Variable' !default;
 $color-body-text: #333333 !default;
 $font-color-body: #333333 !default;
@@ -11,16 +22,6 @@ $color-header-text: #333333 !default;
 $color-paper: hsl(48, 93%, 89%);
 $color-paper-dark: color.adjust($color-paper, $lightness: -4%);
 $color-paper-light: color.adjust($color-paper, $lightness: 4%);
-@import "npm-fonts/inconsolata";
-@import "icons";
-/* @import "ol"; */
-@import "ol-iiif";
-@import "share";
-@import "media-info";
-@import "footer";
-@import "menu";
-
-@import "iiif/presentation-tify";
 
 body {
     font-family: $font-body-font, monospace;
