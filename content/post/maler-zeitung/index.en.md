@@ -7,7 +7,8 @@ outputs:
   - html
 tags:
 - singlefind
-view: true
+params:
+  view: true
 resources:
 - src: "page001.jpg"
   params:

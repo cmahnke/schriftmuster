@@ -1,7 +1,8 @@
 ---
 title: "Intermediate page"
 date: 2021-06-29T18:47:43+01:00
-displayinlist: false
+params:
+  displayinlist: false
 type: font
 tags:
 - Font

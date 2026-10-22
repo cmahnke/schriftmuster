@@ -1,7 +1,8 @@
 ---
 title: "Über diese Seite"
-metaPage: true
-displayinlist: false
+params:
+  metaPage: true
+  displayinlist: false
 ---
 
 Da ich vor einigen Jahren mal beruflich stark im Bereich der [Texterkennung](https://de.wikipedia.org/wiki/Texterkennung) (Optical character recognition - OCR) engagiert war, verfüge ich auch über eine recht umfangreiche Sammlung an Schriftmustern. Inzwischen bin ich nicht mehr mit dem Thema beschäftigt, daher möchte diese Sammlung gerne als Ressource für weitere Entwicklungen anbieten. Die gezeigten Schriften sind nicht nur für den (Buch-) Druck, sondern Plakat-, Zier- und Handschriften. Dazu können sich auch mal typographisch interessante [Einzelstücke](/tags/singlefind) gesellen.

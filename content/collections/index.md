@@ -1,7 +1,8 @@
 ---
 title: "Sammlungen"
 description: "Diese Seite listet alle Schriftensammlungen auf."
-metaPage: true
-displayinlist: false
+params:
+  metaPage: true
+  displayinlist: false
 layout: collections
 ---
