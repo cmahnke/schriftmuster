@@ -9,6 +9,8 @@ copyright = '<a href="https://projektemacher.org/" target="_blank">Projektemache
 enableGitInfo = true
 timeout = "180s"
 
+enableRobotsTXT = true
+
 [languages]
     [languages.de]
         label = "Deutsch"
@@ -186,3 +188,6 @@ timeout = "180s"
 
 [params.js]
   format = "esm"
+
+[params.robots]
+  llmsTXT = true
