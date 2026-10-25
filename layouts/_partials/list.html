@@ -94,7 +94,9 @@
 
           {{- else -}}
             {{- if gt $previewImg.Width 800 -}}
-              {{- $previewImg = $previewImg.Resize "800x" -}}
+              {{- $previewImg = $previewImg.Resize "800x webp q85" -}}
+            {{- else -}}
+              {{- $previewImg = $previewImg.Process "webp q85" -}}
             {{- end -}}
           {{- end -}}
 
@@ -103,7 +105,7 @@
               <div class="preview {{ $class }}">
                 <img alt="{{ $title }}" src="{{ $previewImg.RelPermalink }}"
                   width="{{ $previewImg.Width }}" height="{{ $previewImg.Height }}"
-                  srcset="{{ ($previewImg.Resize "320x").RelPermalink }} 320w,
+                  srcset="{{ ($previewImg.Resize "320x webp q85").RelPermalink }} 320w,
                   {{ $previewImg.RelPermalink }} 800w" sizes="(max-width: 480px) 320px, 800px"
                 >
               </div>

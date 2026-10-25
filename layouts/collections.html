@@ -40,7 +40,9 @@
                             {{ warnf "Can't find image %s" $imgLocation }}
                         {{- else -}}
                             {{- if gt $previewImg.Width 800 -}}
-                                {{- $previewImg = $previewImg.Resize "800x" -}}
+                                {{- $previewImg = $previewImg.Resize "800x webp q85" -}}
+                            {{- else -}}
+                                {{- $previewImg = $previewImg.Process "webp q85" -}}
                             {{- end -}}
                         {{- end -}}
                         <a class="post-link" href="{{ .Permalink }}">
