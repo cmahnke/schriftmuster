@@ -101,7 +101,7 @@
           {{- else if eq .Params.itemType "font" -}}
               <h2>{{ i18n "aboutTheFem" }} {{ i18n "font" }}</h2>
           {{- end -}}
-          {{- .Params.description | markdownify -}}
+          {{- .Description | markdownify -}}
         </div>
         {{- if and (eq .Params.type "book") (ne .Kind "section") -}}
           {{- if not (hasPrefix $iiifCtx "http://iiif.io/api/presentation/") -}}

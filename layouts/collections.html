@@ -4,7 +4,7 @@
 {{ define "content" }}
     <div class="page-container collections">
         {{- $pages := where site.Pages "Section" "post" -}}
-        {{- $pages = where $pages "Params.type" "eq" "book" -}}
+        {{- $pages = where $pages "Type" "eq" "book" -}}
         {{- $pages = where $pages "Kind" "eq" "section" -}}
 
         <main class="list">
