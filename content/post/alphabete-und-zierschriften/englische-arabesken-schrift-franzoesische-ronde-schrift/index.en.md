@@ -1,7 +1,8 @@
 ---
 title: "Englische Arabeskenschrift, Französische Schrift"
 date: 2021-01-05T08:44:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

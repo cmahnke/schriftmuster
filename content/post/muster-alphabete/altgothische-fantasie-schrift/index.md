@@ -1,7 +1,8 @@
 ---
 title: "Altgothische Fantasie-Schrift"
 date: 2020-10-25T20:56:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

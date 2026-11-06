@@ -1,7 +1,8 @@
 ---
 title: "Blatt 3"
 date: 2020-11-19T07:51:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

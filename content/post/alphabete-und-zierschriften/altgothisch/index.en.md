@@ -1,7 +1,8 @@
 ---
 title: "Altgothische-Schrift"
 date: 2021-01-21T08:47:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

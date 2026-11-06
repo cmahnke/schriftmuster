@@ -1,7 +1,8 @@
 ---
 title: "Verzierte-Römisch"
 date: 2021-02-06T08:49:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

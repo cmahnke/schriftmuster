@@ -1,7 +1,8 @@
 ---
 title: "Faust-Fraktur"
 date: 2021-05-15T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

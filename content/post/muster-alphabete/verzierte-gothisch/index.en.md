@@ -1,7 +1,8 @@
 ---
 title: "Verzierte Gothisch"
 date: 2020-10-22T20:55:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

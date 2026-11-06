@@ -1,7 +1,8 @@
 ---
 title: "Blatt 11"
 date: 2020-12-08T07:55:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

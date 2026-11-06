@@ -1,7 +1,8 @@
 ---
 title: "Die Kursiv"
 date: 2020-12-22T08:00:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

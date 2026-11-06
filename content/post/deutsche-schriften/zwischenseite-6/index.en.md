@@ -2,8 +2,8 @@
 title: "Intermediate page"
 date: 2021-08-24T18:47:43+01:00
 params:
+  itemType: font
   displayinlist: false
-type: font
 tags:
 - Font
 resources:

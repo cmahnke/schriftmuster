@@ -1,7 +1,8 @@
 ---
 title: "Sheet 7"
 date: 2024-09-17T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

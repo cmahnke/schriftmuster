@@ -2,7 +2,8 @@
 title: "Alphabete"
 date: 2020-12-12T07:58:43+02:00
 description: 'This collection "7 Alphabete" by Hans Kühne, published 1953 by Brause, Iserlohn. <a class="worldcat" href="http://www.worldcat.org/oclc/73515779">&nbsp;</a>'
-type: book
+params:
+  itemType: book
 outputs:
   - iiif-manifest
   - html

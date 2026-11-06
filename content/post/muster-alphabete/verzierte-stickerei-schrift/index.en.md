@@ -1,7 +1,8 @@
 ---
 title: "Verzierte Stickerei-Schrift"
 date: 2020-11-06T20:59:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

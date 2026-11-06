@@ -1,13 +1,13 @@
 ---
 title: "Malerzeitung"
 date: 2023-11-10T17:18:43+01:00
-type: single
 outputs:
   - iiif-manifest
   - html
 tags:
 - singlefind
 params:
+  itemType: single
   view: true
 resources:
 - src: "page001.jpg"

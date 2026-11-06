@@ -1,7 +1,8 @@
 ---
 title: "Alt-Schwabacher"
 date: 2021-08-27T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

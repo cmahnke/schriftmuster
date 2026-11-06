@@ -1,7 +1,8 @@
 ---
 title: "Postkarten"
 date: 2020-12-22T17:18:43+01:00
-type: single
+params:
+  itemType: single
 outputs:
   - iiif-manifest
   - html

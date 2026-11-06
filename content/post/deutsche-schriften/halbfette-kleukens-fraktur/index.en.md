@@ -1,7 +1,8 @@
 ---
 title: "Halbfette Kleukens-Fraktur"
 date: 2021-07-06T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

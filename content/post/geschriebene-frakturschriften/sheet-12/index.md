@@ -1,7 +1,8 @@
 ---
 title: "Blatt 12"
 date: 2024-10-21T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

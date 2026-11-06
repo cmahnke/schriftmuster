@@ -1,7 +1,8 @@
 ---
 title: "Viel Glück und Freude im Neuen Jahre"
 date: 2020-12-31T10:25:43+01:00
-type: single
+params:
+  itemType: single
 outputs:
   - iiif-manifest
   - html

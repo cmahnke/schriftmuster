@@ -1,7 +1,8 @@
 ---
 title: "Stempel-Fraktur"
 date: 2021-05-07T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

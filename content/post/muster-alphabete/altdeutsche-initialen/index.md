@@ -1,7 +1,8 @@
 ---
 title: "Altdeutsche Initialen"
 date: 2020-11-09T21:00:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

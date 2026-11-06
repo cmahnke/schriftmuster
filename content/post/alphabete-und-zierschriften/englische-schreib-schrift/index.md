@@ -1,7 +1,8 @@
 ---
 title: "Englische-Schrift"
 date: 2021-01-04T08:44:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

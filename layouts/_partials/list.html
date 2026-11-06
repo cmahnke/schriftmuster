@@ -17,7 +17,7 @@
     {{- $rotate = printf "%s%d.%s" (index (shuffle (slice "-" "")) 0) (index (shuffle (seq 0 1)) 0) $rotate -}}
     {{- $style := printf "transform: rotate(%sdeg);" $rotate -}}
 
-    <div class="list-entry paper-curl-right {{ .Params.type }}" style="{{ $style | safeCSS }}">
+    <div class="list-entry paper-curl-right {{ .Params.itemType }}" style="{{ $style | safeCSS }}">
 
     <div class="workaround paper-curl-right">
       {{- $contextPath := "" -}}
@@ -47,13 +47,13 @@
             <h2 class='post-title'>{{ $title }}</h2>
           </div>
 
-          {{- $class := .Params.type -}}
+          {{- $class := .Params.itemType -}}
           {{- $imgName := "" -}}
-          {{- if eq .Params.type "font" -}}
+          {{- if eq .Params.itemType "font" -}}
             {{- $imgName = "preview.png" -}}
-          {{- else if eq .Params.type "book" -}}
+          {{- else if eq .Params.itemType "book" -}}
             {{- $imgName = "front" -}}
-          {{- else if eq .Params.type "single" -}}
+          {{- else if eq .Params.itemType "single" -}}
             {{- if isset .Params "view" -}}
               {{- if .Resources.GetMatch .Params.view  -}}
                 {{- $imgName = .Params.view -}}

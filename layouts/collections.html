@@ -4,7 +4,7 @@
 {{ define "content" }}
     <div class="page-container collections">
         {{- $pages := where site.Pages "Section" "post" -}}
-        {{- $pages = where $pages "Type" "eq" "book" -}}
+        {{- $pages = where $pages "Params.itemType" "eq" "book" -}}
         {{- $pages = where $pages "Kind" "eq" "section" -}}
 
         <main class="list">
@@ -23,10 +23,10 @@
                     <div class="workaround paper-curl-right">
                         {{- $class := "" -}}
                         {{- $imgName := "" -}}
-                        {{- if eq .Params.type "font" -}}
+                        {{- if eq .Params.itemType "font" -}}
                             {{- $imgName = "preview.png" -}}
                             {{- $class = "font" -}}
-                        {{- else if eq .Params.type "book" -}}
+                        {{- else if eq .Params.itemType "book" -}}
                             {{- $imgName = "front" -}}
                             {{- $class = "book" -}}
                         {{- end -}}

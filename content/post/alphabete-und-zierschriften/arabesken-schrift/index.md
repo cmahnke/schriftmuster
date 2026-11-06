@@ -1,7 +1,8 @@
 ---
 title: "Arabeskenschrift"
 date: 2021-02-10T08:50:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

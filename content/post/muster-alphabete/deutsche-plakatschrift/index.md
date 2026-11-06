@@ -1,7 +1,8 @@
 ---
 title: "Deutsche Plakatschrift"
 date: 2020-10-14T20:54:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

@@ -1,7 +1,8 @@
 ---
 title: "Moderne Schriften"
 date: 2020-11-03T20:58:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

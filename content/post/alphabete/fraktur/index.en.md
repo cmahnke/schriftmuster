@@ -1,7 +1,8 @@
 ---
 title: "Die Fraktur"
 date: 2020-12-26T07:59:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

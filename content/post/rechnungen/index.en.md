@@ -1,7 +1,8 @@
 ---
 title: "Rechnungen"
 date: 2020-11-13T10:25:43+01:00
-type: single
+params:
+  itemType: single
 outputs:
   - iiif-manifest
   - html

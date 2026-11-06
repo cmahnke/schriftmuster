@@ -1,7 +1,8 @@
 ---
 title: "Die Blockschrift"
 date: 2020-12-14T07:59:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

@@ -1,7 +1,8 @@
 ---
 title: "Halbfette Jaecker-Schrift"
 date: 2021-10-18T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

@@ -1,7 +1,8 @@
 ---
 title: "Reichverzierte Initiale"
 date: 2021-03-01T08:54:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

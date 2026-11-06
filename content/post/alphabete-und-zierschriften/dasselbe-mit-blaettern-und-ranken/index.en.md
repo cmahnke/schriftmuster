@@ -1,7 +1,8 @@
 ---
 title: "Dasselbe mit Blättern und Ranken"
 date: 2021-02-18T08:53:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

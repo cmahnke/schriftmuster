@@ -1,7 +1,8 @@
 ---
 title: "Egyptienne"
 date: 2021-01-31T08:48:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

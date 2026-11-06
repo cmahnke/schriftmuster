@@ -1,7 +1,8 @@
 ---
 title: "Halbfette Büxenstein-Fraktur"
 date: 2021-04-21T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

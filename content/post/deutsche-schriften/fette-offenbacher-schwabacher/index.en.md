@@ -1,7 +1,8 @@
 ---
 title: "Fette Offenbacher Schwabacher"
 date: 2021-09-24T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

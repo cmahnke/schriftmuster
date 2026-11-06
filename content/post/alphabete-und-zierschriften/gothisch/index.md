@@ -1,7 +1,8 @@
 ---
 title: "Gothische-Schrift"
 date: 2021-01-18T08:46:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

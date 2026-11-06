@@ -2,7 +2,8 @@
 title: "Alphabete"
 date: 2020-12-12T07:58:43+02:00
 description: 'Die Sammlung "7 Alphabete" von Hans Kühne erschien 1953 bei Brause, Iserlohn. <a class="worldcat" href="http://www.worldcat.org/oclc/73515779">&nbsp;</a>'
-type: book
+params:
+  itemType: book
 outputs:
   - iiif-manifest
   - html

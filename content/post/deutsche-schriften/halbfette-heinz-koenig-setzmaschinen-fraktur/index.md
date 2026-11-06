@@ -1,7 +1,8 @@
 ---
 title: "Halbfette Heinz-König-Setzmaschinen-Fraktur"
 date: 2021-06-04T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

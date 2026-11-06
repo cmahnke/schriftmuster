@@ -1,7 +1,8 @@
 ---
 title: "Der Tanz"
 date: 2024-04-01T22:10:43+01:00
-type: single
+params:
+  itemType: single
 outputs:
   - iiif-manifest
   - html

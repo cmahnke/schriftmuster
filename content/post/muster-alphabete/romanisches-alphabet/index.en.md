@@ -1,7 +1,8 @@
 ---
 title: "Romanisches Alphabet"
 date: 2020-10-19T20:55:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

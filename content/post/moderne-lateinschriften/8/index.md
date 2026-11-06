@@ -1,7 +1,8 @@
 ---
 title: "Blatt 8"
 date: 2020-12-02T07:54:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

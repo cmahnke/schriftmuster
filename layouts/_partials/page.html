@@ -74,11 +74,11 @@
                         {{- if .params.iiif -}}
                           {{- if ne $currentSectionDir "" -}}
                               {{- partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) -}}
-                          {{- else if eq $.Params.type "book" -}}
+                          {{- else if eq $.Params.itemType "book" -}}
                               {{- if (not (or (or (eq .name "front") (eq .name "title")) (eq .name "cover"))) -}}
                                   {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
                               {{- end -}}
-                          {{- else if eq $.Params.type "single" -}}
+                          {{- else if eq $.Params.itemType "single" -}}
                               {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $contextPath "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
                           {{- else -}}
                               {{ errorf "[page.html] Unable to render content for post %s - maybe no resources given." $pageURL }}
@@ -94,16 +94,16 @@
 
 {{/* TODO: Check if media partial works here - it's not tested with sections */}}
 
-      {{- if .Params.type -}}
-        <div class="{{ .Params.type }}-description">
-          {{- if eq .Params.type "book" -}}
+      {{- if .Params.itemType -}}
+        <div class="{{ .Params.itemType }}-description">
+          {{- if eq .Params.itemType "book" -}}
               <h2>{{ i18n "aboutTheNeu" }} {{ i18n "book" }}</h2>
           {{- else if eq .Params.itemType "font" -}}
               <h2>{{ i18n "aboutTheFem" }} {{ i18n "font" }}</h2>
           {{- end -}}
           {{- .Description | markdownify -}}
         </div>
-        {{- if and (eq .Params.type "book") (ne .Kind "section") -}}
+        {{- if and (eq .Params.itemType "book") (ne .Kind "section") -}}
           {{- if not (hasPrefix $iiifCtx "http://iiif.io/api/presentation/") -}}
               <div class="book-description-images iiif">
                 {{- range .Params.resources -}}

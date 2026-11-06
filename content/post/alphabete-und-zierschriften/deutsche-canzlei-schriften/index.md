@@ -1,7 +1,8 @@
 ---
 title: "Deutsche-Kanzleischriften"
 date: 2021-01-11T08:45:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

@@ -1,7 +1,8 @@
 ---
 title: "Ekkehard-Fraktur"
 date: 2021-06-16T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

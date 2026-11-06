@@ -1,7 +1,8 @@
 ---
 title: "Stickmuster"
 date: 2020-12-13T13:59:43+01:00
-type: single
+params:
+  itemType: single
 outputs:
   - iiif-manifest
   - html

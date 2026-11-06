@@ -2,7 +2,8 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-type: book
+params:
+  itemType: book
 tags:
 - Book
 resources:

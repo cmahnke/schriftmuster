@@ -1,7 +1,8 @@
 ---
 title: "Deutsche Anzeigenschrift / Breiter Schnitt"
 date: 2021-07-30T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

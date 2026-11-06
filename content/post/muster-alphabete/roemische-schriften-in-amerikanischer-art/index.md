@@ -1,7 +1,8 @@
 ---
 title: "Römische Schriften in amerikanischer Art"
 date: 2020-10-31T20:58:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

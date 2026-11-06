@@ -1,7 +1,8 @@
 ---
 title: "Fractur-Schrift"
 date: 2021-01-14T08:46:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

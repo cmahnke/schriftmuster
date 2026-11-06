@@ -1,7 +1,8 @@
 ---
 title: "Halbfette Reform-Fraktur"
 date: 2021-06-12T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

@@ -1,7 +1,8 @@
 ---
 title: "Deutsche Anzeigenschrift / Enger Schnitt"
 date: 2021-08-07T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

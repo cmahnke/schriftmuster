@@ -1,7 +1,8 @@
 ---
 title: "Wieynck-Kanzlei"
 date: 2021-10-30T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

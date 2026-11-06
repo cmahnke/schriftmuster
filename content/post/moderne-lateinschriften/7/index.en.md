@@ -1,7 +1,8 @@
 ---
 title: "Sheet 7"
 date: 2020-11-30T07:53:43+02:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:

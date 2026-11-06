@@ -1,7 +1,8 @@
 ---
 title: "Schumachersche Fraktur"
 date: 2021-04-25T18:47:43+01:00
-type: font
+params:
+  itemType: font
 tags:
 - Font
 resources:
