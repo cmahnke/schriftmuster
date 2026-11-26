@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /privacy/
+
+
+Disallow: /*.bib$
+
+Disallow: /*.json$
+
+Disallow: /*.xml$
+
+Sitemap: https://schriftmuster.projektemacher.org/sitemap.xml
+
+
+llms-txt: https://schriftmuster.projektemacher.org/llms.txt
